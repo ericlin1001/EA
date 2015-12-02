@@ -1,0 +1,12 @@
+{
+		"Name":"DE1",
+		"F":0.5,
+		"CR":0.9,
+		"MaxFEs":100000,
+		"NumDim":30,
+		"PopSize":100,
+		"AuthorInfo":{
+			"Author":"Eric Lin",
+			"Email":"nameljh1001@gmail.com"
+		}
+}

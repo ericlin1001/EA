@@ -1,0 +1,1715 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ASCII	rapidjson/encodings.h	/^struct ASCII {$/;"	s
+Accept	rapidjson/document.h	/^    bool Accept(Handler& handler) const {$/;"	f	class:GenericValue
+AddChunk	rapidjson/allocators.h	/^    void AddChunk(size_t capacity) {$/;"	f	class:MemoryPoolAllocator
+AddConst	rapidjson/internal/meta.h	/^template <typename T> struct AddConst { typedef const T Type; };$/;"	s	namespace:internal
+AddMember	rapidjson/document.h	/^    AddMember(GenericValue& name, T value, Allocator& allocator) {$/;"	f	class:GenericValue
+AddMember	rapidjson/document.h	/^    AddMember(StringRefType name, T value, Allocator& allocator) {$/;"	f	class:GenericValue
+AddMember	rapidjson/document.h	/^    GenericValue& AddMember(GenericValue& name, GenericValue& value, Allocator& allocator) {$/;"	f	class:GenericValue
+AddMember	rapidjson/document.h	/^    GenericValue& AddMember(GenericValue& name, GenericValue&& value, Allocator& allocator) {$/;"	f	class:GenericValue
+AddMember	rapidjson/document.h	/^    GenericValue& AddMember(GenericValue& name, StringRefType value, Allocator& allocator) {$/;"	f	class:GenericValue
+AddMember	rapidjson/document.h	/^    GenericValue& AddMember(GenericValue& name, std::basic_string<Ch>& value, Allocator& allocator) {$/;"	f	class:GenericValue
+AddMember	rapidjson/document.h	/^    GenericValue& AddMember(GenericValue&& name, GenericValue& value, Allocator& allocator) {$/;"	f	class:GenericValue
+AddMember	rapidjson/document.h	/^    GenericValue& AddMember(GenericValue&& name, GenericValue&& value, Allocator& allocator) {$/;"	f	class:GenericValue
+AddMember	rapidjson/document.h	/^    GenericValue& AddMember(StringRefType name, GenericValue& value, Allocator& allocator) {$/;"	f	class:GenericValue
+AddMember	rapidjson/document.h	/^    GenericValue& AddMember(StringRefType name, GenericValue&& value, Allocator& allocator) {$/;"	f	class:GenericValue
+AddMember	rapidjson/document.h	/^    GenericValue& AddMember(StringRefType name, StringRefType value, Allocator& allocator) {$/;"	f	class:GenericValue
+AllocatorType	rapidjson/document.h	/^    typedef Allocator AllocatorType;                        \/\/!< Allocator type from template parameter.$/;"	t	class:GenericDocument
+AllocatorType	rapidjson/document.h	/^    typedef Allocator AllocatorType;                \/\/!< Allocator type from template parameter.$/;"	t	class:GenericValue
+AndExpr	rapidjson/internal/meta.h	/^template <typename C1, typename C2> struct AndExpr : AndExprCond<C1::Value, C2::Value>::Type {};$/;"	s	namespace:internal
+AndExprCond	rapidjson/internal/meta.h	/^template <> struct AndExprCond<true, true> : TrueType {};$/;"	s	namespace:internal
+AndExprCond	rapidjson/internal/meta.h	/^template <bool Cond1, bool Cond2> struct AndExprCond : FalseType {};$/;"	s	namespace:internal
+Append	rapidjson/pointer.h	/^    Append(T* name, Allocator* allocator = 0) const {$/;"	f	class:GenericPointer
+Append	rapidjson/pointer.h	/^    GenericPointer Append(SizeType index, Allocator* allocator = 0) const {$/;"	f	class:GenericPointer
+Append	rapidjson/pointer.h	/^    GenericPointer Append(const Ch* name, SizeType length, Allocator* allocator = 0) const {$/;"	f	class:GenericPointer
+Append	rapidjson/pointer.h	/^    GenericPointer Append(const Token& token, Allocator* allocator = 0) const {$/;"	f	class:GenericPointer
+Append	rapidjson/pointer.h	/^    GenericPointer Append(const ValueType& token, Allocator* allocator = 0) const {$/;"	f	class:GenericPointer
+Append	rapidjson/pointer.h	/^    GenericPointer Append(const std::basic_string<Ch>& name, Allocator* allocator = 0) const {$/;"	f	class:GenericPointer
+AppendDecimal64	rapidjson/internal/biginteger.h	/^    void AppendDecimal64(const char* begin, const char* end) {$/;"	f	class:internal::BigInteger
+Apply	rapidjson/internal/meta.h	/^template <> struct SelectIfImpl<false> { template <typename T1, typename T2> struct Apply { typedef T2 Type; }; };$/;"	s	struct:internal::SelectIfImpl
+Apply	rapidjson/internal/meta.h	/^template <bool C> struct SelectIfImpl { template <typename T1, typename T2> struct Apply { typedef T1 Type; }; };$/;"	s	struct:internal::SelectIfImpl
+Array	rapidjson/document.h	/^    struct Array {$/;"	s	class:GenericValue
+AutoUTF	rapidjson/encodings.h	/^struct AutoUTF {$/;"	s
+AutoUTFInputStream	rapidjson/encodedstream.h	/^    AutoUTFInputStream(InputByteStream& is, UTFType type = kUTF8) : is_(&is), type_(type), hasBOM_(false) {$/;"	f	class:AutoUTFInputStream
+AutoUTFInputStream	rapidjson/encodedstream.h	/^class AutoUTFInputStream {$/;"	c
+AutoUTFOutputStream	rapidjson/encodedstream.h	/^    AutoUTFOutputStream(OutputByteStream& os, UTFType type, bool putBOM) : os_(&os), type_(type) {$/;"	f	class:AutoUTFOutputStream
+AutoUTFOutputStream	rapidjson/encodedstream.h	/^class AutoUTFOutputStream {$/;"	c
+Base	rapidjson/prettywriter.h	/^    typedef Writer<OutputStream, SourceEncoding, TargetEncoding, StackAllocator> Base;$/;"	t	class:PrettyWriter
+Base	rapidjson/reader.h	/^        typedef NumberStream<InputStream, false> Base;$/;"	t	class:GenericReader::NumberStream
+BaseReaderHandler	rapidjson/reader.h	/^struct BaseReaderHandler {$/;"	s
+BaseType	rapidjson/document.h	/^    typedef std::iterator<std::random_access_iterator_tag,ValueType> BaseType;$/;"	t	class:GenericMemberIterator
+Begin	rapidjson/document.h	/^    ConstValueIterator Begin() const { return const_cast<GenericValue&>(*this).Begin(); }$/;"	f	class:GenericValue
+Begin	rapidjson/document.h	/^    ValueIterator Begin() { RAPIDJSON_ASSERT(IsArray()); return data_.a.elements; }$/;"	f	class:GenericValue
+BigInteger	rapidjson/internal/biginteger.h	/^    BigInteger(const BigInteger& rhs) : count_(rhs.count_) {$/;"	f	class:internal::BigInteger
+BigInteger	rapidjson/internal/biginteger.h	/^    BigInteger(const char* decimals, size_t length) : count_(1) {$/;"	f	class:internal::BigInteger
+BigInteger	rapidjson/internal/biginteger.h	/^    explicit BigInteger(uint64_t u) : count_(1) {$/;"	f	class:internal::BigInteger
+BigInteger	rapidjson/internal/biginteger.h	/^class BigInteger {$/;"	c	namespace:internal
+Bool	rapidjson/document.h	/^    bool Bool(bool b) { new (stack_.template Push<ValueType>()) ValueType(b); return true; }$/;"	f	class:GenericDocument
+Bool	rapidjson/prettywriter.h	/^    bool Bool(bool b)           { PrettyPrefix(b ? kTrueType : kFalseType); return Base::WriteBool(b); }$/;"	f	class:PrettyWriter
+Bool	rapidjson/reader.h	/^    bool Bool(bool) { return static_cast<Override&>(*this).Default(); }$/;"	f	struct:BaseReaderHandler
+Bool	rapidjson/writer.h	/^    bool Bool(bool b)           { Prefix(b ? kTrueType : kFalseType); return WriteBool(b); }$/;"	f	class:Writer
+BoolExpr	rapidjson/internal/meta.h	/^template <typename C> struct BoolExpr : SelectIf<C,TrueType,FalseType>::Type {};$/;"	s	namespace:internal
+BoolType	rapidjson/internal/meta.h	/^template <bool Cond> struct BoolType {$/;"	s	namespace:internal
+Bottom	rapidjson/internal/stack.h	/^    T* Bottom() { return (T*)stack_; }$/;"	f	class:internal::Stack
+CEC2015_TEST_FUNCTION	cec14_test_func.h	11;"	d
+COPY	rapidjson/encodings.h	125;"	d
+COPY	rapidjson/encodings.h	147;"	d
+COPY	rapidjson/encodings.h	154;"	d
+COPY	rapidjson/encodings.h	173;"	d
+Capacity	rapidjson/allocators.h	/^    size_t Capacity() const {$/;"	f	class:MemoryPoolAllocator
+Capacity	rapidjson/document.h	/^    SizeType Capacity() const { RAPIDJSON_ASSERT(IsArray()); return data_.a.capacity; }$/;"	f	class:GenericValue
+Ch	rapidjson/document.h	/^    typedef CharType Ch; \/\/!< character type of the string$/;"	t	struct:GenericStringRef
+Ch	rapidjson/document.h	/^    typedef typename Encoding::Ch Ch;                       \/\/!< Character type derived from Encoding.$/;"	t	class:GenericDocument
+Ch	rapidjson/document.h	/^    typedef typename Encoding::Ch Ch;               \/\/!< Character type derived from Encoding.$/;"	t	class:GenericValue
+Ch	rapidjson/encodedstream.h	/^    typedef CharType Ch;$/;"	t	class:AutoUTFInputStream
+Ch	rapidjson/encodedstream.h	/^    typedef CharType Ch;$/;"	t	class:AutoUTFOutputStream
+Ch	rapidjson/encodedstream.h	/^    typedef typename Encoding::Ch Ch;$/;"	t	class:EncodedInputStream
+Ch	rapidjson/encodedstream.h	/^    typedef typename Encoding::Ch Ch;$/;"	t	class:EncodedOutputStream
+Ch	rapidjson/encodings.h	/^    typedef CharType Ch;$/;"	t	struct:ASCII
+Ch	rapidjson/encodings.h	/^    typedef CharType Ch;$/;"	t	struct:AutoUTF
+Ch	rapidjson/encodings.h	/^    typedef CharType Ch;$/;"	t	struct:UTF16
+Ch	rapidjson/encodings.h	/^    typedef CharType Ch;$/;"	t	struct:UTF32
+Ch	rapidjson/encodings.h	/^    typedef CharType Ch;$/;"	t	struct:UTF8
+Ch	rapidjson/filereadstream.h	/^    typedef char Ch;    \/\/!< Character type (byte).$/;"	t	class:FileReadStream
+Ch	rapidjson/filewritestream.h	/^    typedef char Ch;    \/\/!< Character type. Only support char.$/;"	t	class:FileWriteStream
+Ch	rapidjson/memorybuffer.h	/^    typedef char Ch; \/\/ byte$/;"	t	struct:GenericMemoryBuffer
+Ch	rapidjson/memorystream.h	/^    typedef char Ch; \/\/ byte$/;"	t	struct:MemoryStream
+Ch	rapidjson/pointer.h	/^    typedef typename EncodingType::Ch Ch;                   \/\/!< Character type from Value$/;"	t	class:GenericPointer
+Ch	rapidjson/prettywriter.h	/^    typedef typename Base::Ch Ch;$/;"	t	class:PrettyWriter
+Ch	rapidjson/rapidjson.h	/^    typedef typename Encoding::Ch Ch;$/;"	t	struct:GenericInsituStringStream
+Ch	rapidjson/rapidjson.h	/^    typedef typename Encoding::Ch Ch;$/;"	t	struct:GenericStringStream
+Ch	rapidjson/reader.h	/^        typedef CharType Ch;$/;"	t	class:GenericReader::StackStream
+Ch	rapidjson/reader.h	/^    typedef typename Encoding::Ch Ch;$/;"	t	struct:BaseReaderHandler
+Ch	rapidjson/reader.h	/^    typedef typename SourceEncoding::Ch Ch; \/\/!< SourceEncoding character type$/;"	t	class:GenericReader
+Ch	rapidjson/stringbuffer.h	/^    typedef typename Encoding::Ch Ch;$/;"	t	class:GenericStringBuffer
+Ch	rapidjson/writer.h	/^    typedef typename SourceEncoding::Ch Ch;$/;"	t	class:Writer
+CharType	rapidjson/document.h	/^    GenericStringRef(CharType (&str)[N]) \/* = delete *\/;$/;"	m	struct:GenericStringRef
+CheckWithinHalfULP	rapidjson/internal/strtod.h	/^inline int CheckWithinHalfULP(double b, const BigInteger& d, int dExp) {$/;"	f	namespace:internal
+ChunkHeader	rapidjson/allocators.h	/^    struct ChunkHeader {$/;"	s	class:MemoryPoolAllocator
+Clear	rapidjson/allocators.h	/^    void Clear() {$/;"	f	class:MemoryPoolAllocator
+Clear	rapidjson/document.h	/^    void Clear() {$/;"	f	class:GenericValue
+Clear	rapidjson/error/error.h	/^    void Clear() { Set(kParseErrorNone); }$/;"	f	struct:ParseResult
+Clear	rapidjson/internal/stack.h	/^    void Clear() { stackTop_ = stack_; }$/;"	f	class:internal::Stack
+Clear	rapidjson/memorybuffer.h	/^    void Clear() { stack_.Clear(); }$/;"	f	struct:GenericMemoryBuffer
+Clear	rapidjson/stringbuffer.h	/^    void Clear() { stack_.Clear(); }$/;"	f	class:GenericStringBuffer
+ClearStack	rapidjson/document.h	/^    void ClearStack() {$/;"	f	class:GenericDocument
+ClearStack	rapidjson/reader.h	/^    void ClearStack() { stack_.Clear(); }$/;"	f	class:GenericReader
+ClearStackOnExit	rapidjson/document.h	/^        explicit ClearStackOnExit(GenericDocument& d) : d_(d) {}$/;"	f	struct:GenericDocument::ClearStackOnExit
+ClearStackOnExit	rapidjson/document.h	/^    struct ClearStackOnExit {$/;"	s	class:GenericDocument
+ClearStackOnExit	rapidjson/reader.h	/^        explicit ClearStackOnExit(GenericReader& r) : r_(r) {}$/;"	f	struct:GenericReader::ClearStackOnExit
+ClearStackOnExit	rapidjson/reader.h	/^    struct ClearStackOnExit {$/;"	s	class:GenericReader
+Code	rapidjson/error/error.h	/^    ParseErrorCode Code() const { return code_; }$/;"	f	struct:ParseResult
+ColonToken	rapidjson/reader.h	/^        ColonToken,$/;"	e	enum:GenericReader::Token
+CommaToken	rapidjson/reader.h	/^        CommaToken,$/;"	e	enum:GenericReader::Token
+Compare	rapidjson/internal/biginteger.h	/^    int Compare(const BigInteger& rhs) const {$/;"	f	class:internal::BigInteger
+ConstIterator	rapidjson/document.h	/^    typedef GenericMemberIterator<true,Encoding,Allocator>  ConstIterator;$/;"	t	class:GenericMemberIterator
+ConstMemberIterator	rapidjson/document.h	/^    typedef typename GenericMemberIterator<true,Encoding,Allocator>::Iterator ConstMemberIterator;  \/\/!< Constant member iterator for iterating in object.$/;"	t	class:GenericValue
+ConstValueIterator	rapidjson/document.h	/^    typedef const GenericValue* ConstValueIterator; \/\/!< Constant value iterator for iterating in array.$/;"	t	class:GenericValue
+CopyFrom	rapidjson/document.h	/^    GenericValue& CopyFrom(const GenericValue<Encoding, SourceAllocator>& rhs, Allocator& allocator) {$/;"	f	class:GenericValue
+CopyFromRaw	rapidjson/pointer.h	/^    Ch* CopyFromRaw(const GenericPointer& rhs, size_t extraToken = 0, size_t extraNameBufferSize = 0) {$/;"	f	class:GenericPointer
+CountDecimalDigit32	rapidjson/internal/dtoa.h	/^inline unsigned CountDecimalDigit32(uint32_t n) {$/;"	f	namespace:internal
+Create	rapidjson/pointer.h	/^    ValueType& Create(GenericDocument<EncodingType, typename ValueType::AllocatorType, stackAllocator>& document, bool* alreadyExist = 0) const {$/;"	f	class:GenericPointer
+Create	rapidjson/pointer.h	/^    ValueType& Create(ValueType& root, typename ValueType::AllocatorType& allocator, bool* alreadyExist = 0) const {$/;"	f	class:GenericPointer
+CreateValueByPointer	rapidjson/pointer.h	/^typename DocumentType::ValueType& CreateValueByPointer(DocumentType& document, const CharType(&source)[N]) {$/;"	f
+CreateValueByPointer	rapidjson/pointer.h	/^typename DocumentType::ValueType& CreateValueByPointer(DocumentType& document, const GenericPointer<typename DocumentType::ValueType>& pointer) {$/;"	f
+CreateValueByPointer	rapidjson/pointer.h	/^typename T::ValueType& CreateValueByPointer(T& root, const CharType(&source)[N], typename T::AllocatorType& a) {$/;"	f
+CreateValueByPointer	rapidjson/pointer.h	/^typename T::ValueType& CreateValueByPointer(T& root, const GenericPointer<typename T::ValueType>& pointer, typename T::AllocatorType& a) {$/;"	f
+CrtAllocator	rapidjson/allocators.h	/^class CrtAllocator {$/;"	c
+Data	rapidjson/document.h	/^    union Data {$/;"	u	class:GenericValue
+Decode	rapidjson/encodings.h	/^    RAPIDJSON_FORCEINLINE static bool Decode(InputStream& is, unsigned* codepoint) {$/;"	f	struct:AutoUTF
+Decode	rapidjson/encodings.h	/^    static bool Decode(InputStream& is, unsigned* codepoint) {$/;"	f	struct:ASCII
+Decode	rapidjson/encodings.h	/^    static bool Decode(InputStream& is, unsigned* codepoint) {$/;"	f	struct:UTF16
+Decode	rapidjson/encodings.h	/^    static bool Decode(InputStream& is, unsigned* codepoint) {$/;"	f	struct:UTF32
+Decode	rapidjson/encodings.h	/^    static bool Decode(InputStream& is, unsigned* codepoint) {$/;"	f	struct:UTF8
+DefFunction	functions.h	60;"	d
+Default	rapidjson/reader.h	/^    bool Default() { return true; }$/;"	f	struct:BaseReaderHandler
+Destroy	rapidjson/document.h	/^    void Destroy() {$/;"	f	class:GenericDocument
+Destroy	rapidjson/internal/stack.h	/^    void Destroy() {$/;"	f	class:internal::Stack
+DetectType	rapidjson/encodedstream.h	/^    void DetectType() {$/;"	f	class:AutoUTFInputStream
+Difference	rapidjson/internal/biginteger.h	/^    bool Difference(const BigInteger& rhs, BigInteger* out) const {$/;"	f	class:internal::BigInteger
+DifferenceType	rapidjson/document.h	/^    typedef typename BaseType::difference_type DifferenceType;$/;"	t	class:GenericMemberIterator
+DigitGen	rapidjson/internal/dtoa.h	/^inline void DigitGen(const DiyFp& W, const DiyFp& Mp, uint64_t delta, char* buffer, int* len, int* K) {$/;"	f	namespace:internal
+DisableIf	rapidjson/internal/meta.h	/^struct DisableIf : DisableIfCond<Condition::Value, T> {};$/;"	s	namespace:internal
+DisableIfCond	rapidjson/internal/meta.h	/^template <bool Condition, typename T = void> struct DisableIfCond { typedef T Type; };$/;"	s	namespace:internal
+DisableIfCond	rapidjson/internal/meta.h	/^template <typename T> struct DisableIfCond<true, T> { \/* empty *\/ };$/;"	s	namespace:internal
+DiyFp	rapidjson/internal/diyfp.h	/^    DiyFp() {}$/;"	f	struct:internal::DiyFp
+DiyFp	rapidjson/internal/diyfp.h	/^    DiyFp(uint64_t fp, int exp) : f(fp), e(exp) {}$/;"	f	struct:internal::DiyFp
+DiyFp	rapidjson/internal/diyfp.h	/^    explicit DiyFp(double d) {$/;"	f	struct:internal::DiyFp
+DiyFp	rapidjson/internal/diyfp.h	/^struct DiyFp {$/;"	s	namespace:internal
+Document	rapidjson/document.h	/^typedef GenericDocument<UTF8<> > Document;$/;"	t
+Double	rapidjson/document.h	/^    bool Double(double d) { new (stack_.template Push<ValueType>()) ValueType(d); return true; }$/;"	f	class:GenericDocument
+Double	rapidjson/internal/ieee754.h	/^    Double() {}$/;"	f	class:internal::Double
+Double	rapidjson/internal/ieee754.h	/^    Double(double d) : d_(d) {}$/;"	f	class:internal::Double
+Double	rapidjson/internal/ieee754.h	/^    Double(uint64_t u) : u_(u) {}$/;"	f	class:internal::Double
+Double	rapidjson/internal/ieee754.h	/^class Double {$/;"	c	namespace:internal
+Double	rapidjson/prettywriter.h	/^    bool Double(double d)       { PrettyPrefix(kNumberType); return Base::WriteDouble(d); }$/;"	f	class:PrettyWriter
+Double	rapidjson/reader.h	/^    bool Double(double) { return static_cast<Override&>(*this).Default(); }$/;"	f	struct:BaseReaderHandler
+Double	rapidjson/writer.h	/^    bool Double(double d)       { Prefix(kNumberType); return WriteDouble(d); }$/;"	f	class:Writer
+E	cec14_test_func.h	18;"	d
+EPS	cec14_test_func.h	17;"	d
+EffectiveSignificandSize	rapidjson/internal/ieee754.h	/^    static unsigned EffectiveSignificandSize(int order) {$/;"	f	class:internal::Double
+Empty	rapidjson/document.h	/^    bool Empty() const { RAPIDJSON_ASSERT(IsArray()); return data_.a.size == 0; }$/;"	f	class:GenericValue
+Empty	rapidjson/internal/stack.h	/^    bool Empty() const { return stackTop_ == stack_; }$/;"	f	class:internal::Stack
+EnableIf	rapidjson/internal/meta.h	/^struct EnableIf : EnableIfCond<Condition::Value, T> {};$/;"	s	namespace:internal
+EnableIfCond	rapidjson/internal/meta.h	/^template <bool Condition, typename T = void> struct EnableIfCond  { typedef T Type; };$/;"	s	namespace:internal
+EnableIfCond	rapidjson/internal/meta.h	/^template <typename T> struct EnableIfCond<false, T> { \/* empty *\/ };$/;"	s	namespace:internal
+Encode	rapidjson/encodings.h	/^    RAPIDJSON_FORCEINLINE static void Encode(OutputStream& os, unsigned codepoint) {$/;"	f	struct:AutoUTF
+Encode	rapidjson/encodings.h	/^    static void Encode(OutputStream& os, unsigned codepoint) {$/;"	f	struct:ASCII
+Encode	rapidjson/encodings.h	/^    static void Encode(OutputStream& os, unsigned codepoint) {$/;"	f	struct:UTF16
+Encode	rapidjson/encodings.h	/^    static void Encode(OutputStream& os, unsigned codepoint) {$/;"	f	struct:UTF32
+Encode	rapidjson/encodings.h	/^    static void Encode(OutputStream& os, unsigned codepoint) {$/;"	f	struct:UTF8
+EncodedInputStream	rapidjson/encodedstream.h	/^    EncodedInputStream(InputByteStream& is) : is_(is) { $/;"	f	class:EncodedInputStream
+EncodedInputStream	rapidjson/encodedstream.h	/^class EncodedInputStream {$/;"	c
+EncodedOutputStream	rapidjson/encodedstream.h	/^    EncodedOutputStream(OutputByteStream& os, bool putBOM = true) : os_(os) { $/;"	f	class:EncodedOutputStream
+EncodedOutputStream	rapidjson/encodedstream.h	/^class EncodedOutputStream {$/;"	c
+EncodingType	rapidjson/document.h	/^    typedef Encoding EncodingType;                  \/\/!< Encoding type from template parameter.$/;"	t	class:GenericValue
+EncodingType	rapidjson/pointer.h	/^    typedef typename ValueType::EncodingType EncodingType;  \/\/!< Encoding type from Value$/;"	t	class:GenericPointer
+End	rapidjson/document.h	/^    ConstValueIterator End() const { return const_cast<GenericValue&>(*this).End(); }$/;"	f	class:GenericValue
+End	rapidjson/document.h	/^    ValueIterator End() { RAPIDJSON_ASSERT(IsArray()); return data_.a.elements + data_.a.size; }$/;"	f	class:GenericValue
+EndArray	rapidjson/document.h	/^    bool EndArray(SizeType elementCount) {$/;"	f	class:GenericDocument
+EndArray	rapidjson/prettywriter.h	/^    bool EndArray(SizeType memberCount = 0) {$/;"	f	class:PrettyWriter
+EndArray	rapidjson/reader.h	/^    bool EndArray(SizeType) { return static_cast<Override&>(*this).Default(); }$/;"	f	struct:BaseReaderHandler
+EndArray	rapidjson/writer.h	/^    bool EndArray(SizeType elementCount = 0) {$/;"	f	class:Writer
+EndDef	functions.h	64;"	d
+EndObject	rapidjson/document.h	/^    bool EndObject(SizeType memberCount) {$/;"	f	class:GenericDocument
+EndObject	rapidjson/prettywriter.h	/^    bool EndObject(SizeType memberCount = 0) {$/;"	f	class:PrettyWriter
+EndObject	rapidjson/reader.h	/^    bool EndObject(SizeType) { return static_cast<Override&>(*this).Default(); }$/;"	f	struct:BaseReaderHandler
+EndObject	rapidjson/writer.h	/^    bool EndObject(SizeType memberCount = 0) {$/;"	f	class:Writer
+Erase	rapidjson/document.h	/^    ValueIterator Erase(ConstValueIterator first, ConstValueIterator last) {$/;"	f	class:GenericValue
+Erase	rapidjson/document.h	/^    ValueIterator Erase(ConstValueIterator pos) {$/;"	f	class:GenericValue
+Erase	rapidjson/pointer.h	/^    bool Erase(ValueType& root) const {$/;"	f	class:GenericPointer
+EraseMember	rapidjson/document.h	/^    MemberIterator EraseMember(ConstMemberIterator first, ConstMemberIterator last) {$/;"	f	class:GenericValue
+EraseMember	rapidjson/document.h	/^    MemberIterator EraseMember(ConstMemberIterator pos) {$/;"	f	class:GenericValue
+EraseMember	rapidjson/document.h	/^    bool EraseMember(const Ch* name) {$/;"	f	class:GenericValue
+EraseMember	rapidjson/document.h	/^    bool EraseMember(const GenericValue<Encoding, SourceAllocator>& name) {$/;"	f	class:GenericValue
+EraseMember	rapidjson/document.h	/^    bool EraseMember(const std::basic_string<Ch>& name) { return EraseMember(GenericValue(StringRef(name))); }$/;"	f	class:GenericValue
+EraseValueByPointer	rapidjson/pointer.h	/^bool EraseValueByPointer(T& root, const CharType(&source)[N]) {$/;"	f
+EraseValueByPointer	rapidjson/pointer.h	/^bool EraseValueByPointer(T& root, const GenericPointer<typename T::ValueType>& pointer) {$/;"	f
+Expand	rapidjson/internal/stack.h	/^    void Expand(size_t count) {$/;"	f	class:internal::Stack
+Exponent	rapidjson/internal/ieee754.h	/^    int Exponent() const { return static_cast<int>(((u_ & kExponentMask) >> kSignificandSize) - kExponentBias); }$/;"	f	class:internal::Double
+FUNCTION_H	functions.h	3;"	d
+FalseToken	rapidjson/reader.h	/^        FalseToken,$/;"	e	enum:GenericReader::Token
+FalseType	rapidjson/internal/meta.h	/^typedef BoolType<false> FalseType;$/;"	t	namespace:internal
+FastPath	rapidjson/internal/strtod.h	/^inline double FastPath(double significand, int exp) {$/;"	f	namespace:internal
+FileReadStream	rapidjson/filereadstream.h	/^    FileReadStream(std::FILE* fp, char* buffer, size_t bufferSize) : fp_(fp), buffer_(buffer), bufferSize_(bufferSize), bufferLast_(0), current_(buffer_), readCount_(0), count_(0), eof_(false) { $/;"	f	class:FileReadStream
+FileReadStream	rapidjson/filereadstream.h	/^class FileReadStream {$/;"	c
+FileWriteStream	rapidjson/filewritestream.h	/^    FileWriteStream(std::FILE* fp, char* buffer, size_t bufferSize) : fp_(fp), buffer_(buffer), bufferEnd_(buffer + bufferSize), current_(buffer_) { $/;"	f	class:FileWriteStream
+FileWriteStream	rapidjson/filewritestream.h	/^class FileWriteStream {$/;"	c
+FindMember	rapidjson/document.h	/^    ConstMemberIterator FindMember(const Ch* name) const { return const_cast<GenericValue&>(*this).FindMember(name); }$/;"	f	class:GenericValue
+FindMember	rapidjson/document.h	/^    ConstMemberIterator FindMember(const std::basic_string<Ch>& name) const { return FindMember(StringRef(name)); }$/;"	f	class:GenericValue
+FindMember	rapidjson/document.h	/^    MemberIterator FindMember(const Ch* name) {$/;"	f	class:GenericValue
+FindMember	rapidjson/document.h	/^    MemberIterator FindMember(const GenericValue<Encoding, SourceAllocator>& name) {$/;"	f	class:GenericValue
+FindMember	rapidjson/document.h	/^    MemberIterator FindMember(const std::basic_string<Ch>& name) { return FindMember(StringRef(name)); }$/;"	f	class:GenericValue
+FindMember	rapidjson/document.h	/^    template <typename SourceAllocator> ConstMemberIterator FindMember(const GenericValue<Encoding, SourceAllocator>& name) const { return const_cast<GenericValue&>(*this).FindMember(name); }$/;"	f	class:GenericValue
+Flush	rapidjson/encodedstream.h	/^    void Flush() { RAPIDJSON_ASSERT(false); } $/;"	f	class:AutoUTFInputStream
+Flush	rapidjson/encodedstream.h	/^    void Flush() { RAPIDJSON_ASSERT(false); } $/;"	f	class:EncodedInputStream
+Flush	rapidjson/encodedstream.h	/^    void Flush() { os_->Flush(); } $/;"	f	class:AutoUTFOutputStream
+Flush	rapidjson/encodedstream.h	/^    void Flush() { os_.Flush(); }$/;"	f	class:EncodedOutputStream
+Flush	rapidjson/filereadstream.h	/^    void Flush() { RAPIDJSON_ASSERT(false); } $/;"	f	class:FileReadStream
+Flush	rapidjson/filewritestream.h	/^    void Flush() {$/;"	f	class:FileWriteStream
+Flush	rapidjson/memorybuffer.h	/^    void Flush() {}$/;"	f	struct:GenericMemoryBuffer
+Flush	rapidjson/memorystream.h	/^    void Flush() { RAPIDJSON_ASSERT(false); }$/;"	f	struct:MemoryStream
+Flush	rapidjson/rapidjson.h	/^    void Flush() { RAPIDJSON_ASSERT(false); }$/;"	f	struct:GenericStringStream
+Flush	rapidjson/rapidjson.h	/^    void Flush() {}$/;"	f	struct:GenericInsituStringStream
+Flush	rapidjson/stringbuffer.h	/^    void Flush() {}$/;"	f	class:GenericStringBuffer
+Free	rapidjson/allocators.h	/^    static void Free(void *ptr) { (void)ptr; } \/\/ Do nothing$/;"	f	class:MemoryPoolAllocator
+Free	rapidjson/allocators.h	/^    static void Free(void *ptr) { std::free(ptr); }$/;"	f	class:CrtAllocator
+Function	functions.h	/^		Function(const char *s,double xlow,double xup,double fbest,bool isFindMin,int numDim){$/;"	f	class:Function
+Function	functions.h	/^class Function{$/;"	c
+FunctionFactory	functions.h	/^		FunctionFactory(int numDim){$/;"	f	class:FunctionFactory
+FunctionFactory	functions.h	/^class FunctionFactory{$/;"	c
+GenericDocument	rapidjson/document.h	/^    GenericDocument(Allocator* allocator = 0, size_t stackCapacity = kDefaultStackCapacity, StackAllocator* stackAllocator = 0) : $/;"	f	class:GenericDocument
+GenericDocument	rapidjson/document.h	/^    explicit GenericDocument(Type type, Allocator* allocator = 0, size_t stackCapacity = kDefaultStackCapacity, StackAllocator* stackAllocator = 0) :$/;"	f	class:GenericDocument
+GenericDocument	rapidjson/document.h	/^class GenericDocument : public GenericValue<Encoding, Allocator> {$/;"	c
+GenericInsituStringStream	rapidjson/rapidjson.h	/^    GenericInsituStringStream(Ch *src) : src_(src), dst_(0), head_(src) {}$/;"	f	struct:GenericInsituStringStream
+GenericInsituStringStream	rapidjson/rapidjson.h	/^struct GenericInsituStringStream {$/;"	s
+GenericMember	rapidjson/document.h	/^struct GenericMember { $/;"	s
+GenericMemberIterator	rapidjson/document.h	/^    GenericMemberIterator() : ptr_() {}$/;"	f	class:GenericMemberIterator
+GenericMemberIterator	rapidjson/document.h	/^    GenericMemberIterator(const NonConstIterator & it) : ptr_(it.ptr_) {}$/;"	f	class:GenericMemberIterator
+GenericMemberIterator	rapidjson/document.h	/^    explicit GenericMemberIterator(Pointer p) : ptr_(p) {}$/;"	f	class:GenericMemberIterator
+GenericMemberIterator	rapidjson/document.h	/^class GenericMemberIterator$/;"	c
+GenericMemberIterator	rapidjson/document.h	/^struct GenericMemberIterator<false,Encoding,Allocator> {$/;"	s
+GenericMemberIterator	rapidjson/document.h	/^struct GenericMemberIterator<true,Encoding,Allocator> {$/;"	s
+GenericMemoryBuffer	rapidjson/memorybuffer.h	/^    GenericMemoryBuffer(Allocator* allocator = 0, size_t capacity = kDefaultCapacity) : stack_(allocator, capacity) {}$/;"	f	struct:GenericMemoryBuffer
+GenericMemoryBuffer	rapidjson/memorybuffer.h	/^struct GenericMemoryBuffer {$/;"	s
+GenericPointer	rapidjson/pointer.h	/^    GenericPointer() : allocator_(), ownAllocator_(), nameBuffer_(), tokens_(), tokenCount_(), parseErrorOffset_(), parseErrorCode_(kPointerParseErrorNone) {}$/;"	f	class:GenericPointer
+GenericPointer	rapidjson/pointer.h	/^    GenericPointer(const Ch* source, size_t length, Allocator* allocator = 0) : allocator_(allocator), ownAllocator_(), nameBuffer_(), tokens_(), tokenCount_(), parseErrorOffset_(), parseErrorCode_(kPointerParseErrorNone) {$/;"	f	class:GenericPointer
+GenericPointer	rapidjson/pointer.h	/^    GenericPointer(const GenericPointer& rhs) : allocator_(), ownAllocator_(), nameBuffer_(), tokens_(), tokenCount_(), parseErrorOffset_(), parseErrorCode_(kPointerParseErrorNone) {$/;"	f	class:GenericPointer
+GenericPointer	rapidjson/pointer.h	/^    GenericPointer(const Token* tokens, size_t tokenCount) : allocator_(), ownAllocator_(), nameBuffer_(), tokens_(const_cast<Token*>(tokens)), tokenCount_(tokenCount), parseErrorOffset_(), parseErrorCode_(kPointerParseErrorNone) {}$/;"	f	class:GenericPointer
+GenericPointer	rapidjson/pointer.h	/^    explicit GenericPointer(const Ch* source, Allocator* allocator = 0) : allocator_(allocator), ownAllocator_(), nameBuffer_(), tokens_(), tokenCount_(), parseErrorOffset_(), parseErrorCode_(kPointerParseErrorNone) {$/;"	f	class:GenericPointer
+GenericPointer	rapidjson/pointer.h	/^    explicit GenericPointer(const std::basic_string<Ch>& source, Allocator* allocator = 0) : allocator_(allocator), ownAllocator_(), nameBuffer_(), tokens_(), tokenCount_(), parseErrorOffset_(), parseErrorCode_(kPointerParseErrorNone) {$/;"	f	class:GenericPointer
+GenericPointer	rapidjson/pointer.h	/^class GenericPointer {$/;"	c
+GenericReader	rapidjson/reader.h	/^    GenericReader(StackAllocator* stackAllocator = 0, size_t stackCapacity = kDefaultStackCapacity) : stack_(stackAllocator, stackCapacity), parseResult_() {}$/;"	f	class:GenericReader
+GenericReader	rapidjson/reader.h	/^class GenericReader {$/;"	c
+GenericStringBuffer	rapidjson/stringbuffer.h	/^    GenericStringBuffer(Allocator* allocator = 0, size_t capacity = kDefaultCapacity) : stack_(allocator, capacity) {}$/;"	f	class:GenericStringBuffer
+GenericStringBuffer	rapidjson/stringbuffer.h	/^    GenericStringBuffer(GenericStringBuffer&& rhs) : stack_(std::move(rhs.stack_)) {}$/;"	f	class:GenericStringBuffer
+GenericStringBuffer	rapidjson/stringbuffer.h	/^class GenericStringBuffer {$/;"	c
+GenericStringRef	rapidjson/document.h	/^    GenericStringRef(const CharType* str, SizeType len)$/;"	f	struct:GenericStringRef
+GenericStringRef	rapidjson/document.h	/^    explicit GenericStringRef(const CharType* str)$/;"	f	struct:GenericStringRef
+GenericStringRef	rapidjson/document.h	/^struct GenericStringRef {$/;"	s
+GenericStringStream	rapidjson/rapidjson.h	/^    GenericStringStream(const Ch *src) : src_(src), head_(src) {}$/;"	f	struct:GenericStringStream
+GenericStringStream	rapidjson/rapidjson.h	/^struct GenericStringStream {$/;"	s
+GenericValue	rapidjson/document.h	/^    GenericValue(const Ch* s, SizeType length, Allocator& allocator) : data_(), flags_() { SetStringRaw(StringRef(s, length), allocator); }$/;"	f	class:GenericValue
+GenericValue	rapidjson/document.h	/^    GenericValue(const Ch*s, Allocator& allocator) : data_(), flags_() { SetStringRaw(StringRef(s), allocator); }$/;"	f	class:GenericValue
+GenericValue	rapidjson/document.h	/^    GenericValue(const std::basic_string<Ch>& s, Allocator& allocator) : data_(), flags_() { SetStringRaw(StringRef(s), allocator); }$/;"	f	class:GenericValue
+GenericValue	rapidjson/document.h	/^GenericValue<Encoding,Allocator>::GenericValue(const GenericValue<Encoding,SourceAllocator>& rhs, Allocator& allocator)$/;"	f	class:GenericValue
+GenericValue	rapidjson/document.h	/^class GenericValue {$/;"	c
+Get	rapidjson/pointer.h	/^    ValueType* Get(ValueType& root) const {$/;"	f	class:GenericPointer
+Get	rapidjson/pointer.h	/^    const ValueType* Get(const ValueType& root) const { return Get(const_cast<ValueType&>(root)); }$/;"	f	class:GenericPointer
+GetAllocator	rapidjson/document.h	/^    Allocator& GetAllocator() {$/;"	f	class:GenericDocument
+GetAllocator	rapidjson/internal/stack.h	/^    Allocator& GetAllocator() {$/;"	f	class:internal::Stack
+GetBool	rapidjson/document.h	/^    bool GetBool() const { RAPIDJSON_ASSERT(IsBool()); return flags_ == kTrueFlag; }$/;"	f	class:GenericValue
+GetBuffer	rapidjson/memorybuffer.h	/^    const Ch* GetBuffer() const {$/;"	f	struct:GenericMemoryBuffer
+GetCachedPower	rapidjson/internal/diyfp.h	/^inline DiyFp GetCachedPower(int e, int* K) {$/;"	f	namespace:internal
+GetCachedPower10	rapidjson/internal/diyfp.h	/^inline DiyFp GetCachedPower10(int exp, int *outExp) {$/;"	f	namespace:internal
+GetCachedPowerByIndex	rapidjson/internal/diyfp.h	/^inline DiyFp GetCachedPowerByIndex(size_t index) {$/;"	f	namespace:internal
+GetCapacity	rapidjson/internal/stack.h	/^    size_t GetCapacity() const { return static_cast<size_t>(stackEnd_ - stack_); }$/;"	f	class:internal::Stack
+GetCount	rapidjson/internal/biginteger.h	/^    size_t GetCount() const { return count_; }$/;"	f	class:internal::BigInteger
+GetDigit	rapidjson/internal/biginteger.h	/^    Type GetDigit(size_t index) const { RAPIDJSON_ASSERT(index < count_); return digits_[index]; }$/;"	f	class:internal::BigInteger
+GetDigitsLut	rapidjson/internal/itoa.h	/^inline const char* GetDigitsLut() {$/;"	f	namespace:internal
+GetDouble	rapidjson/document.h	/^    double GetDouble() const {$/;"	f	class:GenericValue
+GetErrorOffset	rapidjson/document.h	/^    size_t GetErrorOffset() const { return parseResult_.Offset(); }$/;"	f	class:GenericDocument
+GetErrorOffset	rapidjson/reader.h	/^    size_t GetErrorOffset() const { return parseResult_.Offset(); }$/;"	f	class:GenericReader
+GetInt	rapidjson/document.h	/^    int GetInt() const          { RAPIDJSON_ASSERT(flags_ & kIntFlag);   return data_.n.i.i;   }$/;"	f	class:GenericValue
+GetInt64	rapidjson/document.h	/^    int64_t GetInt64() const    { RAPIDJSON_ASSERT(flags_ & kInt64Flag); return data_.n.i64; }$/;"	f	class:GenericValue
+GetLength	rapidjson/document.h	/^        inline SizeType GetLength() const       { return  (SizeType)(MaxSize -  str[LenPos]); }$/;"	f	struct:GenericValue::ShortString
+GetParseError	rapidjson/document.h	/^    ParseErrorCode GetParseError() const { return parseResult_.Code(); }$/;"	f	class:GenericDocument
+GetParseErrorCode	rapidjson/pointer.h	/^    PointerParseErrorCode GetParseErrorCode() const { return parseErrorCode_; }$/;"	f	class:GenericPointer
+GetParseErrorCode	rapidjson/reader.h	/^    ParseErrorCode GetParseErrorCode() const { return parseResult_.Code(); }$/;"	f	class:GenericReader
+GetParseErrorFunc	rapidjson/error/error.h	/^typedef const RAPIDJSON_ERROR_CHARTYPE* (*GetParseErrorFunc)(ParseErrorCode);$/;"	t
+GetParseErrorOffset	rapidjson/pointer.h	/^    size_t GetParseErrorOffset() const { return parseErrorOffset_; }$/;"	f	class:GenericPointer
+GetParseError_En	rapidjson/error/en.h	/^inline const RAPIDJSON_ERROR_CHARTYPE* GetParseError_En(ParseErrorCode parseErrorCode) {$/;"	f
+GetRange	rapidjson/encodings.h	/^    static unsigned char GetRange(unsigned char c) {$/;"	f	struct:UTF8
+GetSize	rapidjson/internal/stack.h	/^    size_t GetSize() const { return static_cast<size_t>(stackTop_ - stack_); }$/;"	f	class:internal::Stack
+GetSize	rapidjson/memorybuffer.h	/^    size_t GetSize() const { return stack_.GetSize(); }$/;"	f	struct:GenericMemoryBuffer
+GetSize	rapidjson/stringbuffer.h	/^    size_t GetSize() const { return stack_.GetSize(); }$/;"	f	class:GenericStringBuffer
+GetStackCapacity	rapidjson/document.h	/^    size_t GetStackCapacity() const { return stack_.GetCapacity(); }$/;"	f	class:GenericDocument
+GetString	rapidjson/document.h	/^    const Ch* GetString() const { RAPIDJSON_ASSERT(IsString()); return ((flags_ & kInlineStrFlag) ? data_.ss.str : data_.s.str); }$/;"	f	class:GenericValue
+GetString	rapidjson/stringbuffer.h	/^    const Ch* GetString() const {$/;"	f	class:GenericStringBuffer
+GetStringLength	rapidjson/document.h	/^    SizeType GetStringLength() const { RAPIDJSON_ASSERT(IsString()); return ((flags_ & kInlineStrFlag) ? (data_.ss.GetLength()) : data_.s.length); }$/;"	f	class:GenericValue
+GetTokenCount	rapidjson/pointer.h	/^    size_t GetTokenCount() const { return tokenCount_; }$/;"	f	class:GenericPointer
+GetTokens	rapidjson/pointer.h	/^    const Token* GetTokens() const { return tokens_; }$/;"	f	class:GenericPointer
+GetType	rapidjson/document.h	/^    Type GetType()  const { return static_cast<Type>(flags_ & kTypeMask); }$/;"	f	class:GenericValue
+GetType	rapidjson/encodedstream.h	/^    UTFType GetType() const { return type_; }$/;"	f	class:AutoUTFInputStream
+GetType	rapidjson/encodedstream.h	/^    UTFType GetType() const { return type_; }$/;"	f	class:AutoUTFOutputStream
+GetUint	rapidjson/document.h	/^    unsigned GetUint() const    { RAPIDJSON_ASSERT(flags_ & kUintFlag);  return data_.n.u.u;   }$/;"	f	class:GenericValue
+GetUint64	rapidjson/document.h	/^    uint64_t GetUint64() const  { RAPIDJSON_ASSERT(flags_ & kUint64Flag); return data_.n.u64; }$/;"	f	class:GenericValue
+GetValueByPointer	rapidjson/pointer.h	/^const typename T::ValueType* GetValueByPointer(const T& root, const CharType(&source)[N]) {$/;"	f
+GetValueByPointer	rapidjson/pointer.h	/^const typename T::ValueType* GetValueByPointer(const T& root, const GenericPointer<typename T::ValueType>& pointer) {$/;"	f
+GetValueByPointer	rapidjson/pointer.h	/^typename T::ValueType* GetValueByPointer(T& root, const CharType (&source)[N]) {$/;"	f
+GetValueByPointer	rapidjson/pointer.h	/^typename T::ValueType* GetValueByPointer(T& root, const GenericPointer<typename T::ValueType>& pointer) {$/;"	f
+GetValueByPointerWithDefault	rapidjson/pointer.h	/^GetValueByPointerWithDefault(DocumentType& document, const CharType(&source)[N], T2 defaultValue) {$/;"	f
+GetValueByPointerWithDefault	rapidjson/pointer.h	/^GetValueByPointerWithDefault(DocumentType& document, const GenericPointer<typename DocumentType::ValueType>& pointer, T2 defaultValue) {$/;"	f
+GetValueByPointerWithDefault	rapidjson/pointer.h	/^GetValueByPointerWithDefault(T& root, const CharType(&source)[N], T2 defaultValue, typename T::AllocatorType& a) {$/;"	f
+GetValueByPointerWithDefault	rapidjson/pointer.h	/^GetValueByPointerWithDefault(T& root, const GenericPointer<typename T::ValueType>& pointer, T2 defaultValue, typename T::AllocatorType& a) {$/;"	f
+GetValueByPointerWithDefault	rapidjson/pointer.h	/^typename DocumentType::ValueType& GetValueByPointerWithDefault(DocumentType& document, const CharType(&source)[N], const std::basic_string<typename DocumentType::Ch>& defaultValue) {$/;"	f
+GetValueByPointerWithDefault	rapidjson/pointer.h	/^typename DocumentType::ValueType& GetValueByPointerWithDefault(DocumentType& document, const CharType(&source)[N], const typename DocumentType::Ch* defaultValue) {$/;"	f
+GetValueByPointerWithDefault	rapidjson/pointer.h	/^typename DocumentType::ValueType& GetValueByPointerWithDefault(DocumentType& document, const CharType(&source)[N], const typename DocumentType::ValueType& defaultValue) {$/;"	f
+GetValueByPointerWithDefault	rapidjson/pointer.h	/^typename DocumentType::ValueType& GetValueByPointerWithDefault(DocumentType& document, const GenericPointer<typename DocumentType::ValueType>& pointer, const std::basic_string<typename DocumentType::Ch>& defaultValue) {$/;"	f
+GetValueByPointerWithDefault	rapidjson/pointer.h	/^typename DocumentType::ValueType& GetValueByPointerWithDefault(DocumentType& document, const GenericPointer<typename DocumentType::ValueType>& pointer, const typename DocumentType::Ch* defaultValue) {$/;"	f
+GetValueByPointerWithDefault	rapidjson/pointer.h	/^typename DocumentType::ValueType& GetValueByPointerWithDefault(DocumentType& document, const GenericPointer<typename DocumentType::ValueType>& pointer, const typename DocumentType::ValueType& defaultValue) {$/;"	f
+GetValueByPointerWithDefault	rapidjson/pointer.h	/^typename T::ValueType& GetValueByPointerWithDefault(T& root, const CharType(&source)[N], const std::basic_string<typename T::Ch>& defaultValue, typename T::AllocatorType& a) {$/;"	f
+GetValueByPointerWithDefault	rapidjson/pointer.h	/^typename T::ValueType& GetValueByPointerWithDefault(T& root, const CharType(&source)[N], const typename T::Ch* defaultValue, typename T::AllocatorType& a) {$/;"	f
+GetValueByPointerWithDefault	rapidjson/pointer.h	/^typename T::ValueType& GetValueByPointerWithDefault(T& root, const CharType(&source)[N], const typename T::ValueType& defaultValue, typename T::AllocatorType& a) {$/;"	f
+GetValueByPointerWithDefault	rapidjson/pointer.h	/^typename T::ValueType& GetValueByPointerWithDefault(T& root, const GenericPointer<typename T::ValueType>& pointer, const std::basic_string<typename T::Ch>& defaultValue, typename T::AllocatorType& a) {$/;"	f
+GetValueByPointerWithDefault	rapidjson/pointer.h	/^typename T::ValueType& GetValueByPointerWithDefault(T& root, const GenericPointer<typename T::ValueType>& pointer, const typename T::Ch* defaultValue, typename T::AllocatorType& a) {$/;"	f
+GetValueByPointerWithDefault	rapidjson/pointer.h	/^typename T::ValueType& GetValueByPointerWithDefault(T& root, const GenericPointer<typename T::ValueType>& pointer, const typename T::ValueType& defaultValue, typename T::AllocatorType& a) {$/;"	f
+GetWithDefault	rapidjson/pointer.h	/^    GetWithDefault(GenericDocument<EncodingType, typename ValueType::AllocatorType, stackAllocator>& document, T defaultValue) const {$/;"	f	class:GenericPointer
+GetWithDefault	rapidjson/pointer.h	/^    GetWithDefault(ValueType& root, T defaultValue, typename ValueType::AllocatorType& allocator) const {$/;"	f	class:GenericPointer
+GetWithDefault	rapidjson/pointer.h	/^    ValueType& GetWithDefault(GenericDocument<EncodingType, typename ValueType::AllocatorType, stackAllocator>& document, const Ch* defaultValue) const {$/;"	f	class:GenericPointer
+GetWithDefault	rapidjson/pointer.h	/^    ValueType& GetWithDefault(GenericDocument<EncodingType, typename ValueType::AllocatorType, stackAllocator>& document, const ValueType& defaultValue) const {$/;"	f	class:GenericPointer
+GetWithDefault	rapidjson/pointer.h	/^    ValueType& GetWithDefault(GenericDocument<EncodingType, typename ValueType::AllocatorType, stackAllocator>& document, const std::basic_string<Ch>& defaultValue) const {$/;"	f	class:GenericPointer
+GetWithDefault	rapidjson/pointer.h	/^    ValueType& GetWithDefault(ValueType& root, const Ch* defaultValue, typename ValueType::AllocatorType& allocator) const {$/;"	f	class:GenericPointer
+GetWithDefault	rapidjson/pointer.h	/^    ValueType& GetWithDefault(ValueType& root, const ValueType& defaultValue, typename ValueType::AllocatorType& allocator) const {$/;"	f	class:GenericPointer
+GetWithDefault	rapidjson/pointer.h	/^    ValueType& GetWithDefault(ValueType& root, const std::basic_string<Ch>& defaultValue, typename ValueType::AllocatorType& allocator) const {$/;"	f	class:GenericPointer
+Grisu2	rapidjson/internal/dtoa.h	/^inline void Grisu2(double value, char* buffer, int* length, int* K) {$/;"	f	namespace:internal
+GrisuRound	rapidjson/internal/dtoa.h	/^inline void GrisuRound(char* buffer, int len, uint64_t delta, uint64_t rest, uint64_t ten_kappa, uint64_t wp_w) {$/;"	f	namespace:internal
+HandleError	rapidjson/reader.h	/^    void HandleError(IterativeParsingState src, InputStream& is) {$/;"	f	class:GenericReader
+HasAllocator	rapidjson/internal/stack.h	/^    bool HasAllocator() const {$/;"	f	class:internal::Stack
+HasBOM	rapidjson/encodedstream.h	/^    bool HasBOM() const { return hasBOM_; }$/;"	f	class:AutoUTFInputStream
+HasMember	rapidjson/document.h	/^    bool HasMember(const Ch* name) const { return FindMember(name) != MemberEnd(); }$/;"	f	class:GenericValue
+HasMember	rapidjson/document.h	/^    bool HasMember(const GenericValue<Encoding, SourceAllocator>& name) const { return FindMember(name) != MemberEnd(); }$/;"	f	class:GenericValue
+HasMember	rapidjson/document.h	/^    bool HasMember(const std::basic_string<Ch>& name) const { return FindMember(name) != MemberEnd(); }$/;"	f	class:GenericValue
+HasParseError	rapidjson/document.h	/^    bool HasParseError() const { return parseResult_.IsError(); }$/;"	f	class:GenericDocument
+HasParseError	rapidjson/reader.h	/^    bool HasParseError() const { return parseResult_.IsError(); }$/;"	f	class:GenericReader
+Host	rapidjson/internal/meta.h	/^    struct Host {$/;"	s	struct:internal::IsBaseOfImpl
+I	rapidjson/document.h	/^        struct I {$/;"	s	union:GenericValue::Number
+INF	cec14_test_func.h	16;"	d
+INT16_C	rapidjson/msinttypes/stdint.h	277;"	d
+INT16_C	rapidjson/msinttypes/stdint.h	55;"	d
+INT16_C	rapidjson/msinttypes/stdint.h	66;"	d
+INT16_MAX	rapidjson/msinttypes/stdint.h	181;"	d
+INT16_MIN	rapidjson/msinttypes/stdint.h	180;"	d
+INT32_C	rapidjson/msinttypes/stdint.h	278;"	d
+INT32_C	rapidjson/msinttypes/stdint.h	56;"	d
+INT32_C	rapidjson/msinttypes/stdint.h	67;"	d
+INT32_MAX	rapidjson/msinttypes/stdint.h	183;"	d
+INT32_MIN	rapidjson/msinttypes/stdint.h	182;"	d
+INT64_C	rapidjson/msinttypes/stdint.h	279;"	d
+INT64_C	rapidjson/msinttypes/stdint.h	57;"	d
+INT64_C	rapidjson/msinttypes/stdint.h	68;"	d
+INT64_MAX	rapidjson/msinttypes/stdint.h	185;"	d
+INT64_MIN	rapidjson/msinttypes/stdint.h	184;"	d
+INT8_C	rapidjson/msinttypes/stdint.h	276;"	d
+INT8_C	rapidjson/msinttypes/stdint.h	54;"	d
+INT8_C	rapidjson/msinttypes/stdint.h	65;"	d
+INT8_MAX	rapidjson/msinttypes/stdint.h	179;"	d
+INT8_MIN	rapidjson/msinttypes/stdint.h	178;"	d
+INTMAX_C	rapidjson/msinttypes/stdint.h	290;"	d
+INTMAX_C	rapidjson/msinttypes/stdint.h	79;"	d
+INTMAX_MAX	rapidjson/msinttypes/stdint.h	232;"	d
+INTMAX_MIN	rapidjson/msinttypes/stdint.h	231;"	d
+INTPTR_MAX	rapidjson/msinttypes/stdint.h	222;"	d
+INTPTR_MAX	rapidjson/msinttypes/stdint.h	226;"	d
+INTPTR_MIN	rapidjson/msinttypes/stdint.h	221;"	d
+INTPTR_MIN	rapidjson/msinttypes/stdint.h	225;"	d
+INT_FAST16_MAX	rapidjson/msinttypes/stdint.h	209;"	d
+INT_FAST16_MIN	rapidjson/msinttypes/stdint.h	208;"	d
+INT_FAST32_MAX	rapidjson/msinttypes/stdint.h	211;"	d
+INT_FAST32_MIN	rapidjson/msinttypes/stdint.h	210;"	d
+INT_FAST64_MAX	rapidjson/msinttypes/stdint.h	213;"	d
+INT_FAST64_MIN	rapidjson/msinttypes/stdint.h	212;"	d
+INT_FAST8_MAX	rapidjson/msinttypes/stdint.h	207;"	d
+INT_FAST8_MIN	rapidjson/msinttypes/stdint.h	206;"	d
+INT_LEAST16_MAX	rapidjson/msinttypes/stdint.h	195;"	d
+INT_LEAST16_MIN	rapidjson/msinttypes/stdint.h	194;"	d
+INT_LEAST32_MAX	rapidjson/msinttypes/stdint.h	197;"	d
+INT_LEAST32_MIN	rapidjson/msinttypes/stdint.h	196;"	d
+INT_LEAST64_MAX	rapidjson/msinttypes/stdint.h	199;"	d
+INT_LEAST64_MIN	rapidjson/msinttypes/stdint.h	198;"	d
+INT_LEAST8_MAX	rapidjson/msinttypes/stdint.h	193;"	d
+INT_LEAST8_MIN	rapidjson/msinttypes/stdint.h	192;"	d
+InsituStringStream	rapidjson/rapidjson.h	/^typedef GenericInsituStringStream<UTF8<> > InsituStringStream;$/;"	t
+Instance	functions.h	/^		static FunctionFactory &Instance(int numDim){$/;"	f	class:FunctionFactory
+Int	rapidjson/document.h	/^    bool Int(int i) { new (stack_.template Push<ValueType>()) ValueType(i); return true; }$/;"	f	class:GenericDocument
+Int	rapidjson/prettywriter.h	/^    bool Int(int i)             { PrettyPrefix(kNumberType); return Base::WriteInt(i); }$/;"	f	class:PrettyWriter
+Int	rapidjson/reader.h	/^    bool Int(int) { return static_cast<Override&>(*this).Default(); }$/;"	f	struct:BaseReaderHandler
+Int	rapidjson/writer.h	/^    bool Int(int i)             { Prefix(kNumberType); return WriteInt(i); }$/;"	f	class:Writer
+Int64	rapidjson/document.h	/^    bool Int64(int64_t i) { new (stack_.template Push<ValueType>()) ValueType(i); return true; }$/;"	f	class:GenericDocument
+Int64	rapidjson/prettywriter.h	/^    bool Int64(int64_t i64)     { PrettyPrefix(kNumberType); return Base::WriteInt64(i64); }$/;"	f	class:PrettyWriter
+Int64	rapidjson/reader.h	/^    bool Int64(int64_t) { return static_cast<Override&>(*this).Default(); }$/;"	f	struct:BaseReaderHandler
+Int64	rapidjson/writer.h	/^    bool Int64(int64_t i64)     { Prefix(kNumberType); return WriteInt64(i64); }$/;"	f	class:Writer
+IntegerExponent	rapidjson/internal/ieee754.h	/^    int IntegerExponent() const { return (IsNormal() ? Exponent() : kDenormalExponent) - kSignificandSize; }$/;"	f	class:internal::Double
+IntegerSignificand	rapidjson/internal/ieee754.h	/^    uint64_t IntegerSignificand() const { return IsNormal() ? Significand() | kHiddenBit : Significand(); }$/;"	f	class:internal::Double
+IsArray	rapidjson/document.h	/^    bool IsArray()  const { return flags_ == kArrayFlag; }$/;"	f	class:GenericValue
+IsBaseOf	rapidjson/internal/meta.h	/^template <typename B, typename D> struct IsBaseOf$/;"	s	namespace:internal
+IsBaseOfImpl	rapidjson/internal/meta.h	/^template<typename B, typename D> struct IsBaseOfImpl {$/;"	s	namespace:internal
+IsBool	rapidjson/document.h	/^    bool IsBool()   const { return (flags_ & kBoolFlag) != 0; }$/;"	f	class:GenericValue
+IsComplete	rapidjson/writer.h	/^    bool IsComplete() const {$/;"	f	class:Writer
+IsConst	rapidjson/internal/meta.h	/^template <typename T> struct IsConst : FalseType {};$/;"	s	namespace:internal
+IsConst	rapidjson/internal/meta.h	/^template <typename T> struct IsConst<const T> : TrueType {};$/;"	s	namespace:internal
+IsDouble	rapidjson/document.h	/^    bool IsDouble() const { return (flags_ & kDoubleFlag) != 0; }$/;"	f	class:GenericValue
+IsError	rapidjson/error/error.h	/^    bool IsError() const { return code_ != kParseErrorNone; }$/;"	f	struct:ParseResult
+IsFalse	rapidjson/document.h	/^    bool IsFalse()  const { return flags_ == kFalseFlag; }$/;"	f	class:GenericValue
+IsGenericValue	rapidjson/document.h	/^template <typename T> struct IsGenericValue : IsGenericValueImpl<T>::Type {};$/;"	s	namespace:internal
+IsGenericValueImpl	rapidjson/document.h	/^struct IsGenericValueImpl : FalseType {};$/;"	s	namespace:internal
+IsGenericValueImpl	rapidjson/document.h	/^template <typename T> struct IsGenericValueImpl<T, typename Void<typename T::EncodingType>::Type, typename Void<typename T::AllocatorType>::Type>$/;"	s	namespace:internal
+IsInf	rapidjson/internal/ieee754.h	/^    bool IsInf() const { return (u_ & kExponentMask) == kExponentMask && Significand() == 0; }$/;"	f	class:internal::Double
+IsInt	rapidjson/document.h	/^    bool IsInt()    const { return (flags_ & kIntFlag) != 0; }$/;"	f	class:GenericValue
+IsInt64	rapidjson/document.h	/^    bool IsInt64()  const { return (flags_ & kInt64Flag) != 0; }$/;"	f	class:GenericValue
+IsMoreConst	rapidjson/internal/meta.h	/^struct IsMoreConst$/;"	s	namespace:internal
+IsNan	rapidjson/internal/ieee754.h	/^    bool IsNan() const { return (u_ & kExponentMask) == kExponentMask && Significand() != 0; }$/;"	f	class:internal::Double
+IsNormal	rapidjson/internal/ieee754.h	/^    bool IsNormal() const { return (u_ & kExponentMask) != 0 || Significand() == 0; }$/;"	f	class:internal::Double
+IsNull	rapidjson/document.h	/^    bool IsNull()   const { return flags_ == kNullFlag; }$/;"	f	class:GenericValue
+IsNumber	rapidjson/document.h	/^    bool IsNumber() const { return (flags_ & kNumberFlag) != 0; }$/;"	f	class:GenericValue
+IsObject	rapidjson/document.h	/^    bool IsObject() const { return flags_ == kObjectFlag; }$/;"	f	class:GenericValue
+IsPointer	rapidjson/internal/meta.h	/^template <typename T> struct IsPointer : FalseType {};$/;"	s	namespace:internal
+IsPointer	rapidjson/internal/meta.h	/^template <typename T> struct IsPointer<T*> : TrueType {};$/;"	s	namespace:internal
+IsSame	rapidjson/internal/meta.h	/^template <typename T, typename U> struct IsSame : FalseType {};$/;"	s	namespace:internal
+IsSame	rapidjson/internal/meta.h	/^template <typename T> struct IsSame<T, T> : TrueType {};$/;"	s	namespace:internal
+IsString	rapidjson/document.h	/^    bool IsString() const { return (flags_ & kStringFlag) != 0; }$/;"	f	class:GenericValue
+IsTrue	rapidjson/document.h	/^    bool IsTrue()   const { return flags_ == kTrueFlag; }$/;"	f	class:GenericValue
+IsUint	rapidjson/document.h	/^    bool IsUint()   const { return (flags_ & kUintFlag) != 0; }$/;"	f	class:GenericValue
+IsUint64	rapidjson/document.h	/^    bool IsUint64() const { return (flags_ & kUint64Flag) != 0; }$/;"	f	class:GenericValue
+IsValid	rapidjson/pointer.h	/^        bool IsValid() const { return valid_; }$/;"	f	class:GenericPointer::PercentDecodeStream
+IsValid	rapidjson/pointer.h	/^    bool IsValid() const { return parseErrorCode_ == kPointerParseErrorNone; }$/;"	f	class:GenericPointer
+IsZero	rapidjson/internal/biginteger.h	/^    bool IsZero() const { return count_ == 1 && digits_[0] == 0; }$/;"	f	class:internal::BigInteger
+IsZero	rapidjson/internal/ieee754.h	/^    bool IsZero() const { return (u_ & (kExponentMask | kSignificandMask)) == 0; }$/;"	f	class:internal::Double
+IterativeParse	rapidjson/reader.h	/^    ParseResult IterativeParse(InputStream& is, Handler& handler) {$/;"	f	class:GenericReader
+IterativeParsingArrayFinishState	rapidjson/reader.h	/^        IterativeParsingArrayFinishState,$/;"	e	enum:GenericReader::IterativeParsingState
+IterativeParsingArrayInitialState	rapidjson/reader.h	/^        IterativeParsingArrayInitialState,$/;"	e	enum:GenericReader::IterativeParsingState
+IterativeParsingElementDelimiterState	rapidjson/reader.h	/^        IterativeParsingElementDelimiterState,$/;"	e	enum:GenericReader::IterativeParsingState
+IterativeParsingElementState	rapidjson/reader.h	/^        IterativeParsingElementState,$/;"	e	enum:GenericReader::IterativeParsingState
+IterativeParsingErrorState	rapidjson/reader.h	/^        IterativeParsingErrorState,$/;"	e	enum:GenericReader::IterativeParsingState
+IterativeParsingFinishState	rapidjson/reader.h	/^        IterativeParsingFinishState,$/;"	e	enum:GenericReader::IterativeParsingState
+IterativeParsingKeyValueDelimiterState	rapidjson/reader.h	/^        IterativeParsingKeyValueDelimiterState,$/;"	e	enum:GenericReader::IterativeParsingState
+IterativeParsingMemberDelimiterState	rapidjson/reader.h	/^        IterativeParsingMemberDelimiterState,$/;"	e	enum:GenericReader::IterativeParsingState
+IterativeParsingMemberKeyState	rapidjson/reader.h	/^        IterativeParsingMemberKeyState,$/;"	e	enum:GenericReader::IterativeParsingState
+IterativeParsingMemberValueState	rapidjson/reader.h	/^        IterativeParsingMemberValueState,$/;"	e	enum:GenericReader::IterativeParsingState
+IterativeParsingObjectFinishState	rapidjson/reader.h	/^        IterativeParsingObjectFinishState,$/;"	e	enum:GenericReader::IterativeParsingState
+IterativeParsingObjectInitialState	rapidjson/reader.h	/^        IterativeParsingObjectInitialState,$/;"	e	enum:GenericReader::IterativeParsingState
+IterativeParsingStartState	rapidjson/reader.h	/^        IterativeParsingStartState = 0,$/;"	e	enum:GenericReader::IterativeParsingState
+IterativeParsingState	rapidjson/reader.h	/^    enum IterativeParsingState {$/;"	g	class:GenericReader
+IterativeParsingValueState	rapidjson/reader.h	/^        IterativeParsingValueState,$/;"	e	enum:GenericReader::IterativeParsingState
+Iterator	rapidjson/document.h	/^    typedef GenericMember<Encoding,Allocator>* Iterator;$/;"	t	struct:GenericMemberIterator
+Iterator	rapidjson/document.h	/^    typedef GenericMemberIterator Iterator;$/;"	t	class:GenericMemberIterator
+Iterator	rapidjson/document.h	/^    typedef const GenericMember<Encoding,Allocator>* Iterator;$/;"	t	struct:GenericMemberIterator
+Key	rapidjson/document.h	/^    bool Key(const Ch* str, SizeType length, bool copy) { return String(str, length, copy); }$/;"	f	class:GenericDocument
+Key	rapidjson/prettywriter.h	/^    bool Key(const Ch* str) { return Key(str, internal::StrLen(str)); }$/;"	f	class:PrettyWriter
+Key	rapidjson/prettywriter.h	/^    bool Key(const Ch* str, SizeType length, bool copy = false) { return String(str, length, copy); }$/;"	f	class:PrettyWriter
+Key	rapidjson/reader.h	/^    bool Key(const Ch* str, SizeType len, bool copy) { return static_cast<Override&>(*this).String(str, len, copy); }$/;"	f	struct:BaseReaderHandler
+Key	rapidjson/writer.h	/^    bool Key(const Ch* str) { return Key(str, internal::StrLen(str)); }$/;"	f	class:Writer
+Key	rapidjson/writer.h	/^    bool Key(const Ch* str, SizeType length, bool copy = false) { return String(str, length, copy); }$/;"	f	class:Writer
+LeftBracketToken	rapidjson/reader.h	/^        LeftBracketToken = 0,$/;"	e	enum:GenericReader::Token
+LeftCurlyBracketToken	rapidjson/reader.h	/^        LeftCurlyBracketToken,$/;"	e	enum:GenericReader::Token
+LenPos	rapidjson/document.h	/^        enum { MaxChars = sizeof(String) \/ sizeof(Ch), MaxSize = MaxChars - 1, LenPos = MaxSize };$/;"	e	enum:GenericValue::ShortString::__anon14
+Length	rapidjson/reader.h	/^        size_t Length() const { return length_; }$/;"	f	class:GenericReader::StackStream
+Length	rapidjson/reader.h	/^        size_t Length() { return 0; }$/;"	f	class:GenericReader::NumberStream
+Length	rapidjson/reader.h	/^        size_t Length() { return stackStream.Length(); }$/;"	f	class:GenericReader::NumberStream
+Level	rapidjson/writer.h	/^        Level(bool inArray_) : valueCount(0), inArray(inArray_) {}$/;"	f	struct:Writer::Level
+Level	rapidjson/writer.h	/^    struct Level {$/;"	s	class:Writer
+MAX_FUNCTION_NAME	functions.h	6;"	d
+Malloc	rapidjson/allocators.h	/^    void* Malloc(size_t size) { $/;"	f	class:CrtAllocator
+Malloc	rapidjson/allocators.h	/^    void* Malloc(size_t size) {$/;"	f	class:MemoryPoolAllocator
+MaxChars	rapidjson/document.h	/^        enum { MaxChars = sizeof(String) \/ sizeof(Ch), MaxSize = MaxChars - 1, LenPos = MaxSize };$/;"	e	enum:GenericValue::ShortString::__anon14
+MaxSize	rapidjson/document.h	/^        enum { MaxChars = sizeof(String) \/ sizeof(Ch), MaxSize = MaxChars - 1, LenPos = MaxSize };$/;"	e	enum:GenericValue::ShortString::__anon14
+MaybeAddConst	rapidjson/internal/meta.h	/^template <bool Constify, typename T> struct MaybeAddConst : SelectIfCond<Constify, const T, T> {};$/;"	s	namespace:internal
+Member	rapidjson/document.h	/^    typedef GenericMember<Encoding, Allocator> Member;$/;"	t	class:GenericValue
+MemberBegin	rapidjson/document.h	/^    ConstMemberIterator MemberBegin() const { RAPIDJSON_ASSERT(IsObject()); return ConstMemberIterator(data_.o.members); }$/;"	f	class:GenericValue
+MemberBegin	rapidjson/document.h	/^    MemberIterator MemberBegin()            { RAPIDJSON_ASSERT(IsObject()); return MemberIterator(data_.o.members); }$/;"	f	class:GenericValue
+MemberCount	rapidjson/document.h	/^    SizeType MemberCount() const { RAPIDJSON_ASSERT(IsObject()); return data_.o.size; }$/;"	f	class:GenericValue
+MemberEnd	rapidjson/document.h	/^    ConstMemberIterator MemberEnd() const   { RAPIDJSON_ASSERT(IsObject()); return ConstMemberIterator(data_.o.members + data_.o.size); }$/;"	f	class:GenericValue
+MemberEnd	rapidjson/document.h	/^    MemberIterator MemberEnd()              { RAPIDJSON_ASSERT(IsObject()); return MemberIterator(data_.o.members + data_.o.size); }$/;"	f	class:GenericValue
+MemberIterator	rapidjson/document.h	/^    typedef typename GenericMemberIterator<false,Encoding,Allocator>::Iterator MemberIterator;  \/\/!< Member iterator for iterating in object.$/;"	t	class:GenericValue
+MemoryBuffer	rapidjson/memorybuffer.h	/^typedef GenericMemoryBuffer<> MemoryBuffer;$/;"	t
+MemoryPoolAllocator	rapidjson/allocators.h	/^    MemoryPoolAllocator(size_t chunkSize = kDefaultChunkCapacity, BaseAllocator* baseAllocator = 0) : $/;"	f	class:MemoryPoolAllocator
+MemoryPoolAllocator	rapidjson/allocators.h	/^    MemoryPoolAllocator(void *buffer, size_t size, size_t chunkSize = kDefaultChunkCapacity, BaseAllocator* baseAllocator = 0) :$/;"	f	class:MemoryPoolAllocator
+MemoryPoolAllocator	rapidjson/allocators.h	/^class MemoryPoolAllocator {$/;"	c
+MemoryStream	rapidjson/memorystream.h	/^    MemoryStream(const Ch *src, size_t size) : src_(src), begin_(src), end_(src + size), size_(size) {}$/;"	f	struct:MemoryStream
+MemoryStream	rapidjson/memorystream.h	/^struct MemoryStream {$/;"	s
+Min3	rapidjson/internal/strtod.h	/^inline T Min3(T a, T b, T c) {$/;"	f	namespace:internal
+MulAdd64	rapidjson/internal/biginteger.h	/^    static uint64_t MulAdd64(uint64_t a, uint64_t b, uint64_t k, uint64_t* outHigh) {$/;"	f	class:internal::BigInteger
+MultiplyPow5	rapidjson/internal/biginteger.h	/^    BigInteger& MultiplyPow5(unsigned exp) {$/;"	f	class:internal::BigInteger
+N	rapidjson/reader.h	1106;"	d
+N	rapidjson/reader.h	1120;"	d
+N16	rapidjson/reader.h	1107;"	d
+N16	rapidjson/reader.h	1121;"	d
+NeedPercentEncode	rapidjson/pointer.h	/^    bool NeedPercentEncode(Ch c) const {$/;"	f	class:GenericPointer
+NextPositiveDouble	rapidjson/internal/ieee754.h	/^    double NextPositiveDouble() const {$/;"	f	class:internal::Double
+No	rapidjson/internal/meta.h	/^    typedef char (&No) [2];$/;"	t	struct:internal::IsBaseOfImpl
+NonConstIterator	rapidjson/document.h	/^    typedef GenericMemberIterator<false,Encoding,Allocator> NonConstIterator;$/;"	t	class:GenericMemberIterator
+NormD	utils.h	/^inline double NormD(double u,double t){$/;"	f
+Normalize	rapidjson/internal/diyfp.h	/^    DiyFp Normalize() const {$/;"	f	struct:internal::DiyFp
+NormalizeBoundary	rapidjson/internal/diyfp.h	/^    DiyFp NormalizeBoundary() const {$/;"	f	struct:internal::DiyFp
+NormalizedBoundaries	rapidjson/internal/diyfp.h	/^    void NormalizedBoundaries(DiyFp* minus, DiyFp* plus) const {$/;"	f	struct:internal::DiyFp
+NotExpr	rapidjson/internal/meta.h	/^template <typename C> struct NotExpr  : SelectIf<C,FalseType,TrueType>::Type {};$/;"	s	namespace:internal
+Null	rapidjson/document.h	/^    bool Null() { new (stack_.template Push<ValueType>()) ValueType(); return true; }$/;"	f	class:GenericDocument
+Null	rapidjson/prettywriter.h	/^    bool Null()                 { PrettyPrefix(kNullType);   return Base::WriteNull(); }$/;"	f	class:PrettyWriter
+Null	rapidjson/reader.h	/^    bool Null() { return static_cast<Override&>(*this).Default(); }$/;"	f	struct:BaseReaderHandler
+Null	rapidjson/writer.h	/^    bool Null()                 { Prefix(kNullType);   return WriteNull(); }$/;"	f	class:Writer
+NullToken	rapidjson/reader.h	/^        NullToken,$/;"	e	enum:GenericReader::Token
+Number	rapidjson/document.h	/^    union Number {$/;"	u	class:GenericValue
+NumberStream	rapidjson/reader.h	/^        NumberStream(GenericReader& reader, InputStream& is) : NumberStream<InputStream, false>(reader, is), stackStream(reader.stack_) {}$/;"	f	class:GenericReader::NumberStream
+NumberStream	rapidjson/reader.h	/^        NumberStream(GenericReader& reader, InputStream& s) : is(s) { (void)reader;  }$/;"	f	class:GenericReader::NumberStream
+NumberStream	rapidjson/reader.h	/^    class NumberStream<InputStream, false> {$/;"	c	class:GenericReader
+NumberStream	rapidjson/reader.h	/^    class NumberStream<InputStream, true> : public NumberStream<InputStream, false> {$/;"	c	class:GenericReader
+NumberToken	rapidjson/reader.h	/^        NumberToken,$/;"	e	enum:GenericReader::Token
+Object	rapidjson/document.h	/^    struct Object {$/;"	s	class:GenericValue
+ObjectEmpty	rapidjson/document.h	/^    bool ObjectEmpty() const { RAPIDJSON_ASSERT(IsObject()); return data_.o.size == 0; }$/;"	f	class:GenericValue
+Offset	rapidjson/error/error.h	/^    size_t Offset() const { return offset_; }$/;"	f	struct:ParseResult
+OrExpr	rapidjson/internal/meta.h	/^template <typename C1, typename C2> struct OrExpr  : OrExprCond<C1::Value, C2::Value>::Type {};$/;"	s	namespace:internal
+OrExprCond	rapidjson/internal/meta.h	/^template <> struct OrExprCond<false, false> : FalseType {};$/;"	s	namespace:internal
+OrExprCond	rapidjson/internal/meta.h	/^template <bool Cond1, bool Cond2> struct OrExprCond : TrueType {};$/;"	s	namespace:internal
+Override	rapidjson/reader.h	/^    typedef typename internal::SelectIf<internal::IsSame<Derived, void>, BaseReaderHandler, Derived>::Type Override;$/;"	t	struct:BaseReaderHandler
+PI	cec14_test_func.h	19;"	d
+PRIX16	rapidjson/msinttypes/inttypes.h	118;"	d
+PRIX32	rapidjson/msinttypes/inttypes.h	131;"	d
+PRIX64	rapidjson/msinttypes/inttypes.h	144;"	d
+PRIX8	rapidjson/msinttypes/inttypes.h	105;"	d
+PRIXFAST16	rapidjson/msinttypes/inttypes.h	126;"	d
+PRIXFAST32	rapidjson/msinttypes/inttypes.h	139;"	d
+PRIXFAST64	rapidjson/msinttypes/inttypes.h	152;"	d
+PRIXFAST8	rapidjson/msinttypes/inttypes.h	113;"	d
+PRIXLEAST16	rapidjson/msinttypes/inttypes.h	122;"	d
+PRIXLEAST32	rapidjson/msinttypes/inttypes.h	135;"	d
+PRIXLEAST64	rapidjson/msinttypes/inttypes.h	148;"	d
+PRIXLEAST8	rapidjson/msinttypes/inttypes.h	109;"	d
+PRIXMAX	rapidjson/msinttypes/inttypes.h	157;"	d
+PRIXPTR	rapidjson/msinttypes/inttypes.h	162;"	d
+PRId16	rapidjson/msinttypes/inttypes.h	74;"	d
+PRId32	rapidjson/msinttypes/inttypes.h	81;"	d
+PRId64	rapidjson/msinttypes/inttypes.h	88;"	d
+PRId8	rapidjson/msinttypes/inttypes.h	67;"	d
+PRIdFAST16	rapidjson/msinttypes/inttypes.h	78;"	d
+PRIdFAST32	rapidjson/msinttypes/inttypes.h	85;"	d
+PRIdFAST64	rapidjson/msinttypes/inttypes.h	92;"	d
+PRIdFAST8	rapidjson/msinttypes/inttypes.h	71;"	d
+PRIdLEAST16	rapidjson/msinttypes/inttypes.h	76;"	d
+PRIdLEAST32	rapidjson/msinttypes/inttypes.h	83;"	d
+PRIdLEAST64	rapidjson/msinttypes/inttypes.h	90;"	d
+PRIdLEAST8	rapidjson/msinttypes/inttypes.h	69;"	d
+PRIdMAX	rapidjson/msinttypes/inttypes.h	95;"	d
+PRIdPTR	rapidjson/msinttypes/inttypes.h	98;"	d
+PRIi16	rapidjson/msinttypes/inttypes.h	75;"	d
+PRIi32	rapidjson/msinttypes/inttypes.h	82;"	d
+PRIi64	rapidjson/msinttypes/inttypes.h	89;"	d
+PRIi8	rapidjson/msinttypes/inttypes.h	68;"	d
+PRIiFAST16	rapidjson/msinttypes/inttypes.h	79;"	d
+PRIiFAST32	rapidjson/msinttypes/inttypes.h	86;"	d
+PRIiFAST64	rapidjson/msinttypes/inttypes.h	93;"	d
+PRIiFAST8	rapidjson/msinttypes/inttypes.h	72;"	d
+PRIiLEAST16	rapidjson/msinttypes/inttypes.h	77;"	d
+PRIiLEAST32	rapidjson/msinttypes/inttypes.h	84;"	d
+PRIiLEAST64	rapidjson/msinttypes/inttypes.h	91;"	d
+PRIiLEAST8	rapidjson/msinttypes/inttypes.h	70;"	d
+PRIiMAX	rapidjson/msinttypes/inttypes.h	96;"	d
+PRIiPTR	rapidjson/msinttypes/inttypes.h	99;"	d
+PRIo16	rapidjson/msinttypes/inttypes.h	115;"	d
+PRIo32	rapidjson/msinttypes/inttypes.h	128;"	d
+PRIo64	rapidjson/msinttypes/inttypes.h	141;"	d
+PRIo8	rapidjson/msinttypes/inttypes.h	102;"	d
+PRIoFAST16	rapidjson/msinttypes/inttypes.h	123;"	d
+PRIoFAST32	rapidjson/msinttypes/inttypes.h	136;"	d
+PRIoFAST64	rapidjson/msinttypes/inttypes.h	149;"	d
+PRIoFAST8	rapidjson/msinttypes/inttypes.h	110;"	d
+PRIoLEAST16	rapidjson/msinttypes/inttypes.h	119;"	d
+PRIoLEAST32	rapidjson/msinttypes/inttypes.h	132;"	d
+PRIoLEAST64	rapidjson/msinttypes/inttypes.h	145;"	d
+PRIoLEAST8	rapidjson/msinttypes/inttypes.h	106;"	d
+PRIoMAX	rapidjson/msinttypes/inttypes.h	154;"	d
+PRIoPTR	rapidjson/msinttypes/inttypes.h	159;"	d
+PRIu16	rapidjson/msinttypes/inttypes.h	116;"	d
+PRIu32	rapidjson/msinttypes/inttypes.h	129;"	d
+PRIu64	rapidjson/msinttypes/inttypes.h	142;"	d
+PRIu8	rapidjson/msinttypes/inttypes.h	103;"	d
+PRIuFAST16	rapidjson/msinttypes/inttypes.h	124;"	d
+PRIuFAST32	rapidjson/msinttypes/inttypes.h	137;"	d
+PRIuFAST64	rapidjson/msinttypes/inttypes.h	150;"	d
+PRIuFAST8	rapidjson/msinttypes/inttypes.h	111;"	d
+PRIuLEAST16	rapidjson/msinttypes/inttypes.h	120;"	d
+PRIuLEAST32	rapidjson/msinttypes/inttypes.h	133;"	d
+PRIuLEAST64	rapidjson/msinttypes/inttypes.h	146;"	d
+PRIuLEAST8	rapidjson/msinttypes/inttypes.h	107;"	d
+PRIuMAX	rapidjson/msinttypes/inttypes.h	155;"	d
+PRIuPTR	rapidjson/msinttypes/inttypes.h	160;"	d
+PRIx16	rapidjson/msinttypes/inttypes.h	117;"	d
+PRIx32	rapidjson/msinttypes/inttypes.h	130;"	d
+PRIx64	rapidjson/msinttypes/inttypes.h	143;"	d
+PRIx8	rapidjson/msinttypes/inttypes.h	104;"	d
+PRIxFAST16	rapidjson/msinttypes/inttypes.h	125;"	d
+PRIxFAST32	rapidjson/msinttypes/inttypes.h	138;"	d
+PRIxFAST64	rapidjson/msinttypes/inttypes.h	151;"	d
+PRIxFAST8	rapidjson/msinttypes/inttypes.h	112;"	d
+PRIxLEAST16	rapidjson/msinttypes/inttypes.h	121;"	d
+PRIxLEAST32	rapidjson/msinttypes/inttypes.h	134;"	d
+PRIxLEAST64	rapidjson/msinttypes/inttypes.h	147;"	d
+PRIxLEAST8	rapidjson/msinttypes/inttypes.h	108;"	d
+PRIxMAX	rapidjson/msinttypes/inttypes.h	156;"	d
+PRIxPTR	rapidjson/msinttypes/inttypes.h	161;"	d
+PTRDIFF_MAX	rapidjson/msinttypes/stdint.h	239;"	d
+PTRDIFF_MAX	rapidjson/msinttypes/stdint.h	242;"	d
+PTRDIFF_MIN	rapidjson/msinttypes/stdint.h	238;"	d
+PTRDIFF_MIN	rapidjson/msinttypes/stdint.h	241;"	d
+Parse	rapidjson/document.h	/^    GenericDocument& Parse(const Ch* str) {$/;"	f	class:GenericDocument
+Parse	rapidjson/pointer.h	/^    void Parse(const Ch* source, size_t length) {$/;"	f	class:GenericPointer
+Parse	rapidjson/reader.h	/^    ParseResult Parse(InputStream& is, Handler& handler) {$/;"	f	class:GenericReader
+ParseArray	rapidjson/reader.h	/^    void ParseArray(InputStream& is, Handler& handler) {$/;"	f	class:GenericReader
+ParseErrorCode	rapidjson/error/error.h	/^enum ParseErrorCode {$/;"	g
+ParseFalse	rapidjson/reader.h	/^    void ParseFalse(InputStream& is, Handler& handler) {$/;"	f	class:GenericReader
+ParseFlag	rapidjson/reader.h	/^enum ParseFlag {$/;"	g
+ParseHex4	rapidjson/reader.h	/^    unsigned ParseHex4(InputStream& is) {$/;"	f	class:GenericReader
+ParseInsitu	rapidjson/document.h	/^    GenericDocument& ParseInsitu(Ch* str) {$/;"	f	class:GenericDocument
+ParseNull	rapidjson/reader.h	/^    void ParseNull(InputStream& is, Handler& handler) {$/;"	f	class:GenericReader
+ParseNumber	rapidjson/reader.h	/^    void ParseNumber(InputStream& is, Handler& handler) {$/;"	f	class:GenericReader
+ParseObject	rapidjson/reader.h	/^    void ParseObject(InputStream& is, Handler& handler) {$/;"	f	class:GenericReader
+ParseResult	rapidjson/error/error.h	/^    ParseResult() : code_(kParseErrorNone), offset_(0) {}$/;"	f	struct:ParseResult
+ParseResult	rapidjson/error/error.h	/^    ParseResult(ParseErrorCode code, size_t offset) : code_(code), offset_(offset) {}$/;"	f	struct:ParseResult
+ParseResult	rapidjson/error/error.h	/^struct ParseResult {$/;"	s
+ParseStream	rapidjson/document.h	/^    GenericDocument& ParseStream(InputStream& is) {$/;"	f	class:GenericDocument
+ParseString	rapidjson/reader.h	/^    void ParseString(InputStream& is, Handler& handler, bool isKey = false) {$/;"	f	class:GenericReader
+ParseStringToStream	rapidjson/reader.h	/^    RAPIDJSON_FORCEINLINE void ParseStringToStream(InputStream& is, OutputStream& os) {$/;"	f	class:GenericReader
+ParseTrue	rapidjson/reader.h	/^    void ParseTrue(InputStream& is, Handler& handler) {$/;"	f	class:GenericReader
+ParseUint64	rapidjson/internal/biginteger.h	/^    static uint64_t ParseUint64(const char* begin, const char* end) {$/;"	f	class:internal::BigInteger
+ParseValue	rapidjson/reader.h	/^    void ParseValue(InputStream& is, Handler& handler) {$/;"	f	class:GenericReader
+Peek	rapidjson/encodedstream.h	/^    Ch Peek() const { RAPIDJSON_ASSERT(false); return 0;}$/;"	f	class:AutoUTFOutputStream
+Peek	rapidjson/encodedstream.h	/^    Ch Peek() const { RAPIDJSON_ASSERT(false); return 0;}$/;"	f	class:EncodedOutputStream
+Peek	rapidjson/encodedstream.h	/^    Ch Peek() const { return current_; }$/;"	f	class:AutoUTFInputStream
+Peek	rapidjson/encodedstream.h	/^    Ch Peek() const { return current_; }$/;"	f	class:EncodedInputStream
+Peek	rapidjson/filereadstream.h	/^    Ch Peek() const { return *current_; }$/;"	f	class:FileReadStream
+Peek	rapidjson/filewritestream.h	/^    char Peek() const { RAPIDJSON_ASSERT(false); return 0; }$/;"	f	class:FileWriteStream
+Peek	rapidjson/memorystream.h	/^    Ch Peek() const { return (src_ == end_) ? '\\0' : *src_; }$/;"	f	struct:MemoryStream
+Peek	rapidjson/rapidjson.h	/^    Ch Peek() const { return *src_; }$/;"	f	struct:GenericStringStream
+Peek	rapidjson/rapidjson.h	/^    Ch Peek() { return *src_; }$/;"	f	struct:GenericInsituStringStream
+Peek	rapidjson/reader.h	/^        RAPIDJSON_FORCEINLINE Ch Peek() const { return is.Peek(); }$/;"	f	class:GenericReader::NumberStream
+Peek4	rapidjson/filereadstream.h	/^    const Ch* Peek4() const {$/;"	f	class:FileReadStream
+Peek4	rapidjson/memorystream.h	/^    const Ch* Peek4() const {$/;"	f	struct:MemoryStream
+PercentDecodeStream	rapidjson/pointer.h	/^        PercentDecodeStream(const Ch* source, const Ch* end) : src_(source), head_(source), end_(end), valid_(true) {}$/;"	f	class:GenericPointer::PercentDecodeStream
+PercentDecodeStream	rapidjson/pointer.h	/^    class PercentDecodeStream {$/;"	c	class:GenericPointer
+PercentEncodeStream	rapidjson/pointer.h	/^        PercentEncodeStream(OutputStream& os) : os_(os) {}$/;"	f	class:GenericPointer::PercentEncodeStream
+PercentEncodeStream	rapidjson/pointer.h	/^    class PercentEncodeStream {$/;"	c	class:GenericPointer
+PlainType	rapidjson/document.h	/^    typedef GenericMember<Encoding,Allocator> PlainType;$/;"	t	class:GenericMemberIterator
+Pointer	rapidjson/document.h	/^    typedef typename BaseType::pointer         Pointer;$/;"	t	class:GenericMemberIterator
+Pointer	rapidjson/pointer.h	/^typedef GenericPointer<Value> Pointer;$/;"	t
+PointerParseErrorCode	rapidjson/pointer.h	/^enum PointerParseErrorCode {$/;"	g
+Pop	rapidjson/internal/stack.h	/^    T* Pop(size_t count) {$/;"	f	class:internal::Stack
+Pop	rapidjson/memorybuffer.h	/^    void Pop(size_t count) { stack_.template Pop<Ch>(count); }$/;"	f	struct:GenericMemoryBuffer
+Pop	rapidjson/rapidjson.h	/^    void Pop(size_t count) { dst_ -= count; }$/;"	f	struct:GenericInsituStringStream
+Pop	rapidjson/reader.h	/^        Ch* Pop() {$/;"	f	class:GenericReader::StackStream
+Pop	rapidjson/reader.h	/^        const char* Pop() { return 0; }$/;"	f	class:GenericReader::NumberStream
+Pop	rapidjson/reader.h	/^        const char* Pop() {$/;"	f	class:GenericReader::NumberStream
+Pop	rapidjson/stringbuffer.h	/^    void Pop(size_t count) { stack_.template Pop<Ch>(count); }$/;"	f	class:GenericStringBuffer
+PopBack	rapidjson/document.h	/^    GenericValue& PopBack() {$/;"	f	class:GenericValue
+Pow10	rapidjson/internal/pow10.h	/^inline double Pow10(int n) {$/;"	f	namespace:internal
+Predict	rapidjson/reader.h	/^    RAPIDJSON_FORCEINLINE IterativeParsingState Predict(IterativeParsingState state, Token token) {$/;"	f	class:GenericReader
+Prefix	rapidjson/writer.h	/^    void Prefix(Type type) {$/;"	f	class:Writer
+Prettify	rapidjson/internal/dtoa.h	/^inline char* Prettify(char* buffer, int length, int k) {$/;"	f	namespace:internal
+PrettyPrefix	rapidjson/prettywriter.h	/^    void PrettyPrefix(Type type) {$/;"	f	class:PrettyWriter
+PrettyWriter	rapidjson/prettywriter.h	/^    PrettyWriter(OutputStream& os, StackAllocator* allocator = 0, size_t levelDepth = Base::kDefaultLevelDepth) : $/;"	f	class:PrettyWriter
+PrettyWriter	rapidjson/prettywriter.h	/^class PrettyWriter : public Writer<OutputStream, SourceEncoding, TargetEncoding, StackAllocator> {$/;"	c
+Push	rapidjson/internal/stack.h	/^    RAPIDJSON_FORCEINLINE T* Push(size_t count = 1) {$/;"	f	class:internal::Stack
+Push	rapidjson/memorybuffer.h	/^    Ch* Push(size_t count) { return stack_.template Push<Ch>(count); }$/;"	f	struct:GenericMemoryBuffer
+Push	rapidjson/rapidjson.h	/^    Ch* Push(size_t count) { Ch* begin = dst_; dst_ += count; return begin; }$/;"	f	struct:GenericInsituStringStream
+Push	rapidjson/stringbuffer.h	/^    Ch* Push(size_t count) { return stack_.template Push<Ch>(count); }$/;"	f	class:GenericStringBuffer
+PushBack	rapidjson/document.h	/^    GenericValue& PushBack(GenericValue& value, Allocator& allocator) {$/;"	f	class:GenericValue
+PushBack	rapidjson/document.h	/^    GenericValue& PushBack(GenericValue&& value, Allocator& allocator) {$/;"	f	class:GenericValue
+PushBack	rapidjson/document.h	/^    GenericValue& PushBack(StringRefType value, Allocator& allocator) {$/;"	f	class:GenericValue
+PushBack	rapidjson/document.h	/^    PushBack(T value, Allocator& allocator) {$/;"	f	class:GenericValue
+PushBack	rapidjson/internal/biginteger.h	/^    void PushBack(Type digit) {$/;"	f	class:internal::BigInteger
+Put	rapidjson/encodedstream.h	/^    void Put(Ch c) { Encoding::Put(os_, c);  }$/;"	f	class:EncodedOutputStream
+Put	rapidjson/encodedstream.h	/^    void Put(Ch c) { putFunc_(*os_, c); }$/;"	f	class:AutoUTFOutputStream
+Put	rapidjson/encodedstream.h	/^    void Put(Ch) { RAPIDJSON_ASSERT(false); }$/;"	f	class:AutoUTFInputStream
+Put	rapidjson/encodedstream.h	/^    void Put(Ch) { RAPIDJSON_ASSERT(false); }$/;"	f	class:EncodedInputStream
+Put	rapidjson/encodings.h	/^    static void Put(OutputByteStream& os, Ch c) {$/;"	f	struct:ASCII
+Put	rapidjson/encodings.h	/^    static void Put(OutputByteStream& os, Ch c) {$/;"	f	struct:UTF8
+Put	rapidjson/encodings.h	/^    static void Put(OutputByteStream& os, CharType c) {$/;"	f	struct:UTF16BE
+Put	rapidjson/encodings.h	/^    static void Put(OutputByteStream& os, CharType c) {$/;"	f	struct:UTF16LE
+Put	rapidjson/encodings.h	/^    static void Put(OutputByteStream& os, CharType c) {$/;"	f	struct:UTF32BE
+Put	rapidjson/encodings.h	/^    static void Put(OutputByteStream& os, CharType c) {$/;"	f	struct:UTF32LE
+Put	rapidjson/filereadstream.h	/^    void Put(Ch) { RAPIDJSON_ASSERT(false); }$/;"	f	class:FileReadStream
+Put	rapidjson/filewritestream.h	/^    void Put(char c) { $/;"	f	class:FileWriteStream
+Put	rapidjson/memorybuffer.h	/^    void Put(Ch c) { *stack_.template Push<Ch>() = c; }$/;"	f	struct:GenericMemoryBuffer
+Put	rapidjson/memorystream.h	/^    void Put(Ch) { RAPIDJSON_ASSERT(false); }$/;"	f	struct:MemoryStream
+Put	rapidjson/pointer.h	/^        void Put(char c) { \/\/ UTF-8 must be byte$/;"	f	class:GenericPointer::PercentEncodeStream
+Put	rapidjson/rapidjson.h	/^    void Put(Ch c) { RAPIDJSON_ASSERT(dst_ != 0); *dst_++ = c; }$/;"	f	struct:GenericInsituStringStream
+Put	rapidjson/rapidjson.h	/^    void Put(Ch) { RAPIDJSON_ASSERT(false); }$/;"	f	struct:GenericStringStream
+Put	rapidjson/reader.h	/^        RAPIDJSON_FORCEINLINE void Put(Ch c) {$/;"	f	class:GenericReader::StackStream
+Put	rapidjson/stringbuffer.h	/^    void Put(Ch c) { *stack_.template Push<Ch>() = c; }$/;"	f	class:GenericStringBuffer
+PutBOM	rapidjson/encodedstream.h	/^    void PutBOM() { $/;"	f	class:AutoUTFOutputStream
+PutBOM	rapidjson/encodings.h	/^    static void PutBOM(OutputByteStream& os) {$/;"	f	struct:ASCII
+PutBOM	rapidjson/encodings.h	/^    static void PutBOM(OutputByteStream& os) {$/;"	f	struct:UTF16BE
+PutBOM	rapidjson/encodings.h	/^    static void PutBOM(OutputByteStream& os) {$/;"	f	struct:UTF16LE
+PutBOM	rapidjson/encodings.h	/^    static void PutBOM(OutputByteStream& os) {$/;"	f	struct:UTF32BE
+PutBOM	rapidjson/encodings.h	/^    static void PutBOM(OutputByteStream& os) {$/;"	f	struct:UTF32LE
+PutBOM	rapidjson/encodings.h	/^    static void PutBOM(OutputByteStream& os) {$/;"	f	struct:UTF8
+PutBegin	rapidjson/encodedstream.h	/^    Ch* PutBegin() { RAPIDJSON_ASSERT(false); return 0; }$/;"	f	class:AutoUTFInputStream
+PutBegin	rapidjson/encodedstream.h	/^    Ch* PutBegin() { RAPIDJSON_ASSERT(false); return 0; }$/;"	f	class:AutoUTFOutputStream
+PutBegin	rapidjson/encodedstream.h	/^    Ch* PutBegin() { RAPIDJSON_ASSERT(false); return 0; }$/;"	f	class:EncodedInputStream
+PutBegin	rapidjson/encodedstream.h	/^    Ch* PutBegin() { RAPIDJSON_ASSERT(false); return 0; }$/;"	f	class:EncodedOutputStream
+PutBegin	rapidjson/filereadstream.h	/^    Ch* PutBegin() { RAPIDJSON_ASSERT(false); return 0; }$/;"	f	class:FileReadStream
+PutBegin	rapidjson/filewritestream.h	/^    char* PutBegin() { RAPIDJSON_ASSERT(false); return 0; }$/;"	f	class:FileWriteStream
+PutBegin	rapidjson/memorystream.h	/^    Ch* PutBegin() { RAPIDJSON_ASSERT(false); return 0; }$/;"	f	struct:MemoryStream
+PutBegin	rapidjson/rapidjson.h	/^    Ch* PutBegin() { RAPIDJSON_ASSERT(false); return 0; }$/;"	f	struct:GenericStringStream
+PutBegin	rapidjson/rapidjson.h	/^    Ch* PutBegin() { return dst_ = src_; }$/;"	f	struct:GenericInsituStringStream
+PutEnd	rapidjson/encodedstream.h	/^    size_t PutEnd(Ch*) { RAPIDJSON_ASSERT(false); return 0; }$/;"	f	class:AutoUTFInputStream
+PutEnd	rapidjson/encodedstream.h	/^    size_t PutEnd(Ch*) { RAPIDJSON_ASSERT(false); return 0; }$/;"	f	class:AutoUTFOutputStream
+PutEnd	rapidjson/encodedstream.h	/^    size_t PutEnd(Ch*) { RAPIDJSON_ASSERT(false); return 0; }$/;"	f	class:EncodedInputStream
+PutEnd	rapidjson/encodedstream.h	/^    size_t PutEnd(Ch*) { RAPIDJSON_ASSERT(false); return 0; }$/;"	f	class:EncodedOutputStream
+PutEnd	rapidjson/filereadstream.h	/^    size_t PutEnd(Ch*) { RAPIDJSON_ASSERT(false); return 0; }$/;"	f	class:FileReadStream
+PutEnd	rapidjson/filewritestream.h	/^    size_t PutEnd(char*) { RAPIDJSON_ASSERT(false); return 0; }$/;"	f	class:FileWriteStream
+PutEnd	rapidjson/memorystream.h	/^    size_t PutEnd(Ch*) { RAPIDJSON_ASSERT(false); return 0; }$/;"	f	struct:MemoryStream
+PutEnd	rapidjson/rapidjson.h	/^    size_t PutEnd(Ch* begin) { return static_cast<size_t>(dst_ - begin); }$/;"	f	struct:GenericInsituStringStream
+PutEnd	rapidjson/rapidjson.h	/^    size_t PutEnd(Ch*) { RAPIDJSON_ASSERT(false); return 0; }$/;"	f	struct:GenericStringStream
+PutFunc	rapidjson/encodedstream.h	/^    typedef void (*PutFunc)(OutputByteStream&, Ch);$/;"	t	class:AutoUTFOutputStream
+PutN	rapidjson/filewritestream.h	/^    void PutN(char c, size_t n) {$/;"	f	class:FileWriteStream
+PutN	rapidjson/filewritestream.h	/^inline void PutN(FileWriteStream& stream, char c, size_t n) {$/;"	f
+PutN	rapidjson/memorybuffer.h	/^inline void PutN(MemoryBuffer& memoryBuffer, char c, size_t n) {$/;"	f
+PutN	rapidjson/rapidjson.h	/^inline void PutN(Stream& stream, Ch c, size_t n) {$/;"	f
+PutN	rapidjson/stringbuffer.h	/^inline void PutN(GenericStringBuffer<UTF8<> >& stream, char c, size_t n) {$/;"	f
+RAPIDJSON_64BIT	rapidjson/rapidjson.h	227;"	d
+RAPIDJSON_64BIT	rapidjson/rapidjson.h	229;"	d
+RAPIDJSON_ALIGN	rapidjson/rapidjson.h	245;"	d
+RAPIDJSON_ALIGN	rapidjson/rapidjson.h	247;"	d
+RAPIDJSON_ALLOCATORS_H_	rapidjson/allocators.h	16;"	d
+RAPIDJSON_ASSERT	rapidjson/rapidjson.h	344;"	d
+RAPIDJSON_BIGENDIAN	rapidjson/rapidjson.h	169;"	d
+RAPIDJSON_BIGINTEGER_H_	rapidjson/internal/biginteger.h	16;"	d
+RAPIDJSON_DELETE	rapidjson/rapidjson.h	484;"	d
+RAPIDJSON_DIAG_OFF	rapidjson/rapidjson.h	406;"	d
+RAPIDJSON_DIAG_POP	rapidjson/rapidjson.h	412;"	d
+RAPIDJSON_DIAG_PRAGMA	rapidjson/rapidjson.h	405;"	d
+RAPIDJSON_DIAG_PUSH	rapidjson/rapidjson.h	411;"	d
+RAPIDJSON_DISABLEIF	rapidjson/internal/meta.h	159;"	d
+RAPIDJSON_DISABLEIF_RETURN	rapidjson/internal/meta.h	168;"	d
+RAPIDJSON_DIYFP_H_	rapidjson/internal/diyfp.h	20;"	d
+RAPIDJSON_DOCUMENT_H_	rapidjson/document.h	16;"	d
+RAPIDJSON_DO_JOIN	rapidjson/rapidjson.h	360;"	d
+RAPIDJSON_DO_JOIN2	rapidjson/rapidjson.h	361;"	d
+RAPIDJSON_DO_STRINGIFY	rapidjson/rapidjson.h	51;"	d
+RAPIDJSON_DTOA_	rapidjson/internal/dtoa.h	20;"	d
+RAPIDJSON_ENABLEIF	rapidjson/internal/meta.h	155;"	d
+RAPIDJSON_ENABLEIF_RETURN	rapidjson/internal/meta.h	163;"	d
+RAPIDJSON_ENCODEDSTREAM_H_	rapidjson/encodedstream.h	16;"	d
+RAPIDJSON_ENCODINGS_FUNC	rapidjson/encodedstream.h	253;"	d
+RAPIDJSON_ENCODINGS_FUNC	rapidjson/encodedstream.h	93;"	d
+RAPIDJSON_ENCODINGS_FUNC	rapidjson/encodings.h	555;"	d
+RAPIDJSON_ENCODINGS_FUNC	rapidjson/encodings.h	578;"	d
+RAPIDJSON_ENCODINGS_H_	rapidjson/encodings.h	16;"	d
+RAPIDJSON_ENDIAN	rapidjson/rapidjson.h	188;"	d
+RAPIDJSON_ENDIAN	rapidjson/rapidjson.h	190;"	d
+RAPIDJSON_ENDIAN	rapidjson/rapidjson.h	198;"	d
+RAPIDJSON_ENDIAN	rapidjson/rapidjson.h	200;"	d
+RAPIDJSON_ENDIAN	rapidjson/rapidjson.h	206;"	d
+RAPIDJSON_ENDIAN	rapidjson/rapidjson.h	208;"	d
+RAPIDJSON_ENDIAN	rapidjson/rapidjson.h	211;"	d
+RAPIDJSON_ENDIAN	rapidjson/rapidjson.h	213;"	d
+RAPIDJSON_ENDIAN	rapidjson/rapidjson.h	215;"	d
+RAPIDJSON_ERROR_CHARTYPE	rapidjson/error/error.h	34;"	d
+RAPIDJSON_ERROR_EN_H__	rapidjson/error/en.h	16;"	d
+RAPIDJSON_ERROR_ERROR_H__	rapidjson/error/error.h	16;"	d
+RAPIDJSON_ERROR_STRING	rapidjson/error/error.h	47;"	d
+RAPIDJSON_FILEREADSTREAM_H_	rapidjson/filereadstream.h	16;"	d
+RAPIDJSON_FILEWRITESTREAM_H_	rapidjson/filewritestream.h	16;"	d
+RAPIDJSON_FORCEINLINE	rapidjson/rapidjson.h	157;"	d
+RAPIDJSON_FORCEINLINE	rapidjson/rapidjson.h	159;"	d
+RAPIDJSON_FORCEINLINE	rapidjson/rapidjson.h	161;"	d
+RAPIDJSON_GNUC	rapidjson/rapidjson.h	398;"	d
+RAPIDJSON_HAS_CXX11_NOEXCEPT	rapidjson/rapidjson.h	454;"	d
+RAPIDJSON_HAS_CXX11_RVALUE_REFS	rapidjson/rapidjson.h	441;"	d
+RAPIDJSON_HAS_CXX11_TYPETRAITS	rapidjson/rapidjson.h	470;"	d
+RAPIDJSON_HAS_STDSTRING	rapidjson/document.h	38;"	d
+RAPIDJSON_IEEE754_	rapidjson/internal/ieee754.h	16;"	d
+RAPIDJSON_INTERNAL_META_H_	rapidjson/internal/meta.h	16;"	d
+RAPIDJSON_INTERNAL_STACK_H_	rapidjson/internal/stack.h	16;"	d
+RAPIDJSON_INTERNAL_STRFUNC_H_	rapidjson/internal/strfunc.h	16;"	d
+RAPIDJSON_INTERNAL_SWAP_H_	rapidjson/internal/swap.h	16;"	d
+RAPIDJSON_ITOA_	rapidjson/internal/itoa.h	16;"	d
+RAPIDJSON_JOIN	rapidjson/rapidjson.h	359;"	d
+RAPIDJSON_LITTLEENDIAN	rapidjson/rapidjson.h	168;"	d
+RAPIDJSON_MAJOR_VERSION	rapidjson/rapidjson.h	70;"	d
+RAPIDJSON_MEMORYBUFFER_H_	rapidjson/memorybuffer.h	16;"	d
+RAPIDJSON_MEMORYSTREAM_H_	rapidjson/memorystream.h	16;"	d
+RAPIDJSON_MINOR_VERSION	rapidjson/rapidjson.h	71;"	d
+RAPIDJSON_MULTILINEMACRO_BEGIN	rapidjson/rapidjson.h	386;"	d
+RAPIDJSON_MULTILINEMACRO_END	rapidjson/rapidjson.h	387;"	d
+RAPIDJSON_NAMESPACE	rapidjson/rapidjson.h	113;"	d
+RAPIDJSON_NAMESPACE_BEGIN	rapidjson/rapidjson.h	116;"	d
+RAPIDJSON_NAMESPACE_END	rapidjson/rapidjson.h	119;"	d
+RAPIDJSON_NEW	rapidjson/rapidjson.h	480;"	d
+RAPIDJSON_NOEXCEPT	rapidjson/document.h	/^    GenericStringRef(const CharType (&str)[N]) RAPIDJSON_NOEXCEPT$/;"	m	struct:GenericStringRef
+RAPIDJSON_NOEXCEPT	rapidjson/rapidjson.h	463;"	d
+RAPIDJSON_NOTHING	rapidjson/reader.h	48;"	d
+RAPIDJSON_NO_INT64DEFINE	rapidjson/rapidjson.h	147;"	d
+RAPIDJSON_NO_SIZETYPEDEFINE	rapidjson/rapidjson.h	314;"	d
+RAPIDJSON_PARSE_DEFAULT_FLAGS	rapidjson/reader.h	130;"	d
+RAPIDJSON_PARSE_ERROR	rapidjson/reader.h	109;"	d
+RAPIDJSON_PARSE_ERROR_EARLY_RETURN	rapidjson/reader.h	50;"	d
+RAPIDJSON_PARSE_ERROR_EARLY_RETURN_VOID	rapidjson/reader.h	55;"	d
+RAPIDJSON_PARSE_ERROR_NORETURN	rapidjson/reader.h	90;"	d
+RAPIDJSON_PATCH_VERSION	rapidjson/rapidjson.h	72;"	d
+RAPIDJSON_POINTER_H_	rapidjson/pointer.h	16;"	d
+RAPIDJSON_POW10_	rapidjson/internal/pow10.h	16;"	d
+RAPIDJSON_PRAGMA	rapidjson/rapidjson.h	404;"	d
+RAPIDJSON_PRETTYWRITER_H_	rapidjson/prettywriter.h	16;"	d
+RAPIDJSON_RAPIDJSON_H_	rapidjson/rapidjson.h	16;"	d
+RAPIDJSON_READER_H_	rapidjson/reader.h	16;"	d
+RAPIDJSON_REMOVEFPTR_	rapidjson/internal/meta.h	151;"	d
+RAPIDJSON_SIMD	rapidjson/rapidjson.h	291;"	d
+RAPIDJSON_STATIC_ASSERT	rapidjson/rapidjson.h	375;"	d
+RAPIDJSON_STATIC_ASSERT_UNUSED_ATTRIBUTE	rapidjson/rapidjson.h	364;"	d
+RAPIDJSON_STRINGBUFFER_H_	rapidjson/stringbuffer.h	16;"	d
+RAPIDJSON_STRINGIFY	rapidjson/rapidjson.h	50;"	d
+RAPIDJSON_STRTOD_	rapidjson/internal/strtod.h	16;"	d
+RAPIDJSON_UINT64_C2	rapidjson/rapidjson.h	261;"	d
+RAPIDJSON_VERSION_CODE	rapidjson/rapidjson.h	391;"	d
+RAPIDJSON_VERSION_STRING	rapidjson/rapidjson.h	73;"	d
+RAPIDJSON_WRITER_H_	rapidjson/writer.h	16;"	d
+RandomPermutation	utils.h	/^		RandomPermutation(int tn):n(tn),i(0){$/;"	f	class:RandomPermutation
+RandomPermutation	utils.h	/^class RandomPermutation{$/;"	c
+Read	rapidjson/filereadstream.h	/^    void Read() {$/;"	f	class:FileReadStream
+Reader	rapidjson/reader.h	/^typedef GenericReader<UTF8<>, UTF8<> > Reader;$/;"	t
+Realloc	rapidjson/allocators.h	/^    void* Realloc(void* originalPtr, size_t originalSize, size_t newSize) {$/;"	f	class:CrtAllocator
+Realloc	rapidjson/allocators.h	/^    void* Realloc(void* originalPtr, size_t originalSize, size_t newSize) {$/;"	f	class:MemoryPoolAllocator
+Reference	rapidjson/document.h	/^    typedef typename BaseType::reference       Reference;$/;"	t	class:GenericMemberIterator
+RemoveAllMembers	rapidjson/document.h	/^    void RemoveAllMembers() {$/;"	f	class:GenericValue
+RemoveConst	rapidjson/internal/meta.h	/^template <typename T> struct RemoveConst { typedef T Type; };$/;"	s	namespace:internal
+RemoveConst	rapidjson/internal/meta.h	/^template <typename T> struct RemoveConst<const T> { typedef T Type; };$/;"	s	namespace:internal
+RemoveMember	rapidjson/document.h	/^    MemberIterator RemoveMember(MemberIterator m) {$/;"	f	class:GenericValue
+RemoveMember	rapidjson/document.h	/^    bool RemoveMember(const Ch* name) {$/;"	f	class:GenericValue
+RemoveMember	rapidjson/document.h	/^    bool RemoveMember(const GenericValue<Encoding, SourceAllocator>& name) {$/;"	f	class:GenericValue
+RemoveMember	rapidjson/document.h	/^    bool RemoveMember(const std::basic_string<Ch>& name) { return RemoveMember(GenericValue(StringRef(name))); }$/;"	f	class:GenericValue
+RemoveSfinaeTag	rapidjson/internal/meta.h	/^template <typename T> struct RemoveSfinaeTag<SfinaeTag&(*)(T)> { typedef T Type; };$/;"	s	namespace:internal
+Reserve	rapidjson/document.h	/^    GenericValue& Reserve(SizeType newCapacity, Allocator &allocator) {$/;"	f	class:GenericValue
+Reset	rapidjson/writer.h	/^    void Reset(OutputStream& os) {$/;"	f	class:Writer
+Resize	rapidjson/internal/stack.h	/^    void Resize(size_t newCapacity) {$/;"	f	class:internal::Stack
+RightBracketToken	rapidjson/reader.h	/^        RightBracketToken,$/;"	e	enum:GenericReader::Token
+RightCurlyBracketToken	rapidjson/reader.h	/^        RightCurlyBracketToken,$/;"	e	enum:GenericReader::Token
+SCNX16	rapidjson/msinttypes/inttypes.h	221;"	d
+SCNX32	rapidjson/msinttypes/inttypes.h	234;"	d
+SCNX64	rapidjson/msinttypes/inttypes.h	247;"	d
+SCNX8	rapidjson/msinttypes/inttypes.h	208;"	d
+SCNXFAST16	rapidjson/msinttypes/inttypes.h	229;"	d
+SCNXFAST32	rapidjson/msinttypes/inttypes.h	242;"	d
+SCNXFAST64	rapidjson/msinttypes/inttypes.h	255;"	d
+SCNXFAST8	rapidjson/msinttypes/inttypes.h	216;"	d
+SCNXLEAST16	rapidjson/msinttypes/inttypes.h	225;"	d
+SCNXLEAST32	rapidjson/msinttypes/inttypes.h	238;"	d
+SCNXLEAST64	rapidjson/msinttypes/inttypes.h	251;"	d
+SCNXLEAST8	rapidjson/msinttypes/inttypes.h	212;"	d
+SCNXMAX	rapidjson/msinttypes/inttypes.h	260;"	d
+SCNXPTR	rapidjson/msinttypes/inttypes.h	266;"	d
+SCNXPTR	rapidjson/msinttypes/inttypes.h	271;"	d
+SCNd16	rapidjson/msinttypes/inttypes.h	172;"	d
+SCNd32	rapidjson/msinttypes/inttypes.h	179;"	d
+SCNd64	rapidjson/msinttypes/inttypes.h	186;"	d
+SCNd8	rapidjson/msinttypes/inttypes.h	165;"	d
+SCNdFAST16	rapidjson/msinttypes/inttypes.h	176;"	d
+SCNdFAST32	rapidjson/msinttypes/inttypes.h	183;"	d
+SCNdFAST64	rapidjson/msinttypes/inttypes.h	190;"	d
+SCNdFAST8	rapidjson/msinttypes/inttypes.h	169;"	d
+SCNdLEAST16	rapidjson/msinttypes/inttypes.h	174;"	d
+SCNdLEAST32	rapidjson/msinttypes/inttypes.h	181;"	d
+SCNdLEAST64	rapidjson/msinttypes/inttypes.h	188;"	d
+SCNdLEAST8	rapidjson/msinttypes/inttypes.h	167;"	d
+SCNdMAX	rapidjson/msinttypes/inttypes.h	193;"	d
+SCNdPTR	rapidjson/msinttypes/inttypes.h	197;"	d
+SCNdPTR	rapidjson/msinttypes/inttypes.h	200;"	d
+SCNi16	rapidjson/msinttypes/inttypes.h	173;"	d
+SCNi32	rapidjson/msinttypes/inttypes.h	180;"	d
+SCNi64	rapidjson/msinttypes/inttypes.h	187;"	d
+SCNi8	rapidjson/msinttypes/inttypes.h	166;"	d
+SCNiFAST16	rapidjson/msinttypes/inttypes.h	177;"	d
+SCNiFAST32	rapidjson/msinttypes/inttypes.h	184;"	d
+SCNiFAST64	rapidjson/msinttypes/inttypes.h	191;"	d
+SCNiFAST8	rapidjson/msinttypes/inttypes.h	170;"	d
+SCNiLEAST16	rapidjson/msinttypes/inttypes.h	175;"	d
+SCNiLEAST32	rapidjson/msinttypes/inttypes.h	182;"	d
+SCNiLEAST64	rapidjson/msinttypes/inttypes.h	189;"	d
+SCNiLEAST8	rapidjson/msinttypes/inttypes.h	168;"	d
+SCNiMAX	rapidjson/msinttypes/inttypes.h	194;"	d
+SCNiPTR	rapidjson/msinttypes/inttypes.h	198;"	d
+SCNiPTR	rapidjson/msinttypes/inttypes.h	201;"	d
+SCNo16	rapidjson/msinttypes/inttypes.h	218;"	d
+SCNo32	rapidjson/msinttypes/inttypes.h	231;"	d
+SCNo64	rapidjson/msinttypes/inttypes.h	244;"	d
+SCNo8	rapidjson/msinttypes/inttypes.h	205;"	d
+SCNoFAST16	rapidjson/msinttypes/inttypes.h	226;"	d
+SCNoFAST32	rapidjson/msinttypes/inttypes.h	239;"	d
+SCNoFAST64	rapidjson/msinttypes/inttypes.h	252;"	d
+SCNoFAST8	rapidjson/msinttypes/inttypes.h	213;"	d
+SCNoLEAST16	rapidjson/msinttypes/inttypes.h	222;"	d
+SCNoLEAST32	rapidjson/msinttypes/inttypes.h	235;"	d
+SCNoLEAST64	rapidjson/msinttypes/inttypes.h	248;"	d
+SCNoLEAST8	rapidjson/msinttypes/inttypes.h	209;"	d
+SCNoMAX	rapidjson/msinttypes/inttypes.h	257;"	d
+SCNoPTR	rapidjson/msinttypes/inttypes.h	263;"	d
+SCNoPTR	rapidjson/msinttypes/inttypes.h	268;"	d
+SCNu16	rapidjson/msinttypes/inttypes.h	219;"	d
+SCNu32	rapidjson/msinttypes/inttypes.h	232;"	d
+SCNu64	rapidjson/msinttypes/inttypes.h	245;"	d
+SCNu8	rapidjson/msinttypes/inttypes.h	206;"	d
+SCNuFAST16	rapidjson/msinttypes/inttypes.h	227;"	d
+SCNuFAST32	rapidjson/msinttypes/inttypes.h	240;"	d
+SCNuFAST64	rapidjson/msinttypes/inttypes.h	253;"	d
+SCNuFAST8	rapidjson/msinttypes/inttypes.h	214;"	d
+SCNuLEAST16	rapidjson/msinttypes/inttypes.h	223;"	d
+SCNuLEAST32	rapidjson/msinttypes/inttypes.h	236;"	d
+SCNuLEAST64	rapidjson/msinttypes/inttypes.h	249;"	d
+SCNuLEAST8	rapidjson/msinttypes/inttypes.h	210;"	d
+SCNuMAX	rapidjson/msinttypes/inttypes.h	258;"	d
+SCNuPTR	rapidjson/msinttypes/inttypes.h	264;"	d
+SCNuPTR	rapidjson/msinttypes/inttypes.h	269;"	d
+SCNx16	rapidjson/msinttypes/inttypes.h	220;"	d
+SCNx32	rapidjson/msinttypes/inttypes.h	233;"	d
+SCNx64	rapidjson/msinttypes/inttypes.h	246;"	d
+SCNx8	rapidjson/msinttypes/inttypes.h	207;"	d
+SCNxFAST16	rapidjson/msinttypes/inttypes.h	228;"	d
+SCNxFAST32	rapidjson/msinttypes/inttypes.h	241;"	d
+SCNxFAST64	rapidjson/msinttypes/inttypes.h	254;"	d
+SCNxFAST8	rapidjson/msinttypes/inttypes.h	215;"	d
+SCNxLEAST16	rapidjson/msinttypes/inttypes.h	224;"	d
+SCNxLEAST32	rapidjson/msinttypes/inttypes.h	237;"	d
+SCNxLEAST64	rapidjson/msinttypes/inttypes.h	250;"	d
+SCNxLEAST8	rapidjson/msinttypes/inttypes.h	211;"	d
+SCNxMAX	rapidjson/msinttypes/inttypes.h	259;"	d
+SCNxPTR	rapidjson/msinttypes/inttypes.h	265;"	d
+SCNxPTR	rapidjson/msinttypes/inttypes.h	270;"	d
+SETTING_PARSER_H	settingParser.h	3;"	d
+SIG_ATOMIC_MAX	rapidjson/msinttypes/stdint.h	246;"	d
+SIG_ATOMIC_MIN	rapidjson/msinttypes/stdint.h	245;"	d
+SIZE_MAX	rapidjson/msinttypes/stdint.h	250;"	d
+SIZE_MAX	rapidjson/msinttypes/stdint.h	252;"	d
+STATIC_ASSERTION_FAILURE	rapidjson/rapidjson.h	/^template <> struct STATIC_ASSERTION_FAILURE<true> { enum { value = 1 }; };$/;"	s
+SelectIf	rapidjson/internal/meta.h	/^template <typename C, typename T1, typename T2> struct SelectIf : SelectIfCond<C::Value, T1, T2> {};$/;"	s	namespace:internal
+SelectIfCond	rapidjson/internal/meta.h	/^template <bool C, typename T1, typename T2> struct SelectIfCond : SelectIfImpl<C>::template Apply<T1,T2> {};$/;"	s	namespace:internal
+SelectIfImpl	rapidjson/internal/meta.h	/^template <> struct SelectIfImpl<false> { template <typename T1, typename T2> struct Apply { typedef T2 Type; }; };$/;"	s	namespace:internal
+SelectIfImpl	rapidjson/internal/meta.h	/^template <bool C> struct SelectIfImpl { template <typename T1, typename T2> struct Apply { typedef T1 Type; }; };$/;"	s	namespace:internal
+Set	rapidjson/error/error.h	/^    void Set(ParseErrorCode code, size_t offset = 0) { code_ = code; offset_ = offset; }$/;"	f	struct:ParseResult
+Set	rapidjson/pointer.h	/^        Set(GenericDocument<EncodingType, typename ValueType::AllocatorType, stackAllocator>& document, T value) const {$/;"	f	class:GenericPointer
+Set	rapidjson/pointer.h	/^    Set(ValueType& root, T value, typename ValueType::AllocatorType& allocator) const {$/;"	f	class:GenericPointer
+Set	rapidjson/pointer.h	/^    ValueType& Set(GenericDocument<EncodingType, typename ValueType::AllocatorType, stackAllocator>& document, ValueType& value) const {$/;"	f	class:GenericPointer
+Set	rapidjson/pointer.h	/^    ValueType& Set(GenericDocument<EncodingType, typename ValueType::AllocatorType, stackAllocator>& document, const Ch* value) const {$/;"	f	class:GenericPointer
+Set	rapidjson/pointer.h	/^    ValueType& Set(GenericDocument<EncodingType, typename ValueType::AllocatorType, stackAllocator>& document, const ValueType& value) const {$/;"	f	class:GenericPointer
+Set	rapidjson/pointer.h	/^    ValueType& Set(GenericDocument<EncodingType, typename ValueType::AllocatorType, stackAllocator>& document, const std::basic_string<Ch>& value) const {$/;"	f	class:GenericPointer
+Set	rapidjson/pointer.h	/^    ValueType& Set(ValueType& root, ValueType& value, typename ValueType::AllocatorType& allocator) const {$/;"	f	class:GenericPointer
+Set	rapidjson/pointer.h	/^    ValueType& Set(ValueType& root, const Ch* value, typename ValueType::AllocatorType& allocator) const {$/;"	f	class:GenericPointer
+Set	rapidjson/pointer.h	/^    ValueType& Set(ValueType& root, const ValueType& value, typename ValueType::AllocatorType& allocator) const {$/;"	f	class:GenericPointer
+Set	rapidjson/pointer.h	/^    ValueType& Set(ValueType& root, const std::basic_string<Ch>& value, typename ValueType::AllocatorType& allocator) const {$/;"	f	class:GenericPointer
+SetArray	rapidjson/document.h	/^    GenericValue& SetArray() {  this->~GenericValue(); new (this) GenericValue(kArrayType); return *this; }$/;"	f	class:GenericValue
+SetArrayRaw	rapidjson/document.h	/^    void SetArrayRaw(GenericValue* values, SizeType count, Allocator& allocator) {$/;"	f	class:GenericValue
+SetBool	rapidjson/document.h	/^    GenericValue& SetBool(bool b) { this->~GenericValue(); new (this) GenericValue(b); return *this; }$/;"	f	class:GenericValue
+SetDouble	rapidjson/document.h	/^    GenericValue& SetDouble(double d)       { this->~GenericValue(); new (this) GenericValue(d);    return *this; }$/;"	f	class:GenericValue
+SetIndent	rapidjson/prettywriter.h	/^    PrettyWriter& SetIndent(Ch indentChar, unsigned indentCharCount) {$/;"	f	class:PrettyWriter
+SetInt	rapidjson/document.h	/^    GenericValue& SetInt(int i)             { this->~GenericValue(); new (this) GenericValue(i);    return *this; }$/;"	f	class:GenericValue
+SetInt64	rapidjson/document.h	/^    GenericValue& SetInt64(int64_t i64)     { this->~GenericValue(); new (this) GenericValue(i64);  return *this; }$/;"	f	class:GenericValue
+SetLength	rapidjson/document.h	/^        inline void     SetLength(SizeType len) { str[LenPos] = (Ch)(MaxSize -  len); }$/;"	f	struct:GenericValue::ShortString
+SetNull	rapidjson/document.h	/^    GenericValue& SetNull() { this->~GenericValue(); new (this) GenericValue(); return *this; }$/;"	f	class:GenericValue
+SetObject	rapidjson/document.h	/^    GenericValue& SetObject() { this->~GenericValue(); new (this) GenericValue(kObjectType); return *this; }$/;"	f	class:GenericValue
+SetObjectRaw	rapidjson/document.h	/^    void SetObjectRaw(Member* members, SizeType count, Allocator& allocator) {$/;"	f	class:GenericValue
+SetParseError	rapidjson/reader.h	/^    void SetParseError(ParseErrorCode code, size_t offset) { parseResult_.Set(code, offset); }$/;"	f	class:GenericReader
+SetString	rapidjson/document.h	/^    GenericValue& SetString(StringRefType s) { this->~GenericValue(); SetStringRaw(s); return *this; }$/;"	f	class:GenericValue
+SetString	rapidjson/document.h	/^    GenericValue& SetString(const Ch* s, Allocator& allocator) { return SetString(s, internal::StrLen(s), allocator); }$/;"	f	class:GenericValue
+SetString	rapidjson/document.h	/^    GenericValue& SetString(const Ch* s, SizeType length) { return SetString(StringRef(s, length)); }$/;"	f	class:GenericValue
+SetString	rapidjson/document.h	/^    GenericValue& SetString(const Ch* s, SizeType length, Allocator& allocator) { this->~GenericValue(); SetStringRaw(StringRef(s, length), allocator); return *this; }$/;"	f	class:GenericValue
+SetString	rapidjson/document.h	/^    GenericValue& SetString(const std::basic_string<Ch>& s, Allocator& allocator) { return SetString(s.data(), SizeType(s.size()), allocator); }$/;"	f	class:GenericValue
+SetStringRaw	rapidjson/document.h	/^    void SetStringRaw(StringRefType s, Allocator& allocator) {$/;"	f	class:GenericValue
+SetUint	rapidjson/document.h	/^    GenericValue& SetUint(unsigned u)       { this->~GenericValue(); new (this) GenericValue(u);    return *this; }$/;"	f	class:GenericValue
+SetUint64	rapidjson/document.h	/^    GenericValue& SetUint64(uint64_t u64)   { this->~GenericValue(); new (this) GenericValue(u64);  return *this; }$/;"	f	class:GenericValue
+SetValueByPointer	rapidjson/pointer.h	/^SetValueByPointer(DocumentType& document, const CharType(&source)[N], T2 value) {$/;"	f
+SetValueByPointer	rapidjson/pointer.h	/^SetValueByPointer(DocumentType& document, const GenericPointer<typename DocumentType::ValueType>& pointer, T2 value) {$/;"	f
+SetValueByPointer	rapidjson/pointer.h	/^SetValueByPointer(T& root, const CharType(&source)[N], T2 value, typename T::AllocatorType& a) {$/;"	f
+SetValueByPointer	rapidjson/pointer.h	/^SetValueByPointer(T& root, const GenericPointer<typename T::ValueType>& pointer, T2 value, typename T::AllocatorType& a) {$/;"	f
+SetValueByPointer	rapidjson/pointer.h	/^typename DocumentType::ValueType& SetValueByPointer(DocumentType& document, const CharType(&source)[N], const std::basic_string<typename DocumentType::Ch>& value) {$/;"	f
+SetValueByPointer	rapidjson/pointer.h	/^typename DocumentType::ValueType& SetValueByPointer(DocumentType& document, const CharType(&source)[N], const typename DocumentType::Ch* value) {$/;"	f
+SetValueByPointer	rapidjson/pointer.h	/^typename DocumentType::ValueType& SetValueByPointer(DocumentType& document, const CharType(&source)[N], const typename DocumentType::ValueType& value) {$/;"	f
+SetValueByPointer	rapidjson/pointer.h	/^typename DocumentType::ValueType& SetValueByPointer(DocumentType& document, const CharType(&source)[N], typename DocumentType::ValueType& value) {$/;"	f
+SetValueByPointer	rapidjson/pointer.h	/^typename DocumentType::ValueType& SetValueByPointer(DocumentType& document, const GenericPointer<typename DocumentType::ValueType>& pointer, const std::basic_string<typename DocumentType::Ch>& value) {$/;"	f
+SetValueByPointer	rapidjson/pointer.h	/^typename DocumentType::ValueType& SetValueByPointer(DocumentType& document, const GenericPointer<typename DocumentType::ValueType>& pointer, const typename DocumentType::Ch* value) {$/;"	f
+SetValueByPointer	rapidjson/pointer.h	/^typename DocumentType::ValueType& SetValueByPointer(DocumentType& document, const GenericPointer<typename DocumentType::ValueType>& pointer, const typename DocumentType::ValueType& value) {$/;"	f
+SetValueByPointer	rapidjson/pointer.h	/^typename DocumentType::ValueType& SetValueByPointer(DocumentType& document, const GenericPointer<typename DocumentType::ValueType>& pointer, typename DocumentType::ValueType& value) {$/;"	f
+SetValueByPointer	rapidjson/pointer.h	/^typename T::ValueType& SetValueByPointer(T& root, const CharType(&source)[N], const std::basic_string<typename T::Ch>& value, typename T::AllocatorType& a) {$/;"	f
+SetValueByPointer	rapidjson/pointer.h	/^typename T::ValueType& SetValueByPointer(T& root, const CharType(&source)[N], const typename T::Ch* value, typename T::AllocatorType& a) {$/;"	f
+SetValueByPointer	rapidjson/pointer.h	/^typename T::ValueType& SetValueByPointer(T& root, const CharType(&source)[N], const typename T::ValueType& value, typename T::AllocatorType& a) {$/;"	f
+SetValueByPointer	rapidjson/pointer.h	/^typename T::ValueType& SetValueByPointer(T& root, const CharType(&source)[N], typename T::ValueType& value, typename T::AllocatorType& a) {$/;"	f
+SetValueByPointer	rapidjson/pointer.h	/^typename T::ValueType& SetValueByPointer(T& root, const GenericPointer<typename T::ValueType>& pointer, const std::basic_string<typename T::Ch>& value, typename T::AllocatorType& a) {$/;"	f
+SetValueByPointer	rapidjson/pointer.h	/^typename T::ValueType& SetValueByPointer(T& root, const GenericPointer<typename T::ValueType>& pointer, const typename T::Ch* value, typename T::AllocatorType& a) {$/;"	f
+SetValueByPointer	rapidjson/pointer.h	/^typename T::ValueType& SetValueByPointer(T& root, const GenericPointer<typename T::ValueType>& pointer, const typename T::ValueType& value, typename T::AllocatorType& a) {$/;"	f
+SetValueByPointer	rapidjson/pointer.h	/^typename T::ValueType& SetValueByPointer(T& root, const GenericPointer<typename T::ValueType>& pointer, typename T::ValueType& value, typename T::AllocatorType& a) {$/;"	f
+SettingParser	settingParser.h	/^		SettingParser(){}$/;"	f	class:SettingParser
+SettingParser	settingParser.h	/^		SettingParser(SettingParser&p){$/;"	f	class:SettingParser
+SettingParser	settingParser.h	/^		SettingParser(const char *file){$/;"	f	class:SettingParser
+SettingParser	settingParser.h	/^class SettingParser{$/;"	c
+SfinaeTag	rapidjson/internal/meta.h	/^struct SfinaeTag {};$/;"	s	namespace:internal
+ShortString	rapidjson/document.h	/^    struct ShortString {$/;"	s	class:GenericValue
+ShrinkToFit	rapidjson/internal/stack.h	/^    void ShrinkToFit() { $/;"	f	class:internal::Stack
+ShrinkToFit	rapidjson/memorybuffer.h	/^    void ShrinkToFit() { stack_.ShrinkToFit(); }$/;"	f	struct:GenericMemoryBuffer
+ShrinkToFit	rapidjson/stringbuffer.h	/^    void ShrinkToFit() {$/;"	f	class:GenericStringBuffer
+Sign	rapidjson/internal/ieee754.h	/^    bool Sign() const { return (u_ & kSignMask) != 0; }$/;"	f	class:internal::Double
+Significand	rapidjson/internal/ieee754.h	/^    uint64_t Significand() const { return u_ & kSignificandMask; }$/;"	f	class:internal::Double
+Size	rapidjson/allocators.h	/^    size_t Size() const {$/;"	f	class:MemoryPoolAllocator
+Size	rapidjson/document.h	/^    SizeType Size() const { RAPIDJSON_ASSERT(IsArray()); return data_.a.size; }$/;"	f	class:GenericValue
+SizeType	rapidjson/rapidjson.h	/^typedef unsigned SizeType;$/;"	t
+SkipWhitespace	rapidjson/reader.h	/^template<> inline void SkipWhitespace(InsituStringStream& is) { $/;"	f
+SkipWhitespace	rapidjson/reader.h	/^template<> inline void SkipWhitespace(StringStream& is) {$/;"	f
+SkipWhitespace	rapidjson/reader.h	/^void SkipWhitespace(InputStream& is) {$/;"	f
+SkipWhitespaceAndComments	rapidjson/reader.h	/^    void SkipWhitespaceAndComments(InputStream& is) {$/;"	f	class:GenericReader
+SkipWhitespace_SIMD	rapidjson/reader.h	/^inline const char *SkipWhitespace_SIMD(const char* p) {$/;"	f
+Stack	rapidjson/internal/stack.h	/^    Stack(Allocator* allocator, size_t stackCapacity) : allocator_(allocator), ownAllocator_(0), stack_(0), stackTop_(0), stackEnd_(0), initialCapacity_(stackCapacity) {$/;"	f	class:internal::Stack
+Stack	rapidjson/internal/stack.h	/^    Stack(Stack&& rhs)$/;"	f	class:internal::Stack
+Stack	rapidjson/internal/stack.h	/^class Stack {$/;"	c	namespace:internal
+StackStream	rapidjson/reader.h	/^        StackStream(internal::Stack<StackAllocator>& stack) : stack_(stack), length_(0) {}$/;"	f	class:GenericReader::StackStream
+StackStream	rapidjson/reader.h	/^    class StackStream {$/;"	c	class:GenericReader
+StartArray	rapidjson/document.h	/^    bool StartArray() { new (stack_.template Push<ValueType>()) ValueType(kArrayType); return true; }$/;"	f	class:GenericDocument
+StartArray	rapidjson/prettywriter.h	/^    bool StartArray() {$/;"	f	class:PrettyWriter
+StartArray	rapidjson/reader.h	/^    bool StartArray() { return static_cast<Override&>(*this).Default(); }$/;"	f	struct:BaseReaderHandler
+StartArray	rapidjson/writer.h	/^    bool StartArray() {$/;"	f	class:Writer
+StartObject	rapidjson/document.h	/^    bool StartObject() { new (stack_.template Push<ValueType>()) ValueType(kObjectType); return true; }$/;"	f	class:GenericDocument
+StartObject	rapidjson/prettywriter.h	/^    bool StartObject() {$/;"	f	class:PrettyWriter
+StartObject	rapidjson/reader.h	/^    bool StartObject() { return static_cast<Override&>(*this).Default(); }$/;"	f	struct:BaseReaderHandler
+StartObject	rapidjson/writer.h	/^    bool StartObject() {$/;"	f	class:Writer
+StaticAssertTest	rapidjson/rapidjson.h	/^template<int x> struct StaticAssertTest {};$/;"	s
+StrLen	rapidjson/internal/strfunc.h	/^inline SizeType StrLen(const Ch* s) {$/;"	f	namespace:internal
+StreamLocalCopy	rapidjson/reader.h	/^    StreamLocalCopy(Stream& original) : s(original) {}$/;"	f	class:internal::StreamLocalCopy
+StreamLocalCopy	rapidjson/reader.h	/^    StreamLocalCopy(Stream& original) : s(original), original_(original) {}$/;"	f	class:internal::StreamLocalCopy
+StreamLocalCopy	rapidjson/reader.h	/^class StreamLocalCopy<Stream, 0> {$/;"	c	namespace:internal
+StreamLocalCopy	rapidjson/reader.h	/^class StreamLocalCopy<Stream, 1> {$/;"	c	namespace:internal
+StreamTraits	rapidjson/rapidjson.h	/^struct StreamTraits {$/;"	s
+StreamTraits	rapidjson/rapidjson.h	/^struct StreamTraits<GenericInsituStringStream<Encoding> > {$/;"	s
+StreamTraits	rapidjson/rapidjson.h	/^struct StreamTraits<GenericStringStream<Encoding> > {$/;"	s
+String	rapidjson/document.h	/^    bool String(const Ch* str, SizeType length, bool copy) { $/;"	f	class:GenericDocument
+String	rapidjson/document.h	/^    struct String {$/;"	s	class:GenericValue
+String	rapidjson/prettywriter.h	/^    bool String(const Ch* str) { return String(str, internal::StrLen(str)); }$/;"	f	class:PrettyWriter
+String	rapidjson/prettywriter.h	/^    bool String(const Ch* str, SizeType length, bool copy = false) {$/;"	f	class:PrettyWriter
+String	rapidjson/prettywriter.h	/^    bool String(const std::basic_string<Ch>& str) {$/;"	f	class:PrettyWriter
+String	rapidjson/reader.h	/^    bool String(const Ch*, SizeType, bool) { return static_cast<Override&>(*this).Default(); }$/;"	f	struct:BaseReaderHandler
+String	rapidjson/writer.h	/^    bool String(const Ch* str) { return String(str, internal::StrLen(str)); }$/;"	f	class:Writer
+String	rapidjson/writer.h	/^    bool String(const Ch* str, SizeType length, bool copy = false) {$/;"	f	class:Writer
+String	rapidjson/writer.h	/^    bool String(const std::basic_string<Ch>& str) {$/;"	f	class:Writer
+StringBuffer	rapidjson/stringbuffer.h	/^typedef GenericStringBuffer<UTF8<> > StringBuffer;$/;"	t
+StringEqual	rapidjson/document.h	/^    bool StringEqual(const GenericValue<Encoding, SourceAllocator>& rhs) const {$/;"	f	class:GenericValue
+StringRef	rapidjson/document.h	/^inline GenericStringRef<CharType> StringRef(const CharType* str) {$/;"	f
+StringRef	rapidjson/document.h	/^inline GenericStringRef<CharType> StringRef(const CharType* str, size_t length) {$/;"	f
+StringRef	rapidjson/document.h	/^inline GenericStringRef<CharType> StringRef(const std::basic_string<CharType>& str) {$/;"	f
+StringRefType	rapidjson/document.h	/^    typedef GenericStringRef<Ch> StringRefType;     \/\/!< Reference to a constant string$/;"	t	class:GenericValue
+StringStream	rapidjson/rapidjson.h	/^typedef GenericStringStream<UTF8<> > StringStream;$/;"	t
+StringToken	rapidjson/reader.h	/^        StringToken,$/;"	e	enum:GenericReader::Token
+Stringify	rapidjson/pointer.h	/^    bool Stringify(OutputStream& os) const {$/;"	f	class:GenericPointer
+StringifyUriFragment	rapidjson/pointer.h	/^    bool StringifyUriFragment(OutputStream& os) const {$/;"	f	class:GenericPointer
+StrtodBigInteger	rapidjson/internal/strtod.h	/^inline double StrtodBigInteger(double approx, const char* decimals, size_t length, size_t decimalPosition, int exp) {$/;"	f	namespace:internal
+StrtodDiyFp	rapidjson/internal/strtod.h	/^inline bool StrtodDiyFp(const char* decimals, size_t length, size_t decimalPosition, int exp, double* result) {$/;"	f	namespace:internal
+StrtodFast	rapidjson/internal/strtod.h	/^inline bool StrtodFast(double d, int p, double* result) {$/;"	f	namespace:internal
+StrtodFullPrecision	rapidjson/internal/strtod.h	/^inline double StrtodFullPrecision(double d, int p, const char* decimals, size_t length, size_t decimalPosition, int exp) {$/;"	f	namespace:internal
+StrtodNormalPrecision	rapidjson/internal/strtod.h	/^inline double StrtodNormalPrecision(double d, int p) {$/;"	f	namespace:internal
+Swap	rapidjson/pointer.h	/^    ValueType& Swap(GenericDocument<EncodingType, typename ValueType::AllocatorType, stackAllocator>& document, ValueType& value) const {$/;"	f	class:GenericPointer
+Swap	rapidjson/pointer.h	/^    ValueType& Swap(ValueType& root, ValueType& value, typename ValueType::AllocatorType& allocator) const {$/;"	f	class:GenericPointer
+SwapValueByPointer	rapidjson/pointer.h	/^typename DocumentType::ValueType& SwapValueByPointer(DocumentType& document, const CharType(&source)[N], typename DocumentType::ValueType& value) {$/;"	f
+SwapValueByPointer	rapidjson/pointer.h	/^typename DocumentType::ValueType& SwapValueByPointer(DocumentType& document, const GenericPointer<typename DocumentType::ValueType>& pointer, typename DocumentType::ValueType& value) {$/;"	f
+SwapValueByPointer	rapidjson/pointer.h	/^typename T::ValueType& SwapValueByPointer(T& root, const CharType(&source)[N], typename T::ValueType& value, typename T::AllocatorType& a) {$/;"	f
+SwapValueByPointer	rapidjson/pointer.h	/^typename T::ValueType& SwapValueByPointer(T& root, const GenericPointer<typename T::ValueType>& pointer, typename T::ValueType& value, typename T::AllocatorType& a) {$/;"	f
+TAIL	rapidjson/encodings.h	127;"	d
+TAIL	rapidjson/encodings.h	149;"	d
+TAIL	rapidjson/encodings.h	156;"	d
+TAIL	rapidjson/encodings.h	175;"	d
+TEMPLATE_H	template.h	3;"	d
+TRANS	rapidjson/encodings.h	126;"	d
+TRANS	rapidjson/encodings.h	148;"	d
+TRANS	rapidjson/encodings.h	155;"	d
+TRANS	rapidjson/encodings.h	174;"	d
+Tagg	utils.h	/^void Tagg(const char *str){$/;"	f
+Take	rapidjson/encodedstream.h	/^    Ch Take() { Ch c = current_; current_ = Encoding::Take(is_); return c; }$/;"	f	class:EncodedInputStream
+Take	rapidjson/encodedstream.h	/^    Ch Take() { Ch c = current_; current_ = takeFunc_(*is_); return c; }$/;"	f	class:AutoUTFInputStream
+Take	rapidjson/encodedstream.h	/^    Ch Take() { RAPIDJSON_ASSERT(false); return 0;}$/;"	f	class:AutoUTFOutputStream
+Take	rapidjson/encodedstream.h	/^    Ch Take() { RAPIDJSON_ASSERT(false); return 0;}$/;"	f	class:EncodedOutputStream
+Take	rapidjson/encodings.h	/^    static Ch Take(InputByteStream& is) {$/;"	f	struct:ASCII
+Take	rapidjson/encodings.h	/^    static Ch Take(InputByteStream& is) {$/;"	f	struct:UTF8
+Take	rapidjson/encodings.h	/^    static CharType Take(InputByteStream& is) {$/;"	f	struct:UTF16BE
+Take	rapidjson/encodings.h	/^    static CharType Take(InputByteStream& is) {$/;"	f	struct:UTF16LE
+Take	rapidjson/encodings.h	/^    static CharType Take(InputByteStream& is) {$/;"	f	struct:UTF32BE
+Take	rapidjson/encodings.h	/^    static CharType Take(InputByteStream& is) {$/;"	f	struct:UTF32LE
+Take	rapidjson/filereadstream.h	/^    Ch Take() { Ch c = *current_; Read(); return c; }$/;"	f	class:FileReadStream
+Take	rapidjson/filewritestream.h	/^    char Take() { RAPIDJSON_ASSERT(false); return 0; }$/;"	f	class:FileWriteStream
+Take	rapidjson/memorystream.h	/^    Ch Take() { return (src_ == end_) ? '\\0' : *src_++; }$/;"	f	struct:MemoryStream
+Take	rapidjson/pointer.h	/^        Ch Take() {$/;"	f	class:GenericPointer::PercentDecodeStream
+Take	rapidjson/rapidjson.h	/^    Ch Take() { return *src_++; }$/;"	f	struct:GenericInsituStringStream
+Take	rapidjson/rapidjson.h	/^    Ch Take() { return *src_++; }$/;"	f	struct:GenericStringStream
+Take	rapidjson/reader.h	/^        RAPIDJSON_FORCEINLINE Ch Take() { return is.Take(); }$/;"	f	class:GenericReader::NumberStream
+TakeBOM	rapidjson/encodings.h	/^    static CharType TakeBOM(InputByteStream& is) {$/;"	f	struct:ASCII
+TakeBOM	rapidjson/encodings.h	/^    static CharType TakeBOM(InputByteStream& is) {$/;"	f	struct:UTF16BE
+TakeBOM	rapidjson/encodings.h	/^    static CharType TakeBOM(InputByteStream& is) {$/;"	f	struct:UTF16LE
+TakeBOM	rapidjson/encodings.h	/^    static CharType TakeBOM(InputByteStream& is) {$/;"	f	struct:UTF32BE
+TakeBOM	rapidjson/encodings.h	/^    static CharType TakeBOM(InputByteStream& is) {$/;"	f	struct:UTF32LE
+TakeBOM	rapidjson/encodings.h	/^    static CharType TakeBOM(InputByteStream& is) {$/;"	f	struct:UTF8
+TakeFunc	rapidjson/encodedstream.h	/^    typedef Ch (*TakeFunc)(InputByteStream& is);$/;"	t	class:AutoUTFInputStream
+TakePush	rapidjson/reader.h	/^        RAPIDJSON_FORCEINLINE Ch TakePush() { return is.Take(); }$/;"	f	class:GenericReader::NumberStream
+TakePush	rapidjson/reader.h	/^        RAPIDJSON_FORCEINLINE Ch TakePush() {$/;"	f	class:GenericReader::NumberStream
+Tell	rapidjson/encodedstream.h	/^    size_t Tell() const { RAPIDJSON_ASSERT(false);  return 0; }$/;"	f	class:EncodedOutputStream
+Tell	rapidjson/encodedstream.h	/^    size_t Tell() const { RAPIDJSON_ASSERT(false); return 0; }$/;"	f	class:AutoUTFOutputStream
+Tell	rapidjson/encodedstream.h	/^    size_t Tell() const { return is_->Tell(); }$/;"	f	class:AutoUTFInputStream
+Tell	rapidjson/encodedstream.h	/^    size_t Tell() const { return is_.Tell(); }$/;"	f	class:EncodedInputStream
+Tell	rapidjson/filereadstream.h	/^    size_t Tell() const { return count_ + static_cast<size_t>(current_ - buffer_); }$/;"	f	class:FileReadStream
+Tell	rapidjson/filewritestream.h	/^    size_t Tell() const { RAPIDJSON_ASSERT(false); return 0; }$/;"	f	class:FileWriteStream
+Tell	rapidjson/memorystream.h	/^    size_t Tell() const { return static_cast<size_t>(src_ - begin_); }$/;"	f	struct:MemoryStream
+Tell	rapidjson/pointer.h	/^        size_t Tell() const { return src_ - head_; }$/;"	f	class:GenericPointer::PercentDecodeStream
+Tell	rapidjson/rapidjson.h	/^    size_t Tell() const { return static_cast<size_t>(src_ - head_); }$/;"	f	struct:GenericStringStream
+Tell	rapidjson/rapidjson.h	/^    size_t Tell() { return static_cast<size_t>(src_ - head_); }$/;"	f	struct:GenericInsituStringStream
+Tell	rapidjson/reader.h	/^        size_t Tell() { return is.Tell(); }$/;"	f	class:GenericReader::NumberStream
+Tic	utils.h	/^		Tic(){}$/;"	f	class:Tic
+Tic	utils.h	/^class Tic{$/;"	c
+ToBias	rapidjson/internal/ieee754.h	/^    uint64_t ToBias() const { return (u_ & kSignMask) ? ~u_ + 1 : u_ | kSignMask; }$/;"	f	class:internal::Double
+ToDouble	rapidjson/internal/diyfp.h	/^    double ToDouble() const {$/;"	f	struct:internal::DiyFp
+Token	rapidjson/pointer.h	/^    struct Token {$/;"	s	class:GenericPointer
+Token	rapidjson/reader.h	/^    enum Token {$/;"	g	class:GenericReader
+Tokenize	rapidjson/reader.h	/^    RAPIDJSON_FORCEINLINE Token Tokenize(Ch c) {$/;"	f	class:GenericReader
+Top	rapidjson/internal/stack.h	/^    T* Top() { $/;"	f	class:internal::Stack
+Transcode	rapidjson/encodings.h	/^    RAPIDJSON_FORCEINLINE static bool Transcode(InputStream& is, OutputStream& os) {$/;"	f	struct:Transcoder
+Transcoder	rapidjson/encodings.h	/^struct Transcoder {$/;"	s
+Transcoder	rapidjson/encodings.h	/^struct Transcoder<Encoding, Encoding> {$/;"	s
+Transit	rapidjson/reader.h	/^    RAPIDJSON_FORCEINLINE IterativeParsingState Transit(IterativeParsingState src, Token token, IterativeParsingState dst, InputStream& is, Handler& handler) {$/;"	f	class:GenericReader
+TrueToken	rapidjson/reader.h	/^        TrueToken,$/;"	e	enum:GenericReader::Token
+TrueType	rapidjson/internal/meta.h	/^typedef BoolType<true> TrueType;$/;"	t	namespace:internal
+Type	rapidjson/internal/biginteger.h	/^    typedef uint64_t Type;$/;"	t	class:internal::BigInteger
+Type	rapidjson/internal/meta.h	/^    typedef BoolType Type;$/;"	t	struct:internal::BoolType
+Type	rapidjson/internal/meta.h	/^template <> struct SelectIfImpl<false> { template <typename T1, typename T2> struct Apply { typedef T2 Type; }; };$/;"	t	struct:internal::SelectIfImpl::Apply
+Type	rapidjson/internal/meta.h	/^template <bool C> struct SelectIfImpl { template <typename T1, typename T2> struct Apply { typedef T1 Type; }; };$/;"	t	struct:internal::SelectIfImpl::Apply
+Type	rapidjson/internal/meta.h	/^template <bool Condition, typename T = void> struct DisableIfCond { typedef T Type; };$/;"	t	struct:internal::DisableIfCond
+Type	rapidjson/internal/meta.h	/^template <bool Condition, typename T = void> struct EnableIfCond  { typedef T Type; };$/;"	t	struct:internal::EnableIfCond
+Type	rapidjson/internal/meta.h	/^template <typename T> struct AddConst { typedef const T Type; };$/;"	t	struct:internal::AddConst
+Type	rapidjson/internal/meta.h	/^template <typename T> struct RemoveConst { typedef T Type; };$/;"	t	struct:internal::RemoveConst
+Type	rapidjson/internal/meta.h	/^template <typename T> struct RemoveConst<const T> { typedef T Type; };$/;"	t	struct:internal::RemoveConst
+Type	rapidjson/internal/meta.h	/^template <typename T> struct RemoveSfinaeTag<SfinaeTag&(*)(T)> { typedef T Type; };$/;"	t	struct:internal::RemoveSfinaeTag
+Type	rapidjson/internal/meta.h	/^template <typename T> struct Void { typedef void Type; };$/;"	t	struct:internal::Void
+Type	rapidjson/rapidjson.h	/^enum Type {$/;"	g
+U	rapidjson/document.h	/^        struct U {$/;"	s	union:GenericValue::Number
+UINT16_C	rapidjson/msinttypes/stdint.h	282;"	d
+UINT16_C	rapidjson/msinttypes/stdint.h	59;"	d
+UINT16_C	rapidjson/msinttypes/stdint.h	71;"	d
+UINT16_MAX	rapidjson/msinttypes/stdint.h	187;"	d
+UINT32_C	rapidjson/msinttypes/stdint.h	283;"	d
+UINT32_C	rapidjson/msinttypes/stdint.h	60;"	d
+UINT32_C	rapidjson/msinttypes/stdint.h	72;"	d
+UINT32_MAX	rapidjson/msinttypes/stdint.h	188;"	d
+UINT64_C	rapidjson/msinttypes/stdint.h	284;"	d
+UINT64_C	rapidjson/msinttypes/stdint.h	61;"	d
+UINT64_C	rapidjson/msinttypes/stdint.h	73;"	d
+UINT64_MAX	rapidjson/msinttypes/stdint.h	189;"	d
+UINT8_C	rapidjson/msinttypes/stdint.h	281;"	d
+UINT8_C	rapidjson/msinttypes/stdint.h	58;"	d
+UINT8_C	rapidjson/msinttypes/stdint.h	70;"	d
+UINT8_MAX	rapidjson/msinttypes/stdint.h	186;"	d
+UINTMAX_C	rapidjson/msinttypes/stdint.h	293;"	d
+UINTMAX_C	rapidjson/msinttypes/stdint.h	82;"	d
+UINTMAX_MAX	rapidjson/msinttypes/stdint.h	233;"	d
+UINTPTR_MAX	rapidjson/msinttypes/stdint.h	223;"	d
+UINTPTR_MAX	rapidjson/msinttypes/stdint.h	227;"	d
+UINT_FAST16_MAX	rapidjson/msinttypes/stdint.h	215;"	d
+UINT_FAST32_MAX	rapidjson/msinttypes/stdint.h	216;"	d
+UINT_FAST64_MAX	rapidjson/msinttypes/stdint.h	217;"	d
+UINT_FAST8_MAX	rapidjson/msinttypes/stdint.h	214;"	d
+UINT_LEAST16_MAX	rapidjson/msinttypes/stdint.h	201;"	d
+UINT_LEAST32_MAX	rapidjson/msinttypes/stdint.h	202;"	d
+UINT_LEAST64_MAX	rapidjson/msinttypes/stdint.h	203;"	d
+UINT_LEAST8_MAX	rapidjson/msinttypes/stdint.h	200;"	d
+UTF16	rapidjson/encodings.h	/^struct UTF16 {$/;"	s
+UTF16BE	rapidjson/encodings.h	/^struct UTF16BE : UTF16<CharType> {$/;"	s
+UTF16LE	rapidjson/encodings.h	/^struct UTF16LE : UTF16<CharType> {$/;"	s
+UTF32	rapidjson/encodings.h	/^struct UTF32 {$/;"	s
+UTF32BE	rapidjson/encodings.h	/^struct UTF32BE : UTF32<CharType> {$/;"	s
+UTF32LE	rapidjson/encodings.h	/^struct UTF32LE : UTF32<CharType> {$/;"	s
+UTF8	rapidjson/encodings.h	/^struct UTF8 {$/;"	s
+UTFType	rapidjson/encodings.h	/^enum UTFType {$/;"	g
+UTILS_H	utils.h	3;"	d
+Uint	rapidjson/document.h	/^    bool Uint(unsigned i) { new (stack_.template Push<ValueType>()) ValueType(i); return true; }$/;"	f	class:GenericDocument
+Uint	rapidjson/prettywriter.h	/^    bool Uint(unsigned u)       { PrettyPrefix(kNumberType); return Base::WriteUint(u); }$/;"	f	class:PrettyWriter
+Uint	rapidjson/reader.h	/^    bool Uint(unsigned) { return static_cast<Override&>(*this).Default(); }$/;"	f	struct:BaseReaderHandler
+Uint	rapidjson/writer.h	/^    bool Uint(unsigned u)       { Prefix(kNumberType); return WriteUint(u); }$/;"	f	class:Writer
+Uint64	rapidjson/document.h	/^    bool Uint64(uint64_t i) { new (stack_.template Push<ValueType>()) ValueType(i); return true; }$/;"	f	class:GenericDocument
+Uint64	rapidjson/prettywriter.h	/^    bool Uint64(uint64_t u64)   { PrettyPrefix(kNumberType); return Base::WriteUint64(u64);  }$/;"	f	class:PrettyWriter
+Uint64	rapidjson/reader.h	/^    bool Uint64(uint64_t) { return static_cast<Override&>(*this).Default(); }$/;"	f	struct:BaseReaderHandler
+Uint64	rapidjson/writer.h	/^    bool Uint64(uint64_t u64)   { Prefix(kNumberType); return WriteUint64(u64); }$/;"	f	class:Writer
+Uint64Value	rapidjson/internal/ieee754.h	/^    uint64_t Uint64Value() const { return u_; }$/;"	f	class:internal::Double
+Usable	rapidjson/document.h	/^        inline static bool Usable(SizeType len) { return            (MaxSize >= len); }$/;"	f	struct:GenericValue::ShortString
+Validate	rapidjson/encodings.h	/^    RAPIDJSON_FORCEINLINE static bool Validate(InputStream& is, OutputStream& os) {$/;"	f	struct:AutoUTF
+Validate	rapidjson/encodings.h	/^    RAPIDJSON_FORCEINLINE static bool Validate(InputStream& is, OutputStream& os) {$/;"	f	struct:Transcoder
+Validate	rapidjson/encodings.h	/^    static bool Validate(InputStream& is, OutputStream& os) {$/;"	f	struct:ASCII
+Validate	rapidjson/encodings.h	/^    static bool Validate(InputStream& is, OutputStream& os) {$/;"	f	struct:UTF16
+Validate	rapidjson/encodings.h	/^    static bool Validate(InputStream& is, OutputStream& os) {$/;"	f	struct:UTF32
+Validate	rapidjson/encodings.h	/^    static bool Validate(InputStream& is, OutputStream& os) {$/;"	f	struct:UTF8
+Value	rapidjson/document.h	/^typedef GenericValue<UTF8<> > Value;$/;"	t
+Value	rapidjson/internal/ieee754.h	/^    double Value() const { return d_; }$/;"	f	class:internal::Double
+Value	rapidjson/internal/meta.h	/^    enum { Value = (sizeof(Check(Host(), 0)) == sizeof(Yes)) };$/;"	e	enum:internal::IsBaseOfImpl::__anon10
+Value	rapidjson/internal/meta.h	/^    static const bool Value = Cond;$/;"	m	struct:internal::BoolType
+ValueIterator	rapidjson/document.h	/^    typedef GenericValue* ValueIterator;            \/\/!< Value iterator for iterating in array.$/;"	t	class:GenericValue
+ValueType	rapidjson/document.h	/^    typedef GenericValue<Encoding, Allocator> ValueType;    \/\/!< Value type of itself.$/;"	t	class:GenericValue
+ValueType	rapidjson/document.h	/^    typedef GenericValue<Encoding, Allocator> ValueType;    \/\/!< Value type of the document.$/;"	t	class:GenericDocument
+ValueType	rapidjson/document.h	/^    typedef typename internal::MaybeAddConst<Const,PlainType>::Type ValueType;$/;"	t	class:GenericMemberIterator
+Void	rapidjson/internal/meta.h	/^template <typename T> struct Void { typedef void Type; };$/;"	s	namespace:internal
+WCHAR_MAX	rapidjson/msinttypes/stdint.h	261;"	d
+WCHAR_MIN	rapidjson/msinttypes/stdint.h	258;"	d
+WINT_MAX	rapidjson/msinttypes/stdint.h	265;"	d
+WINT_MIN	rapidjson/msinttypes/stdint.h	264;"	d
+WriteBool	rapidjson/writer.h	/^    bool WriteBool(bool b)  {$/;"	f	class:Writer
+WriteDouble	rapidjson/writer.h	/^    bool WriteDouble(double d) {$/;"	f	class:Writer
+WriteDouble	rapidjson/writer.h	/^inline bool Writer<StringBuffer>::WriteDouble(double d) {$/;"	f	class:Writer
+WriteEndArray	rapidjson/writer.h	/^    bool WriteEndArray()    { os_->Put(']'); return true; }$/;"	f	class:Writer
+WriteEndObject	rapidjson/writer.h	/^    bool WriteEndObject()   { os_->Put('}'); return true; }$/;"	f	class:Writer
+WriteExponent	rapidjson/internal/dtoa.h	/^inline char* WriteExponent(int K, char* buffer) {$/;"	f	namespace:internal
+WriteIndent	rapidjson/prettywriter.h	/^    void WriteIndent()  {$/;"	f	class:PrettyWriter
+WriteInt	rapidjson/writer.h	/^    bool WriteInt(int i) {$/;"	f	class:Writer
+WriteInt	rapidjson/writer.h	/^inline bool Writer<StringBuffer>::WriteInt(int i) {$/;"	f	class:Writer
+WriteInt64	rapidjson/writer.h	/^    bool WriteInt64(int64_t i64) {$/;"	f	class:Writer
+WriteInt64	rapidjson/writer.h	/^inline bool Writer<StringBuffer>::WriteInt64(int64_t i64) {$/;"	f	class:Writer
+WriteNull	rapidjson/writer.h	/^    bool WriteNull()  {$/;"	f	class:Writer
+WriteStartArray	rapidjson/writer.h	/^    bool WriteStartArray()  { os_->Put('['); return true; }$/;"	f	class:Writer
+WriteStartObject	rapidjson/writer.h	/^    bool WriteStartObject() { os_->Put('{'); return true; }$/;"	f	class:Writer
+WriteString	rapidjson/writer.h	/^    bool WriteString(const Ch* str, SizeType length)  {$/;"	f	class:Writer
+WriteUint	rapidjson/writer.h	/^    bool WriteUint(unsigned u) {$/;"	f	class:Writer
+WriteUint	rapidjson/writer.h	/^inline bool Writer<StringBuffer>::WriteUint(unsigned u) {$/;"	f	class:Writer
+WriteUint64	rapidjson/writer.h	/^    bool WriteUint64(uint64_t u64) {$/;"	f	class:Writer
+WriteUint64	rapidjson/writer.h	/^inline bool Writer<StringBuffer>::WriteUint64(uint64_t u) {$/;"	f	class:Writer
+Writer	rapidjson/writer.h	/^    Writer(OutputStream& os, StackAllocator* stackAllocator = 0, size_t levelDepth = kDefaultLevelDepth) : $/;"	f	class:Writer
+Writer	rapidjson/writer.h	/^    Writer(StackAllocator* allocator = 0, size_t levelDepth = kDefaultLevelDepth) :$/;"	f	class:Writer
+Writer	rapidjson/writer.h	/^class Writer {$/;"	c
+Yes	rapidjson/internal/meta.h	/^    typedef char (&Yes)[1];$/;"	t	struct:internal::IsBaseOfImpl
+Z16	rapidjson/reader.h	721;"	d
+Z16	rapidjson/reader.h	729;"	d
+Z16	rapidjson/writer.h	247;"	d
+Z16	rapidjson/writer.h	255;"	d
+_MSC_INTTYPES_H_	rapidjson/msinttypes/inttypes.h	42;"	d
+_MSC_STDINT_H_	rapidjson/msinttypes/stdint.h	42;"	d
+_W64	rapidjson/msinttypes/stdint.h	106;"	d
+_W64	rapidjson/msinttypes/stdint.h	108;"	d
+a	rapidjson/document.h	/^        Array a;$/;"	m	union:GenericValue::Data
+ackley_func	cec14_test_func.h	/^void ackley_func (double *x, double *f, int nx, double *Os,double *Mr,int s_flag, int r_flag) \/* Ackley's  *\/$/;"	f
+allocator_	rapidjson/document.h	/^    Allocator* allocator_;$/;"	m	class:GenericDocument
+allocator_	rapidjson/internal/stack.h	/^    Allocator* allocator_;$/;"	m	class:internal::Stack
+allocator_	rapidjson/pointer.h	/^    Allocator* allocator_;                  \/\/!< The current allocator. It is either user-supplied or equal to ownAllocator_.$/;"	m	class:GenericPointer
+asyfunc	cec14_test_func.h	/^void asyfunc (double *x, double *xasy, int nx, double beta)$/;"	f
+baseAllocator_	rapidjson/allocators.h	/^    BaseAllocator* baseAllocator_;  \/\/!< base allocator for allocating memory chunks.$/;"	m	class:MemoryPoolAllocator
+begin_	rapidjson/memorystream.h	/^    const Ch* begin_;   \/\/!< Original head of the string.$/;"	m	struct:MemoryStream
+bent_cigar_func	cec14_test_func.h	/^void bent_cigar_func (double *x, double *f, int nx, double *Os,double *Mr, int s_flag, int r_flag) \/* Bent_Cigar *\/$/;"	f
+bi_rastrigin_func	cec14_test_func.h	/^void bi_rastrigin_func (double *x, double *f, int nx, double *Os,double *Mr,int s_flag, int r_flag) \/* Lunacek Bi_rastrigin Function *\/$/;"	f
+bufferEnd_	rapidjson/filewritestream.h	/^    char *bufferEnd_;$/;"	m	class:FileWriteStream
+bufferLast_	rapidjson/filereadstream.h	/^    Ch *bufferLast_;$/;"	m	class:FileReadStream
+bufferSize_	rapidjson/filereadstream.h	/^    size_t bufferSize_;$/;"	m	class:FileReadStream
+buffer_	rapidjson/filereadstream.h	/^    Ch *buffer_;$/;"	m	class:FileReadStream
+buffer_	rapidjson/filewritestream.h	/^    char *buffer_;$/;"	m	class:FileWriteStream
+cIterativeParsingStateCount	rapidjson/reader.h	/^        cIterativeParsingStateCount$/;"	e	enum:GenericReader::IterativeParsingState
+calStatistics	utils.h	/^void calStatistics(const vector<double>&arr,double &min,double &max,double &mean,double &std){$/;"	f
+capacity	rapidjson/allocators.h	/^        size_t capacity;    \/\/!< Capacity of the chunk in bytes (excluding the header itself).$/;"	m	struct:MemoryPoolAllocator::ChunkHeader
+capacity	rapidjson/document.h	/^        SizeType capacity;$/;"	m	struct:GenericValue::Array
+capacity	rapidjson/document.h	/^        SizeType capacity;$/;"	m	struct:GenericValue::Object
+cec14_test_func	cec14_test_func.h	/^void cec14_test_func(double *x, double *f, int nx, int mx,int func_num)$/;"	f
+cf01	cec14_test_func.h	/^void cf01 (double *x, double *f, int nx, double *Os,double *Mr,int r_flag) \/* Composition Function 1 *\/$/;"	f
+cf02	cec14_test_func.h	/^void cf02 (double *x, double *f, int nx, double *Os,double *Mr,int r_flag) \/* Composition Function 2 *\/$/;"	f
+cf03	cec14_test_func.h	/^void cf03 (double *x, double *f, int nx, double *Os,double *Mr,int r_flag) \/* Composition Function 3 *\/$/;"	f
+cf04	cec14_test_func.h	/^void cf04 (double *x, double *f, int nx, double *Os,double *Mr,int r_flag) \/* Composition Function 4 *\/$/;"	f
+cf05	cec14_test_func.h	/^void cf05 (double *x, double *f, int nx, double *Os,double *Mr,int r_flag) \/* Composition Function 4 *\/$/;"	f
+cf06	cec14_test_func.h	/^void cf06 (double *x, double *f, int nx, double *Os,double *Mr,int r_flag) \/* Composition Function 6 *\/$/;"	f
+cf07	cec14_test_func.h	/^void cf07 (double *x, double *f, int nx, double *Os,double *Mr,int *SS,int r_flag) \/* Composition Function 7 *\/$/;"	f
+cf08	cec14_test_func.h	/^void cf08 (double *x, double *f, int nx, double *Os,double *Mr,int *SS,int r_flag) \/* Composition Function 8 *\/$/;"	f
+cf_cal	cec14_test_func.h	/^void cf_cal(double *x, double *f, int nx, double *Os,double * delta,double * bias,double * fit, int cf_num)$/;"	f
+chunkHead_	rapidjson/allocators.h	/^    ChunkHeader *chunkHead_;    \/\/!< Head of the chunk linked-list. Only the head chunk serves allocation.$/;"	m	class:MemoryPoolAllocator
+chunk_capacity_	rapidjson/allocators.h	/^    size_t chunk_capacity_;     \/\/!< The minimum capacity of chunk when they are allocated.$/;"	m	class:MemoryPoolAllocator
+code_	rapidjson/error/error.h	/^    ParseErrorCode code_;$/;"	m	struct:ParseResult
+copyOptimization	rapidjson/rapidjson.h	/^    enum { copyOptimization = 0 };$/;"	e	enum:StreamTraits::__anon2
+copyOptimization	rapidjson/rapidjson.h	/^    enum { copyOptimization = 1 };$/;"	e	enum:StreamTraits::__anon3
+copyOptimization	rapidjson/rapidjson.h	/^    enum { copyOptimization = 1 };$/;"	e	enum:StreamTraits::__anon4
+count_	rapidjson/filereadstream.h	/^    size_t count_;  \/\/!< Number of characters read$/;"	m	class:FileReadStream
+count_	rapidjson/internal/biginteger.h	/^    size_t count_;$/;"	m	class:internal::BigInteger
+current_	rapidjson/encodedstream.h	/^    Ch current_;$/;"	m	class:AutoUTFInputStream
+current_	rapidjson/encodedstream.h	/^    Ch current_;$/;"	m	class:EncodedInputStream
+current_	rapidjson/filereadstream.h	/^    Ch *current_;$/;"	m	class:FileReadStream
+current_	rapidjson/filewritestream.h	/^    char *current_;$/;"	m	class:FileWriteStream
+d	rapidjson/document.h	/^        double d;$/;"	m	union:GenericValue::Number
+d_	rapidjson/document.h	/^        GenericDocument& d_;$/;"	m	struct:GenericDocument::ClearStackOnExit
+d_	rapidjson/internal/ieee754.h	/^        double d_;$/;"	m	union:internal::Double::__anon11
+data_	rapidjson/document.h	/^    Data data_;$/;"	m	class:GenericValue
+dif_powers_func	cec14_test_func.h	/^void dif_powers_func (double *x, double *f, int nx, double *Os,double *Mr,int s_flag, int r_flag) \/* Different Powers *\/$/;"	f
+digits_	rapidjson/internal/biginteger.h	/^    Type digits_[kCapacity];$/;"	m	class:internal::BigInteger
+discus_func	cec14_test_func.h	/^void discus_func (double *x, double *f, int nx, double *Os,double *Mr, int s_flag, int r_flag) \/* Discus *\/$/;"	f
+doc	settingParser.h	/^		Document doc;$/;"	m	class:SettingParser
+drand	utils.h	/^double drand(){$/;"	f
+drand	utils.h	/^double drand(double min,double max){$/;"	f
+dst_	rapidjson/rapidjson.h	/^    Ch* dst_;$/;"	m	struct:GenericInsituStringStream
+dtic	utils.h	/^		inline static double dtic(){$/;"	f	class:Tic
+dtoa	rapidjson/internal/dtoa.h	/^inline char* dtoa(double value, char* buffer) {$/;"	f	namespace:internal
+e	rapidjson/internal/diyfp.h	/^    int e;$/;"	m	struct:internal::DiyFp
+elements	rapidjson/document.h	/^        GenericValue* elements;$/;"	m	struct:GenericValue::Array
+ellips_func	cec14_test_func.h	/^void ellips_func (double *x, double *f, int nx, double *Os,double *Mr, int s_flag, int r_flag) \/* Ellipsoidal *\/$/;"	f
+end_	rapidjson/memorystream.h	/^    const Ch* end_;     \/\/!< End of stream.$/;"	m	struct:MemoryStream
+end_	rapidjson/pointer.h	/^        const Ch* end_;     \/\/!< Past-the-end position.$/;"	m	class:GenericPointer::PercentDecodeStream
+eof_	rapidjson/filereadstream.h	/^    bool eof_;$/;"	m	class:FileReadStream
+escaffer6_func	cec14_test_func.h	/^void escaffer6_func (double *x, double *f, int nx, double *Os,double *Mr,int s_flag, int r_flag) \/* Expanded Scaffer??s F6  *\/$/;"	f
+f	functions.h	/^		inline double f(const vector<double>&xs){$/;"	f	class:Function
+f	rapidjson/internal/diyfp.h	/^    uint64_t f;$/;"	m	struct:internal::DiyFp
+fbest	functions.h	/^		double fbest;$/;"	m	class:Function
+feCounter	functions.h	/^		int feCounter;$/;"	m	class:Function
+file	settingParser.h	/^		char file[256];$/;"	m	class:SettingParser
+flags_	rapidjson/document.h	/^    GenericValue() RAPIDJSON_NOEXCEPT : data_(), flags_(kNullFlag) {}$/;"	f	class:GenericValue
+flags_	rapidjson/document.h	/^    GenericValue(GenericValue&& rhs) RAPIDJSON_NOEXCEPT : data_(rhs.data_), flags_(rhs.flags_) {$/;"	f	class:GenericValue
+flags_	rapidjson/document.h	/^    GenericValue(const Ch* s, SizeType length) RAPIDJSON_NOEXCEPT : data_(), flags_() { SetStringRaw(StringRef(s, length)); }$/;"	f	class:GenericValue
+flags_	rapidjson/document.h	/^    explicit GenericValue(StringRefType s) RAPIDJSON_NOEXCEPT : data_(), flags_() { SetStringRaw(s); }$/;"	f	class:GenericValue
+flags_	rapidjson/document.h	/^    explicit GenericValue(Type type) RAPIDJSON_NOEXCEPT : data_(), flags_() {$/;"	f	class:GenericValue
+flags_	rapidjson/document.h	/^    explicit GenericValue(double d) RAPIDJSON_NOEXCEPT : data_(), flags_(kNumberDoubleFlag) { data_.n.d = d; }$/;"	f	class:GenericValue
+flags_	rapidjson/document.h	/^    explicit GenericValue(int i) RAPIDJSON_NOEXCEPT : data_(), flags_(kNumberIntFlag) {$/;"	f	class:GenericValue
+flags_	rapidjson/document.h	/^    explicit GenericValue(int64_t i64) RAPIDJSON_NOEXCEPT : data_(), flags_(kNumberInt64Flag) {$/;"	f	class:GenericValue
+flags_	rapidjson/document.h	/^    explicit GenericValue(uint64_t u64) RAPIDJSON_NOEXCEPT : data_(), flags_(kNumberUint64Flag) {$/;"	f	class:GenericValue
+flags_	rapidjson/document.h	/^    explicit GenericValue(unsigned u) RAPIDJSON_NOEXCEPT : data_(), flags_(kNumberUintFlag) {$/;"	f	class:GenericValue
+flags_	rapidjson/document.h	/^    unsigned flags_;$/;"	m	class:GenericValue
+fp_	rapidjson/filereadstream.h	/^    std::FILE* fp_;$/;"	m	class:FileReadStream
+fp_	rapidjson/filewritestream.h	/^    std::FILE* fp_;$/;"	m	class:FileWriteStream
+fs	functions.h	/^		vector<Function*>fs;$/;"	m	class:FunctionFactory
+funName	functions.h	/^		char funName[MAX_FUNCTION_NAME];$/;"	m	class:Function
+gaussrand	utils.h	/^double gaussrand()$/;"	f
+generate	utils.h	/^		void generate(){$/;"	f	class:RandomPermutation
+getAuthorInfo	settingParser.h	/^		void getAuthorInfo(const char *name,char *info){$/;"	f	class:SettingParser
+getBest	functions.h	/^		double getBest()const{return fbest;}$/;"	f	class:Function
+getBiVector	settingParser.h	/^		void getBiVector(const char *name,vector<vector<double> >&arr)const{$/;"	f	class:SettingParser
+getDouble	settingParser.h	/^		double getDouble(const char *name)const{$/;"	f	class:SettingParser
+getFunction	functions.h	/^		Function*getFunction(int index)const{$/;"	f	class:FunctionFactory
+getInt	settingParser.h	/^		int getInt(const char *name)const{$/;"	f	class:SettingParser
+getIsFindMin	functions.h	/^		bool getIsFindMin()const{return isFindMin;}$/;"	f	class:Function
+getName	functions.h	/^		const char *getName()const{return funName;}$/;"	f	class:Function
+getNumDim	functions.h	/^		int getNumDim()const{return numDim;}$/;"	f	class:Function
+getNumFunction	functions.h	/^		int getNumFunction()const{$/;"	f	class:FunctionFactory
+getRange	functions.h	/^		double getRange(int botOrUp){$/;"	f	class:Function
+getShortName	functions.h	/^		const char *getShortName()const{return shortName;}$/;"	f	class:Function
+getString	settingParser.h	/^		void getString(const char *name,char *dest)const {$/;"	f	class:SettingParser
+getTimeMs	utils.h	/^		inline static long getTimeMs(){$/;"	f	class:Tic
+getVector	settingParser.h	/^		void getVector(const char *name,vector<double>&arr)const{$/;"	f	class:SettingParser
+getfeCounter	functions.h	/^		int getfeCounter()const{return feCounter;}$/;"	f	class:Function
+grie_rosen_func	cec14_test_func.h	/^void grie_rosen_func (double *x, double *f, int nx, double *Os,double *Mr,int s_flag, int r_flag) \/* Griewank-Rosenbrock  *\/$/;"	f
+griewank_func	cec14_test_func.h	/^void griewank_func (double *x, double *f, int nx, double *Os,double *Mr,int s_flag, int r_flag) \/* Griewank's  *\/$/;"	f
+happycat_func	cec14_test_func.h	/^void happycat_func (double *x, double *f, int nx, double *Os,double *Mr,int s_flag, int r_flag) \/* HappyCat, provdided by Hans-Georg Beyer (HGB) *\/$/;"	f
+hasBOM_	rapidjson/encodedstream.h	/^    bool hasBOM_;$/;"	m	class:AutoUTFInputStream
+hasRoot_	rapidjson/writer.h	/^    bool hasRoot_;$/;"	m	class:Writer
+hashcode	rapidjson/document.h	/^        unsigned hashcode;  \/\/!< reserved$/;"	m	struct:GenericValue::String
+head_	rapidjson/pointer.h	/^        const Ch* head_;    \/\/!< Original head of the string.$/;"	m	class:GenericPointer::PercentDecodeStream
+head_	rapidjson/rapidjson.h	/^    Ch* head_;$/;"	m	struct:GenericInsituStringStream
+head_	rapidjson/rapidjson.h	/^    const Ch* head_;    \/\/!< Original head of the string.$/;"	m	struct:GenericStringStream
+hf01	cec14_test_func.h	/^void hf01 (double *x, double *f, int nx, double *Os,double *Mr,int *S,int s_flag,int r_flag) \/* Hybrid Function 1 *\/$/;"	f
+hf02	cec14_test_func.h	/^void hf02 (double *x, double *f, int nx, double *Os,double *Mr,int *S,int s_flag,int r_flag) \/* Hybrid Function 2 *\/$/;"	f
+hf03	cec14_test_func.h	/^void hf03 (double *x, double *f, int nx, double *Os,double *Mr,int *S,int s_flag,int r_flag) \/* Hybrid Function 3 *\/$/;"	f
+hf04	cec14_test_func.h	/^void hf04 (double *x, double *f, int nx, double *Os,double *Mr,int *S,int s_flag,int r_flag) \/* Hybrid Function 4 *\/$/;"	f
+hf05	cec14_test_func.h	/^void hf05 (double *x, double *f, int nx, double *Os,double *Mr,int *S,int s_flag,int r_flag) \/* Hybrid Function 5 *\/$/;"	f
+hf06	cec14_test_func.h	/^void hf06 (double *x, double *f, int nx, double *Os,double *Mr,int *S,int s_flag,int r_flag) \/* Hybrid Function 6 *\/$/;"	f
+hgbat_func	cec14_test_func.h	/^void hgbat_func (double *x, double *f, int nx, double *Os,double *Mr,int s_flag, int r_flag) \/* HGBat, provdided by Hans-Georg Beyer (HGB)*\/$/;"	f
+i	rapidjson/document.h	/^            int i;$/;"	m	struct:GenericValue::Number::I
+i	rapidjson/document.h	/^        }i;$/;"	m	union:GenericValue::Number	typeref:struct:GenericValue::Number::I
+i	utils.h	/^	int i;$/;"	m	class:RandomPermutation
+i32toa	rapidjson/internal/itoa.h	/^inline char* i32toa(int32_t value, char* buffer) {$/;"	f	namespace:internal
+i64	rapidjson/document.h	/^        int64_t i64;$/;"	m	union:GenericValue::Number
+i64toa	rapidjson/internal/itoa.h	/^inline char* i64toa(int64_t value, char* buffer) {$/;"	f	namespace:internal
+imaxabs	rapidjson/msinttypes/inttypes.h	279;"	d
+imaxdiv	rapidjson/msinttypes/inttypes.h	/^imaxdiv_t __cdecl imaxdiv(intmax_t numer, intmax_t denom)$/;"	f
+imaxdiv_t	rapidjson/msinttypes/inttypes.h	/^} imaxdiv_t;$/;"	t	typeref:struct:__anon12
+inArray	rapidjson/writer.h	/^        bool inArray;       \/\/!< true if in array, otherwise in object$/;"	m	struct:Writer::Level
+indentCharCount_	rapidjson/prettywriter.h	/^    unsigned indentCharCount_;$/;"	m	class:PrettyWriter
+indentChar_	rapidjson/prettywriter.h	/^    Ch indentChar_;$/;"	m	class:PrettyWriter
+index	rapidjson/pointer.h	/^        SizeType index;             \/\/!< A valid array index, if it is not equal to kPointerInvalidIndex.$/;"	m	struct:GenericPointer::Token
+initialCapacity_	rapidjson/internal/stack.h	/^    size_t initialCapacity_;$/;"	m	class:internal::Stack
+instance	functions.h	/^		static FunctionFactory*instance;$/;"	m	class:FunctionFactory
+instance	functions.h	/^FunctionFactory*FunctionFactory::instance=0;$/;"	m	class:FunctionFactory
+int16_t	rapidjson/msinttypes/stdint.h	/^   typedef signed __int16    int16_t;$/;"	t
+int16_t	rapidjson/msinttypes/stdint.h	/^   typedef signed short      int16_t;$/;"	t
+int32_t	rapidjson/msinttypes/stdint.h	/^   typedef signed __int32    int32_t;$/;"	t
+int32_t	rapidjson/msinttypes/stdint.h	/^   typedef signed int        int32_t;$/;"	t
+int64_t	rapidjson/msinttypes/stdint.h	/^typedef signed __int64       int64_t;$/;"	t
+int8_t	rapidjson/msinttypes/stdint.h	/^   typedef signed __int8     int8_t;$/;"	t
+int8_t	rapidjson/msinttypes/stdint.h	/^   typedef signed char       int8_t;$/;"	t
+int_fast16_t	rapidjson/msinttypes/stdint.h	/^typedef int16_t   int_fast16_t;$/;"	t
+int_fast32_t	rapidjson/msinttypes/stdint.h	/^typedef int32_t   int_fast32_t;$/;"	t
+int_fast64_t	rapidjson/msinttypes/stdint.h	/^typedef int64_t   int_fast64_t;$/;"	t
+int_fast8_t	rapidjson/msinttypes/stdint.h	/^typedef int8_t    int_fast8_t;$/;"	t
+int_least16_t	rapidjson/msinttypes/stdint.h	/^typedef int16_t   int_least16_t;$/;"	t
+int_least32_t	rapidjson/msinttypes/stdint.h	/^typedef int32_t   int_least32_t;$/;"	t
+int_least64_t	rapidjson/msinttypes/stdint.h	/^typedef int64_t   int_least64_t;$/;"	t
+int_least8_t	rapidjson/msinttypes/stdint.h	/^typedef int8_t    int_least8_t;$/;"	t
+internal	rapidjson/document.h	/^namespace internal {$/;"	n
+internal	rapidjson/internal/biginteger.h	/^namespace internal {$/;"	n
+internal	rapidjson/internal/diyfp.h	/^namespace internal {$/;"	n
+internal	rapidjson/internal/dtoa.h	/^namespace internal {$/;"	n
+internal	rapidjson/internal/ieee754.h	/^namespace internal {$/;"	n
+internal	rapidjson/internal/itoa.h	/^namespace internal {$/;"	n
+internal	rapidjson/internal/meta.h	/^namespace internal {$/;"	n
+internal	rapidjson/internal/pow10.h	/^namespace internal {$/;"	n
+internal	rapidjson/internal/stack.h	/^namespace internal {$/;"	n
+internal	rapidjson/internal/strfunc.h	/^namespace internal {$/;"	n
+internal	rapidjson/internal/strtod.h	/^namespace internal {$/;"	n
+internal	rapidjson/internal/swap.h	/^namespace internal {$/;"	n
+internal	rapidjson/reader.h	/^namespace internal {$/;"	n
+intmax_t	rapidjson/msinttypes/stdint.h	/^typedef int64_t   intmax_t;$/;"	t
+intptr_t	rapidjson/msinttypes/stdint.h	/^   typedef _W64 signed int   intptr_t;$/;"	t
+intptr_t	rapidjson/msinttypes/stdint.h	/^   typedef signed __int64    intptr_t;$/;"	t
+is	rapidjson/reader.h	/^        InputStream& is;$/;"	m	class:GenericReader::NumberStream
+isFBetter	functions.h	/^		inline bool isFBetter(double a,double b){$/;"	f	class:Function
+isFindMin	functions.h	/^		bool isFindMin;$/;"	m	class:Function
+is_	rapidjson/encodedstream.h	/^    InputByteStream& is_;$/;"	m	class:EncodedInputStream
+is_	rapidjson/encodedstream.h	/^    InputByteStream* is_;$/;"	m	class:AutoUTFInputStream
+kArrayFlag	rapidjson/document.h	/^        kArrayFlag = kArrayType,$/;"	e	enum:GenericValue::__anon13
+kArrayType	rapidjson/rapidjson.h	/^    kArrayType = 4,     \/\/!< array $/;"	e	enum:Type
+kBitCount	rapidjson/internal/biginteger.h	/^    static const size_t kBitCount = 3328;  \/\/ 64bit * 54 > 10^1000$/;"	m	class:internal::BigInteger
+kBoolFlag	rapidjson/document.h	/^        kBoolFlag = 0x100,$/;"	e	enum:GenericValue::__anon13
+kCapacity	rapidjson/internal/biginteger.h	/^    static const size_t kCapacity = kBitCount \/ sizeof(Type);$/;"	m	class:internal::BigInteger
+kConstStringFlag	rapidjson/document.h	/^        kConstStringFlag = kStringType | kStringFlag,$/;"	e	enum:GenericValue::__anon13
+kCopyFlag	rapidjson/document.h	/^        kCopyFlag = 0x200000,$/;"	e	enum:GenericValue::__anon13
+kCopyStringFlag	rapidjson/document.h	/^        kCopyStringFlag = kStringType | kStringFlag | kCopyFlag,$/;"	e	enum:GenericValue::__anon13
+kDefaultArrayCapacity	rapidjson/document.h	/^    static const SizeType kDefaultArrayCapacity = 16;$/;"	m	class:GenericValue
+kDefaultCapacity	rapidjson/memorybuffer.h	/^    static const size_t kDefaultCapacity = 256;$/;"	m	struct:GenericMemoryBuffer
+kDefaultCapacity	rapidjson/stringbuffer.h	/^    static const size_t kDefaultCapacity = 256;$/;"	m	class:GenericStringBuffer
+kDefaultChunkCapacity	rapidjson/allocators.h	/^    static const int kDefaultChunkCapacity = 64 * 1024; \/\/!< Default chunk capacity.$/;"	m	class:MemoryPoolAllocator
+kDefaultLevelDepth	rapidjson/writer.h	/^    static const size_t kDefaultLevelDepth = 32;$/;"	m	class:Writer
+kDefaultObjectCapacity	rapidjson/document.h	/^    static const SizeType kDefaultObjectCapacity = 16;$/;"	m	class:GenericValue
+kDefaultStackCapacity	rapidjson/document.h	/^    static const size_t kDefaultStackCapacity = 1024;$/;"	m	class:GenericDocument
+kDefaultStackCapacity	rapidjson/reader.h	/^    static const size_t kDefaultStackCapacity = 256;    \/\/!< Default stack capacity in bytes for storing a single decoded string.$/;"	m	class:GenericReader
+kDenormalExponent	rapidjson/internal/ieee754.h	/^    static const int kDenormalExponent = 1 - kExponentBias;$/;"	m	class:internal::Double
+kDiySignificandSize	rapidjson/internal/diyfp.h	/^    static const int kDiySignificandSize = 64;$/;"	m	struct:internal::DiyFp
+kDoubleFlag	rapidjson/document.h	/^        kDoubleFlag = 0x4000,$/;"	e	enum:GenericValue::__anon13
+kDpDenormalExponent	rapidjson/internal/diyfp.h	/^    static const int kDpDenormalExponent = -kDpExponentBias + 1;$/;"	m	struct:internal::DiyFp
+kDpExponentBias	rapidjson/internal/diyfp.h	/^    static const int kDpExponentBias = 0x3FF + kDpSignificandSize;$/;"	m	struct:internal::DiyFp
+kDpExponentMask	rapidjson/internal/diyfp.h	/^    static const uint64_t kDpExponentMask = RAPIDJSON_UINT64_C2(0x7FF00000, 0x00000000);$/;"	m	struct:internal::DiyFp
+kDpHiddenBit	rapidjson/internal/diyfp.h	/^    static const uint64_t kDpHiddenBit = RAPIDJSON_UINT64_C2(0x00100000, 0x00000000);$/;"	m	struct:internal::DiyFp
+kDpMaxExponent	rapidjson/internal/diyfp.h	/^    static const int kDpMaxExponent = 0x7FF - kDpExponentBias;$/;"	m	struct:internal::DiyFp
+kDpMinExponent	rapidjson/internal/diyfp.h	/^    static const int kDpMinExponent = -kDpExponentBias;$/;"	m	struct:internal::DiyFp
+kDpSignificandMask	rapidjson/internal/diyfp.h	/^    static const uint64_t kDpSignificandMask = RAPIDJSON_UINT64_C2(0x000FFFFF, 0xFFFFFFFF);$/;"	m	struct:internal::DiyFp
+kDpSignificandSize	rapidjson/internal/diyfp.h	/^    static const int kDpSignificandSize = 52;$/;"	m	struct:internal::DiyFp
+kExponentBias	rapidjson/internal/ieee754.h	/^    static const int kExponentBias = 0x3FF;$/;"	m	class:internal::Double
+kExponentMask	rapidjson/internal/ieee754.h	/^    static const uint64_t kExponentMask = RAPIDJSON_UINT64_C2(0x7FF00000, 0x00000000);$/;"	m	class:internal::Double
+kFalseFlag	rapidjson/document.h	/^        kFalseFlag = kFalseType | kBoolFlag,$/;"	e	enum:GenericValue::__anon13
+kFalseType	rapidjson/rapidjson.h	/^    kFalseType = 1,     \/\/!< false$/;"	e	enum:Type
+kHiddenBit	rapidjson/internal/ieee754.h	/^    static const uint64_t kHiddenBit = RAPIDJSON_UINT64_C2(0x00100000, 0x00000000);$/;"	m	class:internal::Double
+kInlineStrFlag	rapidjson/document.h	/^        kInlineStrFlag = 0x400000,$/;"	e	enum:GenericValue::__anon13
+kInt64Flag	rapidjson/document.h	/^        kInt64Flag = 0x1000,$/;"	e	enum:GenericValue::__anon13
+kIntFlag	rapidjson/document.h	/^        kIntFlag = 0x400,$/;"	e	enum:GenericValue::__anon13
+kNeedFree	rapidjson/allocators.h	/^    static const bool kNeedFree = false;    \/\/!< Tell users that no need to call Free() with this allocator. (concept Allocator)$/;"	m	class:MemoryPoolAllocator
+kNeedFree	rapidjson/allocators.h	/^    static const bool kNeedFree = true;$/;"	m	class:CrtAllocator
+kNullFlag	rapidjson/document.h	/^        kNullFlag = kNullType,$/;"	e	enum:GenericValue::__anon13
+kNullType	rapidjson/rapidjson.h	/^    kNullType = 0,      \/\/!< null$/;"	e	enum:Type
+kNumberAnyFlag	rapidjson/document.h	/^        kNumberAnyFlag = kNumberType | kNumberFlag | kIntFlag | kInt64Flag | kUintFlag | kUint64Flag | kDoubleFlag,$/;"	e	enum:GenericValue::__anon13
+kNumberDoubleFlag	rapidjson/document.h	/^        kNumberDoubleFlag = kNumberType | kNumberFlag | kDoubleFlag,$/;"	e	enum:GenericValue::__anon13
+kNumberFlag	rapidjson/document.h	/^        kNumberFlag = 0x200,$/;"	e	enum:GenericValue::__anon13
+kNumberInt64Flag	rapidjson/document.h	/^        kNumberInt64Flag = kNumberType | kNumberFlag | kInt64Flag,$/;"	e	enum:GenericValue::__anon13
+kNumberIntFlag	rapidjson/document.h	/^        kNumberIntFlag = kNumberType | kNumberFlag | kIntFlag | kInt64Flag,$/;"	e	enum:GenericValue::__anon13
+kNumberType	rapidjson/rapidjson.h	/^    kNumberType = 6     \/\/!< number$/;"	e	enum:Type
+kNumberUint64Flag	rapidjson/document.h	/^        kNumberUint64Flag = kNumberType | kNumberFlag | kUint64Flag,$/;"	e	enum:GenericValue::__anon13
+kNumberUintFlag	rapidjson/document.h	/^        kNumberUintFlag = kNumberType | kNumberFlag | kUintFlag | kUint64Flag | kInt64Flag,$/;"	e	enum:GenericValue::__anon13
+kObjectFlag	rapidjson/document.h	/^        kObjectFlag = kObjectType,$/;"	e	enum:GenericValue::__anon13
+kObjectType	rapidjson/rapidjson.h	/^    kObjectType = 3,    \/\/!< object$/;"	e	enum:Type
+kParseCommentsFlag	rapidjson/reader.h	/^    kParseCommentsFlag = 32,        \/\/!< Allow one-line (\/\/) and multi-line (\/**\/) comments.$/;"	e	enum:ParseFlag
+kParseDefaultFlags	rapidjson/reader.h	/^    kParseDefaultFlags = RAPIDJSON_PARSE_DEFAULT_FLAGS  \/\/!< Default parse flags. Can be customized by defining RAPIDJSON_PARSE_DEFAULT_FLAGS$/;"	e	enum:ParseFlag
+kParseErrorArrayMissCommaOrSquareBracket	rapidjson/error/error.h	/^    kParseErrorArrayMissCommaOrSquareBracket,   \/\/!< Missing a comma or ']' after an array element.$/;"	e	enum:ParseErrorCode
+kParseErrorDocumentEmpty	rapidjson/error/error.h	/^    kParseErrorDocumentEmpty,                   \/\/!< The document is empty.$/;"	e	enum:ParseErrorCode
+kParseErrorDocumentRootNotSingular	rapidjson/error/error.h	/^    kParseErrorDocumentRootNotSingular,         \/\/!< The document root must not follow by other values.$/;"	e	enum:ParseErrorCode
+kParseErrorNone	rapidjson/error/error.h	/^    kParseErrorNone = 0,                        \/\/!< No error.$/;"	e	enum:ParseErrorCode
+kParseErrorNumberMissExponent	rapidjson/error/error.h	/^    kParseErrorNumberMissExponent,              \/\/!< Miss exponent in number.$/;"	e	enum:ParseErrorCode
+kParseErrorNumberMissFraction	rapidjson/error/error.h	/^    kParseErrorNumberMissFraction,              \/\/!< Miss fraction part in number.$/;"	e	enum:ParseErrorCode
+kParseErrorNumberTooBig	rapidjson/error/error.h	/^    kParseErrorNumberTooBig,                    \/\/!< Number too big to be stored in double.$/;"	e	enum:ParseErrorCode
+kParseErrorObjectMissColon	rapidjson/error/error.h	/^    kParseErrorObjectMissColon,                 \/\/!< Missing a colon after a name of object member.$/;"	e	enum:ParseErrorCode
+kParseErrorObjectMissCommaOrCurlyBracket	rapidjson/error/error.h	/^    kParseErrorObjectMissCommaOrCurlyBracket,   \/\/!< Missing a comma or '}' after an object member.$/;"	e	enum:ParseErrorCode
+kParseErrorObjectMissName	rapidjson/error/error.h	/^    kParseErrorObjectMissName,                  \/\/!< Missing a name for object member.$/;"	e	enum:ParseErrorCode
+kParseErrorStringEscapeInvalid	rapidjson/error/error.h	/^    kParseErrorStringEscapeInvalid,             \/\/!< Invalid escape character in string.$/;"	e	enum:ParseErrorCode
+kParseErrorStringInvalidEncoding	rapidjson/error/error.h	/^    kParseErrorStringInvalidEncoding,           \/\/!< Invalid encoding in string.$/;"	e	enum:ParseErrorCode
+kParseErrorStringMissQuotationMark	rapidjson/error/error.h	/^    kParseErrorStringMissQuotationMark,         \/\/!< Missing a closing quotation mark in string.$/;"	e	enum:ParseErrorCode
+kParseErrorStringUnicodeEscapeInvalidHex	rapidjson/error/error.h	/^    kParseErrorStringUnicodeEscapeInvalidHex,   \/\/!< Incorrect hex digit after \\\\u escape in string.$/;"	e	enum:ParseErrorCode
+kParseErrorStringUnicodeSurrogateInvalid	rapidjson/error/error.h	/^    kParseErrorStringUnicodeSurrogateInvalid,   \/\/!< The surrogate pair in string is invalid.$/;"	e	enum:ParseErrorCode
+kParseErrorTermination	rapidjson/error/error.h	/^    kParseErrorTermination,                     \/\/!< Parsing was terminated.$/;"	e	enum:ParseErrorCode
+kParseErrorUnspecificSyntaxError	rapidjson/error/error.h	/^    kParseErrorUnspecificSyntaxError            \/\/!< Unspecific syntax error.$/;"	e	enum:ParseErrorCode
+kParseErrorValueInvalid	rapidjson/error/error.h	/^    kParseErrorValueInvalid,                    \/\/!< Invalid value.$/;"	e	enum:ParseErrorCode
+kParseFullPrecisionFlag	rapidjson/reader.h	/^    kParseFullPrecisionFlag = 16,   \/\/!< Parse number in full precision (but slower).$/;"	e	enum:ParseFlag
+kParseInsituFlag	rapidjson/reader.h	/^    kParseInsituFlag = 1,           \/\/!< In-situ(destructive) parsing.$/;"	e	enum:ParseFlag
+kParseIterativeFlag	rapidjson/reader.h	/^    kParseIterativeFlag = 4,        \/\/!< Iterative(constant complexity in terms of function call stack size) parsing.$/;"	e	enum:ParseFlag
+kParseNoFlags	rapidjson/reader.h	/^    kParseNoFlags = 0,              \/\/!< No flags are set.$/;"	e	enum:ParseFlag
+kParseStopWhenDoneFlag	rapidjson/reader.h	/^    kParseStopWhenDoneFlag = 8,     \/\/!< After parsing a complete JSON root from stream, stop further processing the rest of stream. When this flag is used, parser will not generate kParseErrorDocumentRootNotSingular error.$/;"	e	enum:ParseFlag
+kParseValidateEncodingFlag	rapidjson/reader.h	/^    kParseValidateEncodingFlag = 2, \/\/!< Validate encoding of JSON strings.$/;"	e	enum:ParseFlag
+kPointerInvalidIndex	rapidjson/pointer.h	/^static const SizeType kPointerInvalidIndex = ~SizeType(0);  \/\/!< Represents an invalid index in GenericPointer::Token$/;"	v
+kPointerParseErrorCharacterMustPercentEncode	rapidjson/pointer.h	/^    kPointerParseErrorCharacterMustPercentEncode    \/\/!< A character must percent encoded in URI fragment$/;"	e	enum:PointerParseErrorCode
+kPointerParseErrorInvalidEscape	rapidjson/pointer.h	/^    kPointerParseErrorInvalidEscape,                \/\/!< Invalid escape$/;"	e	enum:PointerParseErrorCode
+kPointerParseErrorInvalidPercentEncoding	rapidjson/pointer.h	/^    kPointerParseErrorInvalidPercentEncoding,       \/\/!< Invalid percent encoding in URI fragment$/;"	e	enum:PointerParseErrorCode
+kPointerParseErrorNone	rapidjson/pointer.h	/^    kPointerParseErrorNone = 0,                     \/\/!< The parse is successful$/;"	e	enum:PointerParseErrorCode
+kPointerParseErrorTokenMustBeginWithSolidus	rapidjson/pointer.h	/^    kPointerParseErrorTokenMustBeginWithSolidus,    \/\/!< A token must begin with a '\/'$/;"	e	enum:PointerParseErrorCode
+kShortStringFlag	rapidjson/document.h	/^        kShortStringFlag = kStringType | kStringFlag | kCopyFlag | kInlineStrFlag,$/;"	e	enum:GenericValue::__anon13
+kSignMask	rapidjson/internal/ieee754.h	/^    static const uint64_t kSignMask = RAPIDJSON_UINT64_C2(0x80000000, 0x00000000);$/;"	m	class:internal::Double
+kSignificandMask	rapidjson/internal/ieee754.h	/^    static const uint64_t kSignificandMask = RAPIDJSON_UINT64_C2(0x000FFFFF, 0xFFFFFFFF);$/;"	m	class:internal::Double
+kSignificandSize	rapidjson/internal/ieee754.h	/^    static const int kSignificandSize = 52;$/;"	m	class:internal::Double
+kStringFlag	rapidjson/document.h	/^        kStringFlag = 0x100000,$/;"	e	enum:GenericValue::__anon13
+kStringType	rapidjson/rapidjson.h	/^    kStringType = 5,    \/\/!< string$/;"	e	enum:Type
+kTokenCount	rapidjson/reader.h	/^        kTokenCount$/;"	e	enum:GenericReader::Token
+kTrueFlag	rapidjson/document.h	/^        kTrueFlag = kTrueType | kBoolFlag,$/;"	e	enum:GenericValue::__anon13
+kTrueType	rapidjson/rapidjson.h	/^    kTrueType = 2,      \/\/!< true$/;"	e	enum:Type
+kTypeBit	rapidjson/internal/biginteger.h	/^    static const size_t kTypeBit = sizeof(Type) * 8;$/;"	m	class:internal::BigInteger
+kTypeMask	rapidjson/document.h	/^        kTypeMask = 0xFF    \/\/ bitwise-and with mask of 0xFF can be optimized by compiler$/;"	e	enum:GenericValue::__anon13
+kUTF16BE	rapidjson/encodings.h	/^    kUTF16BE = 2,   \/\/!< UTF-16 big endian.$/;"	e	enum:UTFType
+kUTF16LE	rapidjson/encodings.h	/^    kUTF16LE = 1,   \/\/!< UTF-16 little endian.$/;"	e	enum:UTFType
+kUTF32BE	rapidjson/encodings.h	/^    kUTF32BE = 4    \/\/!< UTF-32 big endian.$/;"	e	enum:UTFType
+kUTF32LE	rapidjson/encodings.h	/^    kUTF32LE = 3,   \/\/!< UTF-32 little endian.$/;"	e	enum:UTFType
+kUTF8	rapidjson/encodings.h	/^    kUTF8 = 0,      \/\/!< UTF-8.$/;"	e	enum:UTFType
+kUint64Flag	rapidjson/document.h	/^        kUint64Flag = 0x2000,$/;"	e	enum:GenericValue::__anon13
+kUintFlag	rapidjson/document.h	/^        kUintFlag = 0x800,$/;"	e	enum:GenericValue::__anon13
+katsuura_func	cec14_test_func.h	/^void katsuura_func (double *x, double *f, int nx, double *Os,double *Mr,int s_flag, int r_flag) \/* Katsuura  *\/$/;"	f
+lastTime	utils.h	/^		static long lastTime;$/;"	m	class:Tic
+lastTime	utils.h	/^long Tic::lastTime=0;$/;"	m	class:Tic
+length	rapidjson/document.h	/^        SizeType length;$/;"	m	struct:GenericValue::String
+length	rapidjson/document.h	/^    const SizeType length; \/\/!< length of the string (excluding the trailing NULL terminator)$/;"	m	struct:GenericStringRef
+length	rapidjson/pointer.h	/^        SizeType length;            \/\/!< Length of the name.$/;"	m	struct:GenericPointer::Token
+length_	rapidjson/reader.h	/^        SizeType length_;$/;"	m	class:GenericReader::StackStream
+level_stack_	rapidjson/writer.h	/^    internal::Stack<StackAllocator> level_stack_;$/;"	m	class:Writer
+members	rapidjson/document.h	/^        Member* members;$/;"	m	struct:GenericValue::Object
+mtic	utils.h	/^		static long mtic(){$/;"	f	class:Tic
+mul	functions.h	/^	double mul=1.0;$/;"	v
+mulcos	functions.h	/^	double mulcos=1.0;$/;"	v
+n	rapidjson/document.h	/^        Number n;$/;"	m	union:GenericValue::Data
+n	utils.h	/^	int n;$/;"	m	class:RandomPermutation
+name	rapidjson/document.h	/^    GenericValue<Encoding, Allocator> name;     \/\/!< name of member (must be a string)$/;"	m	struct:GenericMember
+name	rapidjson/pointer.h	/^        const Ch* name;             \/\/!< Name of the token. It has null character at the end but it can contain null character.$/;"	m	struct:GenericPointer::Token
+nameBuffer_	rapidjson/pointer.h	/^    Ch* nameBuffer_;                        \/\/!< A buffer containing all names in tokens.$/;"	m	class:GenericPointer
+next	rapidjson/allocators.h	/^        ChunkHeader *next;  \/\/!< Next chunk in the linked list.$/;"	m	struct:MemoryPoolAllocator::ChunkHeader
+next	utils.h	/^		int next(){$/;"	f	class:RandomPermutation
+numDim	functions.h	/^		int numDim;$/;"	m	class:Function
+o	rapidjson/document.h	/^        Object o;$/;"	m	union:GenericValue::Data
+offset_	rapidjson/error/error.h	/^    size_t offset_;$/;"	m	struct:ParseResult
+operator !=	rapidjson/document.h	/^    bool operator!=(ConstIterator that) const { return ptr_ != that.ptr_; }$/;"	f	class:GenericMemberIterator
+operator !=	rapidjson/document.h	/^    bool operator!=(const Ch* rhs) const { return !(*this == rhs); }$/;"	f	class:GenericValue
+operator !=	rapidjson/document.h	/^    bool operator!=(const GenericValue<Encoding, SourceAllocator>& rhs) const { return !(*this == rhs); }$/;"	f	class:GenericValue
+operator !=	rapidjson/document.h	/^    template <typename T> RAPIDJSON_DISABLEIF_RETURN((internal::IsGenericValue<T>), (bool)) operator!=(const T& rhs) const { return !(*this == rhs); }$/;"	f	class:GenericValue
+operator !=	rapidjson/document.h	/^    template <typename T> friend RAPIDJSON_DISABLEIF_RETURN((internal::IsGenericValue<T>), (bool)) operator!=(const T& lhs, const GenericValue& rhs) { return !(rhs == lhs); }$/;"	f	class:GenericValue
+operator !=	rapidjson/pointer.h	/^    bool operator!=(const GenericPointer& rhs) const { return !(*this == rhs); }$/;"	f	class:GenericPointer
+operator ()	functions.h	/^		virtual double operator()(const double *xs,int size){$/;"	f	class:Function
+operator *	rapidjson/document.h	/^    Reference operator*() const { return *ptr_; }$/;"	f	class:GenericMemberIterator
+operator *	rapidjson/internal/diyfp.h	/^    DiyFp operator*(const DiyFp& rhs) const {$/;"	f	struct:internal::DiyFp
+operator *=	rapidjson/internal/biginteger.h	/^    BigInteger& operator*=(uint32_t u) {$/;"	f	class:internal::BigInteger
+operator *=	rapidjson/internal/biginteger.h	/^    BigInteger& operator*=(uint64_t u) {$/;"	f	class:internal::BigInteger
+operator +	rapidjson/document.h	/^    Iterator operator+(DifferenceType n) const { return Iterator(ptr_+n); }$/;"	f	class:GenericMemberIterator
+operator ++	rapidjson/document.h	/^    Iterator  operator++(int){ Iterator old(*this); ++ptr_; return old; }$/;"	f	class:GenericMemberIterator
+operator ++	rapidjson/document.h	/^    Iterator& operator++(){ ++ptr_; return *this; }$/;"	f	class:GenericMemberIterator
+operator +=	rapidjson/document.h	/^    Iterator& operator+=(DifferenceType n) { ptr_+=n; return *this; }$/;"	f	class:GenericMemberIterator
+operator +=	rapidjson/internal/biginteger.h	/^    BigInteger& operator+=(uint64_t u) {$/;"	f	class:internal::BigInteger
+operator -	rapidjson/document.h	/^    DifferenceType operator-(ConstIterator that) const { return ptr_-that.ptr_; }$/;"	f	class:GenericMemberIterator
+operator -	rapidjson/document.h	/^    Iterator operator-(DifferenceType n) const { return Iterator(ptr_-n); }$/;"	f	class:GenericMemberIterator
+operator -	rapidjson/internal/diyfp.h	/^    DiyFp operator-(const DiyFp& rhs) const {$/;"	f	struct:internal::DiyFp
+operator --	rapidjson/document.h	/^    Iterator  operator--(int){ Iterator old(*this); --ptr_; return old; }$/;"	f	class:GenericMemberIterator
+operator --	rapidjson/document.h	/^    Iterator& operator--(){ --ptr_; return *this; }$/;"	f	class:GenericMemberIterator
+operator -=	rapidjson/document.h	/^    Iterator& operator-=(DifferenceType n) { ptr_-=n; return *this; }$/;"	f	class:GenericMemberIterator
+operator ->	rapidjson/document.h	/^    Pointer   operator->() const { return ptr_; }$/;"	f	class:GenericMemberIterator
+operator <	rapidjson/document.h	/^    bool operator< (ConstIterator that) const { return ptr_ < that.ptr_; }$/;"	f	class:GenericMemberIterator
+operator <<=	rapidjson/internal/biginteger.h	/^    BigInteger& operator<<=(size_t shift) {$/;"	f	class:internal::BigInteger
+operator <=	rapidjson/document.h	/^    bool operator<=(ConstIterator that) const { return ptr_ <= that.ptr_; }$/;"	f	class:GenericMemberIterator
+operator =	rapidjson/document.h	/^    operator=(T value) {$/;"	f	class:GenericValue
+operator =	rapidjson/internal/biginteger.h	/^    BigInteger& operator=(const BigInteger &rhs)$/;"	f	class:internal::BigInteger
+operator =	rapidjson/internal/biginteger.h	/^    BigInteger& operator=(uint64_t u) {$/;"	f	class:internal::BigInteger
+operator =	rapidjson/internal/stack.h	/^    Stack& operator=(Stack&& rhs) {$/;"	f	class:internal::Stack
+operator =	rapidjson/pointer.h	/^    GenericPointer& operator=(const GenericPointer& rhs) {$/;"	f	class:GenericPointer
+operator =	rapidjson/stringbuffer.h	/^    GenericStringBuffer& operator=(GenericStringBuffer&& rhs) {$/;"	f	class:GenericStringBuffer
+operator =	settingParser.h	/^		SettingParser&operator=(SettingParser&p){$/;"	f	class:SettingParser
+operator ==	rapidjson/document.h	/^    bool operator==(ConstIterator that) const { return ptr_ == that.ptr_; }$/;"	f	class:GenericMemberIterator
+operator ==	rapidjson/document.h	/^    bool operator==(const Ch* rhs) const { return *this == GenericValue(StringRef(rhs)); }$/;"	f	class:GenericValue
+operator ==	rapidjson/document.h	/^    bool operator==(const GenericValue<Encoding, SourceAllocator>& rhs) const {$/;"	f	class:GenericValue
+operator ==	rapidjson/document.h	/^    bool operator==(const std::basic_string<Ch>& rhs) const { return *this == GenericValue(StringRef(rhs)); }$/;"	f	class:GenericValue
+operator ==	rapidjson/document.h	/^    template <typename T> RAPIDJSON_DISABLEIF_RETURN((internal::OrExpr<internal::IsPointer<T>,internal::IsGenericValue<T> >), (bool)) operator==(const T& rhs) const { return *this == GenericValue(rhs); }$/;"	f	class:GenericValue
+operator ==	rapidjson/document.h	/^    template <typename T> friend RAPIDJSON_DISABLEIF_RETURN((internal::IsGenericValue<T>), (bool)) operator==(const T& lhs, const GenericValue& rhs) { return rhs == lhs; }$/;"	f	class:GenericValue
+operator ==	rapidjson/error/error.h	/^    bool operator==(ParseErrorCode code) const { return code_ == code; }$/;"	f	struct:ParseResult
+operator ==	rapidjson/error/error.h	/^    bool operator==(const ParseResult& that) const { return code_ == that.code_; }$/;"	f	struct:ParseResult
+operator ==	rapidjson/error/error.h	/^    friend bool operator==(ParseErrorCode code, const ParseResult & err) { return code == err.code_; }$/;"	f	struct:ParseResult
+operator ==	rapidjson/internal/biginteger.h	/^    bool operator==(const BigInteger& rhs) const {$/;"	f	class:internal::BigInteger
+operator ==	rapidjson/internal/biginteger.h	/^    bool operator==(const Type rhs) const {$/;"	f	class:internal::BigInteger
+operator ==	rapidjson/pointer.h	/^    bool operator==(const GenericPointer& rhs) const {$/;"	f	class:GenericPointer
+operator >	rapidjson/document.h	/^    bool operator> (ConstIterator that) const { return ptr_ > that.ptr_; }$/;"	f	class:GenericMemberIterator
+operator >=	rapidjson/document.h	/^    bool operator>=(ConstIterator that) const { return ptr_ >= that.ptr_; }$/;"	f	class:GenericMemberIterator
+operator []	rapidjson/document.h	/^    GenericValue& operator[](SizeType index) {$/;"	f	class:GenericValue
+operator []	rapidjson/document.h	/^    GenericValue& operator[](const GenericValue<Encoding, SourceAllocator>& name) {$/;"	f	class:GenericValue
+operator []	rapidjson/document.h	/^    GenericValue& operator[](const std::basic_string<Ch>& name) { return (*this)[GenericValue(StringRef(name))]; }$/;"	f	class:GenericValue
+operator []	rapidjson/document.h	/^    RAPIDJSON_DISABLEIF_RETURN((internal::NotExpr<internal::IsSame<typename internal::RemoveConst<T>::Type, Ch> >),(GenericValue&)) operator[](T* name) {$/;"	f	class:GenericValue
+operator []	rapidjson/document.h	/^    RAPIDJSON_DISABLEIF_RETURN((internal::NotExpr<internal::IsSame<typename internal::RemoveConst<T>::Type, Ch> >),(const GenericValue&)) operator[](T* name) const { return const_cast<GenericValue&>(*this)[name]; }$/;"	f	class:GenericValue
+operator []	rapidjson/document.h	/^    Reference operator[](DifferenceType n) const { return ptr_[n]; }$/;"	f	class:GenericMemberIterator
+operator []	rapidjson/document.h	/^    const GenericValue& operator[](SizeType index) const { return const_cast<GenericValue&>(*this)[index]; }$/;"	f	class:GenericValue
+operator []	rapidjson/document.h	/^    const GenericValue& operator[](const GenericValue<Encoding, SourceAllocator>& name) const { return const_cast<GenericValue&>(*this)[name]; }$/;"	f	class:GenericValue
+operator []	rapidjson/document.h	/^    const GenericValue& operator[](const std::basic_string<Ch>& name) const { return (*this)[GenericValue(StringRef(name))]; }$/;"	f	class:GenericValue
+operator bool	rapidjson/error/error.h	/^    operator bool() const { return !IsError(); }$/;"	f	struct:ParseResult
+operator const Ch *	rapidjson/document.h	/^    operator const Ch *() const { return s; }$/;"	f	struct:GenericStringRef
+original_	rapidjson/reader.h	/^    Stream& original_;$/;"	m	class:internal::StreamLocalCopy
+os_	rapidjson/encodedstream.h	/^    OutputByteStream& os_;$/;"	m	class:EncodedOutputStream
+os_	rapidjson/encodedstream.h	/^    OutputByteStream* os_;$/;"	m	class:AutoUTFOutputStream
+os_	rapidjson/pointer.h	/^        OutputStream& os_;$/;"	m	class:GenericPointer::PercentEncodeStream
+os_	rapidjson/writer.h	/^    OutputStream* os_;$/;"	m	class:Writer
+oszfunc	cec14_test_func.h	/^void oszfunc (double *x, double *xosz, int nx)$/;"	f
+ownAllocator_	rapidjson/document.h	/^    Allocator* ownAllocator_;$/;"	m	class:GenericDocument
+ownAllocator_	rapidjson/internal/stack.h	/^    Allocator* ownAllocator_;$/;"	m	class:internal::Stack
+ownAllocator_	rapidjson/pointer.h	/^    Allocator* ownAllocator_;               \/\/!< Allocator owned by this Pointer.$/;"	m	class:GenericPointer
+ownBaseAllocator_	rapidjson/allocators.h	/^    BaseAllocator* ownBaseAllocator_;   \/\/!< base allocator created by this object.$/;"	m	class:MemoryPoolAllocator
+p	utils.h	/^	vector<int>p;$/;"	m	class:RandomPermutation
+padding	rapidjson/document.h	/^            char padding[4];$/;"	m	struct:GenericValue::Number::I
+padding2	rapidjson/document.h	/^            char padding2[4];$/;"	m	struct:GenericValue::Number::U
+parseErrorCode_	rapidjson/pointer.h	/^    PointerParseErrorCode parseErrorCode_;  \/\/!< Parsing error code.$/;"	m	class:GenericPointer
+parseErrorOffset_	rapidjson/pointer.h	/^    size_t parseErrorOffset_;               \/\/!< Offset in code unit when parsing fail.$/;"	m	class:GenericPointer
+parseFile	settingParser.h	/^		void parseFile(const char *s){$/;"	f	class:SettingParser
+parseResult_	rapidjson/document.h	/^          parseResult_(rhs.parseResult_)$/;"	f	class:GenericDocument
+parseResult_	rapidjson/document.h	/^    ParseResult parseResult_;$/;"	m	class:GenericDocument
+parseResult_	rapidjson/reader.h	/^    ParseResult parseResult_;$/;"	m	class:GenericReader
+printArr	utils.h	/^void printArr(int *arr,int size){$/;"	f
+printVec	utils.h	/^void printVec(const vector<T>&arr){$/;"	f
+ptr_	rapidjson/document.h	/^    Pointer ptr_; \/\/!< raw pointer$/;"	m	class:GenericMemberIterator
+putFunc_	rapidjson/encodedstream.h	/^    PutFunc putFunc_;$/;"	m	class:AutoUTFOutputStream
+quot	rapidjson/msinttypes/inttypes.h	/^   intmax_t quot;$/;"	m	struct:__anon12
+r_	rapidjson/reader.h	/^        GenericReader& r_;$/;"	m	struct:GenericReader::ClearStackOnExit
+rastrigin_func	cec14_test_func.h	/^void rastrigin_func (double *x, double *f, int nx, double *Os,double *Mr,int s_flag, int r_flag) \/* Rastrigin's  *\/$/;"	f
+readCount_	rapidjson/filereadstream.h	/^    size_t readCount_;$/;"	m	class:FileReadStream
+rem	rapidjson/msinttypes/inttypes.h	/^   intmax_t rem;$/;"	m	struct:__anon12
+res	functions.h	/^	double res=0.0;$/;"	v
+res	functions.h	/^	double res=fabs(xs[0]);$/;"	v
+rosenbrock_func	cec14_test_func.h	/^void rosenbrock_func (double *x, double *f, int nx, double *Os,double *Mr,int s_flag, int r_flag) \/* Rosenbrock's *\/$/;"	f
+rotatefunc	cec14_test_func.h	/^void rotatefunc (double *x, double *xrot, int nx,double *Mr)$/;"	f
+s	rapidjson/document.h	/^        String s;$/;"	m	union:GenericValue::Data
+s	rapidjson/document.h	/^    const Ch* const s; \/\/!< plain CharType pointer$/;"	m	struct:GenericStringRef
+s	rapidjson/reader.h	/^    Stream s;$/;"	m	class:internal::StreamLocalCopy
+s	rapidjson/reader.h	/^    Stream& s;$/;"	m	class:internal::StreamLocalCopy
+schaffer_F7_func	cec14_test_func.h	/^void schaffer_F7_func (double *x, double *f, int nx, double *Os,double *Mr,int s_flag, int r_flag) \/* Schwefel's 1.2  *\/$/;"	f
+schwefel_func	cec14_test_func.h	/^void schwefel_func (double *x, double *f, int nx, double *Os,double *Mr,int s_flag, int r_flag) \/* Schwefel's  *\/$/;"	f
+shiftfunc	cec14_test_func.h	/^void shiftfunc (double *x, double *xshift, int nx,double *Os)$/;"	f
+shortName	functions.h	/^		char shortName[50];$/;"	m	class:Function
+size	rapidjson/allocators.h	/^        size_t size;        \/\/!< Current size of allocated memory in bytes.$/;"	m	struct:MemoryPoolAllocator::ChunkHeader
+size	rapidjson/document.h	/^        SizeType size;$/;"	m	struct:GenericValue::Array
+size	rapidjson/document.h	/^        SizeType size;$/;"	m	struct:GenericValue::Object
+size_	rapidjson/memorystream.h	/^    size_t size_;       \/\/!< Size of the stream.$/;"	m	struct:MemoryStream
+sphere_func	cec14_test_func.h	/^void sphere_func (double *x, double *f, int nx, double *Os, double *Mr, int s_flag, int r_flag) \/* Sphere *\/$/;"	f
+sr_func	cec14_test_func.h	/^void sr_func (double *x, double *sr_x, int nx, double *Os,double *Mr, double sh_rate, int s_flag,int r_flag) \/* shift and rotate *\/$/;"	f
+src_	rapidjson/memorystream.h	/^    const Ch* src_;     \/\/!< Current read position.$/;"	m	struct:MemoryStream
+src_	rapidjson/pointer.h	/^        const Ch* src_;     \/\/!< Current read position.$/;"	m	class:GenericPointer::PercentDecodeStream
+src_	rapidjson/rapidjson.h	/^    Ch* src_;$/;"	m	struct:GenericInsituStringStream
+src_	rapidjson/rapidjson.h	/^    const Ch* src_;     \/\/!< Current read position.$/;"	m	struct:GenericStringStream
+ss	rapidjson/document.h	/^        ShortString ss;$/;"	m	union:GenericValue::Data
+stackEnd_	rapidjson/internal/stack.h	/^    char *stackEnd_;$/;"	m	class:internal::Stack
+stackStream	rapidjson/reader.h	/^        StackStream<char> stackStream;$/;"	m	class:GenericReader::NumberStream
+stackTop_	rapidjson/internal/stack.h	/^    char *stackTop_;$/;"	m	class:internal::Stack
+stack_	rapidjson/document.h	/^    internal::Stack<StackAllocator> stack_;$/;"	m	class:GenericDocument
+stack_	rapidjson/internal/stack.h	/^    char *stack_;$/;"	m	class:internal::Stack
+stack_	rapidjson/memorybuffer.h	/^    mutable internal::Stack<Allocator> stack_;$/;"	m	struct:GenericMemoryBuffer
+stack_	rapidjson/reader.h	/^        internal::Stack<StackAllocator>& stack_;$/;"	m	class:GenericReader::StackStream
+stack_	rapidjson/reader.h	/^    internal::Stack<StackAllocator> stack_;  \/\/!< A stack for storing decoded string temporarily during non-destructive parsing.$/;"	m	class:GenericReader
+stack_	rapidjson/stringbuffer.h	/^    mutable internal::Stack<Allocator> stack_;$/;"	m	class:GenericStringBuffer
+step_rastrigin_func	cec14_test_func.h	/^void step_rastrigin_func (double *x, double *f, int nx, double *Os,double *Mr,int s_flag, int r_flag) \/* Noncontinuous Rastrigin's  *\/$/;"	f
+str	rapidjson/document.h	/^        Ch str[MaxChars];$/;"	m	struct:GenericValue::ShortString
+str	rapidjson/document.h	/^        const Ch* str;$/;"	m	struct:GenericValue::String
+strtoimax	rapidjson/msinttypes/inttypes.h	307;"	d
+strtoumax	rapidjson/msinttypes/inttypes.h	308;"	d
+sum	functions.h	/^	double sum=0.0;$/;"	v
+sumcosx	functions.h	/^	double sumcosx=0.0;$/;"	v
+sumu	functions.h	/^	double sumu=0.0;$/;"	v
+sumx	functions.h	/^	double sumx=0.0;$/;"	v
+sumx2	functions.h	/^	double sumx2=0.0;$/;"	v
+sumy	functions.h	/^	double sumy=0.0;$/;"	v
+supportUnicode	rapidjson/encodings.h	/^    enum { supportUnicode = 0 };$/;"	e	enum:ASCII::__anon8
+supportUnicode	rapidjson/encodings.h	/^    enum { supportUnicode = 1 };$/;"	e	enum:AutoUTF::__anon9
+supportUnicode	rapidjson/encodings.h	/^    enum { supportUnicode = 1 };$/;"	e	enum:UTF16::__anon6
+supportUnicode	rapidjson/encodings.h	/^    enum { supportUnicode = 1 };$/;"	e	enum:UTF32::__anon7
+supportUnicode	rapidjson/encodings.h	/^    enum { supportUnicode = 1 };$/;"	e	enum:UTF8::__anon5
+takeFunc_	rapidjson/encodedstream.h	/^    TakeFunc takeFunc_;$/;"	m	class:AutoUTFInputStream
+test	utils.h	/^		static void test(){$/;"	f	class:Tic
+tic	utils.h	/^		static void tic(const char *tag="begin"){$/;"	f	class:Tic
+tokenCount_	rapidjson/pointer.h	/^    size_t tokenCount_;                     \/\/!< Number of tokens in tokens_.$/;"	m	class:GenericPointer
+tokens_	rapidjson/pointer.h	/^    Token* tokens_;                         \/\/!< A list of tokens.$/;"	m	class:GenericPointer
+type_	rapidjson/encodedstream.h	/^    UTFType type_;$/;"	m	class:AutoUTFInputStream
+type_	rapidjson/encodedstream.h	/^    UTFType type_;$/;"	m	class:AutoUTFOutputStream
+u	functions.h	/^		static double u(double x,double a,double k,double m){$/;"	f	class:Function
+u	rapidjson/document.h	/^            unsigned u;$/;"	m	struct:GenericValue::Number::U
+u	rapidjson/document.h	/^        }u;$/;"	m	union:GenericValue::Number	typeref:struct:GenericValue::Number::U
+u32toa	rapidjson/internal/itoa.h	/^inline char* u32toa(uint32_t value, char* buffer) {$/;"	f	namespace:internal
+u64	rapidjson/document.h	/^        uint64_t u64;$/;"	m	union:GenericValue::Number
+u64toa	rapidjson/internal/itoa.h	/^inline char* u64toa(uint64_t value, char* buffer) {$/;"	f	namespace:internal
+u_	rapidjson/internal/ieee754.h	/^        uint64_t u_;$/;"	m	union:internal::Double::__anon11
+uint16_t	rapidjson/msinttypes/stdint.h	/^   typedef unsigned __int16  uint16_t;$/;"	t
+uint16_t	rapidjson/msinttypes/stdint.h	/^   typedef unsigned short    uint16_t;$/;"	t
+uint32_t	rapidjson/msinttypes/stdint.h	/^   typedef unsigned __int32  uint32_t;$/;"	t
+uint32_t	rapidjson/msinttypes/stdint.h	/^   typedef unsigned int      uint32_t;$/;"	t
+uint64_t	rapidjson/msinttypes/stdint.h	/^typedef unsigned __int64     uint64_t;$/;"	t
+uint8_t	rapidjson/msinttypes/stdint.h	/^   typedef unsigned __int8   uint8_t;$/;"	t
+uint8_t	rapidjson/msinttypes/stdint.h	/^   typedef unsigned char     uint8_t;$/;"	t
+uint_fast16_t	rapidjson/msinttypes/stdint.h	/^typedef uint16_t  uint_fast16_t;$/;"	t
+uint_fast32_t	rapidjson/msinttypes/stdint.h	/^typedef uint32_t  uint_fast32_t;$/;"	t
+uint_fast64_t	rapidjson/msinttypes/stdint.h	/^typedef uint64_t  uint_fast64_t;$/;"	t
+uint_fast8_t	rapidjson/msinttypes/stdint.h	/^typedef uint8_t   uint_fast8_t;$/;"	t
+uint_least16_t	rapidjson/msinttypes/stdint.h	/^typedef uint16_t  uint_least16_t;$/;"	t
+uint_least32_t	rapidjson/msinttypes/stdint.h	/^typedef uint32_t  uint_least32_t;$/;"	t
+uint_least64_t	rapidjson/msinttypes/stdint.h	/^typedef uint64_t  uint_least64_t;$/;"	t
+uint_least8_t	rapidjson/msinttypes/stdint.h	/^typedef uint8_t   uint_least8_t;$/;"	t
+uintmax_t	rapidjson/msinttypes/stdint.h	/^typedef uint64_t  uintmax_t;$/;"	t
+uintptr_t	rapidjson/msinttypes/stdint.h	/^   typedef _W64 unsigned int uintptr_t;$/;"	t
+uintptr_t	rapidjson/msinttypes/stdint.h	/^   typedef unsigned __int64  uintptr_t;$/;"	t
+userBuffer_	rapidjson/allocators.h	/^    void *userBuffer_;          \/\/!< User supplied buffer.$/;"	m	class:MemoryPoolAllocator
+valid_	rapidjson/pointer.h	/^        bool valid_;        \/\/!< Whether the parsing is valid.$/;"	m	class:GenericPointer::PercentDecodeStream
+value	rapidjson/document.h	/^    GenericValue<Encoding, Allocator> value;    \/\/!< value of member.$/;"	m	struct:GenericMember
+value	rapidjson/rapidjson.h	/^template <> struct STATIC_ASSERTION_FAILURE<true> { enum { value = 1 }; };$/;"	e	enum:STATIC_ASSERTION_FAILURE::__anon1
+valueCount	rapidjson/writer.h	/^        size_t valueCount;  \/\/!< number of values in this level$/;"	m	struct:Writer::Level
+wcstoimax	rapidjson/msinttypes/inttypes.h	311;"	d
+wcstoumax	rapidjson/msinttypes/inttypes.h	312;"	d
+weierstrass_func	cec14_test_func.h	/^void weierstrass_func (double *x, double *f, int nx, double *Os,double *Mr,int s_flag, int r_flag) \/* Weierstrass's  *\/$/;"	f
+xd	functions.h	/^double xd=xs[size-1];$/;"	v
+xlow	functions.h	/^		double xlow,xup;$/;"	m	class:Function
+xup	functions.h	/^		double xlow,xup;$/;"	m	class:Function
+y1	functions.h	/^	double y1=1.0+(xs[0]+1.0)\/4.0;$/;"	v
+yd	functions.h	/^	double yd=1.0+(xs[size-1]+1.0)\/4.0;$/;"	v
+yi	functions.h	/^	double yi,yi1;$/;"	v
+yi1	functions.h	/^	double yi,yi1;$/;"	v
+~ClearStackOnExit	rapidjson/document.h	/^        ~ClearStackOnExit() { d_.ClearStack(); }$/;"	f	struct:GenericDocument::ClearStackOnExit
+~ClearStackOnExit	rapidjson/reader.h	/^        ~ClearStackOnExit() { r_.ClearStack(); }$/;"	f	struct:GenericReader::ClearStackOnExit
+~FunctionFactory	functions.h	/^		~FunctionFactory(){$/;"	f	class:FunctionFactory
+~GenericDocument	rapidjson/document.h	/^    ~GenericDocument() {$/;"	f	class:GenericDocument
+~GenericPointer	rapidjson/pointer.h	/^    ~GenericPointer() {$/;"	f	class:GenericPointer
+~GenericValue	rapidjson/document.h	/^    ~GenericValue() {$/;"	f	class:GenericValue
+~MemoryPoolAllocator	rapidjson/allocators.h	/^    ~MemoryPoolAllocator() {$/;"	f	class:MemoryPoolAllocator
+~NumberStream	rapidjson/reader.h	/^        ~NumberStream() {}$/;"	f	class:GenericReader::NumberStream
+~SettingParser	settingParser.h	/^		~SettingParser(){$/;"	f	class:SettingParser
+~Stack	rapidjson/internal/stack.h	/^    ~Stack() {$/;"	f	class:internal::Stack
+~StreamLocalCopy	rapidjson/reader.h	/^    ~StreamLocalCopy() { original_ = s; }$/;"	f	class:internal::StreamLocalCopy
