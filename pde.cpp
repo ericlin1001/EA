@@ -50,7 +50,7 @@ class Save{
 	public:
 		Save(const char *title,const char *x,const char *y){
 			char buff[150];
-			sprintf(buff,"%s.figdata",title,x,y);
+			sprintf(buff,"%s.figdata",title);
 			out.open(buff);
 			out<<x<<"\t"<<y<<endl;
 			ix=0;
@@ -118,11 +118,12 @@ class DE:public EA{
 			return fx[bestI];
 		}
 		void update(int maxGeneration){
+#define SaveData s.add(f->getFBest()/getBestFx());
 			Save s(f->getName(),"Generation","F*/F");
-			s.add(f->getFBest()/getBestFx());
+				SaveData;
 			for(int g=1;g<=maxGeneration;g++){
 				updateX();
-				s.add(f->getFBest()/getBestFx());
+				SaveData;
 			}
 		}
 	public:
@@ -161,217 +162,24 @@ class DE:public EA{
 			out_fx=fx[bestI];
 		}
 };
-
-/*
-#if ALGORITHM==4
-int PDE(int processId,int PopSizerocess,Function*f,vector<double>&bestX,double &bestF){
-	srand(time(NULL));//srand in every process.
-	//MPI:
-	const int TAG=99;
-	const int TAG2=98;
-	MPI_Status status;
-	//DE:
-	const int MaxFE=300000;
-	const int NumAlgorithm=min(PopSizerocess-1,4);
-	int PopSize=50;
-	int numDim=f->getNumDim();
-	//
-	DE de;
-	if(processId!=0){
-		de.init(processId-1,PopSize);
-		de.begin(f);
-	}
-	ASSERT(NumAlgorithm>0);
-	const int MaxGeneration=MaxFE/(NumAlgorithm*PopSize);
-	ASSERT(MaxGeneration>0);
-	//master
-	vector<double>meanFs;
-	vector<vector<int> > migrateMap;
-	//slave:
-	vector<int>migrateVec;
-	vector<double>XF;
-	vector<double>bestXF;
-	XF.resize(numDim+1);
-
-	vector<int>popSizes;
-	if(processId==0){
-		//for master process
-		meanFs.resize(NumAlgorithm);
-		migrateMap.resize(NumAlgorithm);
-		popSizes.resize(NumAlgorithm);
-		for(int i=0;i<NumAlgorithm;i++){
-			migrateMap[i].resize(NumAlgorithm);
-			popSizes[i]=PopSize;
-		}
-	}else{
-		migrateVec.resize(NumAlgorithm);
-	}
-	const int MinPopSize=5;
-	for(int g=1;g<=MaxGeneration;g++){
-		if(processId==0){
-			//master process:
-#ifdef DEBUG
-			if(g==1)cout<<"Master:Generation("<<g<<") begin"<<endl;
-#endif
-			double Pmigrate=0.01+0.99*(exp((double)10.0*g/(double)MaxGeneration)-1.0)/(exp(10.0)-1.0);
-			for(int i=1;i<=NumAlgorithm;i++){
-				MPI_Recv(&meanFs[i-1],1,MPI_DOUBLE,i,TAG,MPI_COMM_WORLD,&status);
-			}
-			//build migrateMap.
-			for(int i=0;i<NumAlgorithm;i++){
-				migrateMap[i][i]=0;
-				for(int j=i+1;j<NumAlgorithm;j++){
-					if(drand()<Pmigrate){
-						if(meanFs[i]<meanFs[j]){
-							if(popSizes[j]<=MinPopSize){
-								migrateMap[i][j]=0;
-							}else{
-							//i is better than j.
-								migrateMap[i][j]=-1;//recve from j, j->i
-								popSizes[i]++;
-								popSizes[j]--;
-							}
-						}else{
-							if(popSizes[i]<=MinPopSize){
-								migrateMap[i][j]=0;
-							}else{
-							//j is better than i
-								migrateMap[i][j]=1;//send to j. i->i
-								popSizes[i]--;
-								popSizes[j]++;
-							}
-						}
-					}else{
-							migrateMap[i][j]=0;//do nothing.
-					}
-					migrateMap[j][i]=-migrateMap[i][j];
-				}
-			}
-#ifdef DEBUG
-			cout<<"MigrateMap:"<<endl;
-			for(int i=0;i<NumAlgorithm;i++){
-				for(int j=0;j<NumAlgorithm;j++){
-					cout<<migrateMap[i][j]<<",";
-				}
-				cout<<endl;
-			}
-			cout<<endl;
-			if(g!=MaxGeneration)cout<<"Master:Generation("<<g+1<<") begin"<<endl;
-#endif
-			for(int i=1;i<=NumAlgorithm;i++){
-				MPI_Send(&migrateMap[i-1][0],migrateMap[0].size(),MPI_INT,i,TAG,MPI_COMM_WORLD);
-			}
-		}else{
-			//slave processes:
-			de.update(1);
-			//cout<<"Process("<<processId<<"):"<<"end de.update()"<<endl;
-			double meanF=de.getMeanF();
-#ifdef DEBUG
-			cout<<"Process("<<processId<<"):"<<"meanF:"<<meanF<<endl;
-#endif
-			MPI_Send(&meanF,1,MPI_DOUBLE,0,TAG,MPI_COMM_WORLD);
-		
-			MPI_Recv(&migrateVec[0],migrateVec.size(),MPI_INT,0,TAG,MPI_COMM_WORLD,&status);
-			//cout<<"Process("<<processId<<"):"<<"end recv migrateMap"<<endl;
-			//Attention: without explicit synchronization, there might be a deadlock or error.
-			for(int i=0;i<NumAlgorithm;i++){
-				if(migrateVec[i]==1){
-					//1:send
-					ASSERT(de.getPopSize()>1);
-					int randI=rand()%de.getPopSize();
-					XF=de.del(randI);
-#ifdef DEBUG
-			cout<<"Process("<<processId<<"):"<<"sending to P("<<i+1<<")"<<endl;
-#endif
-					MPI_Send(&XF[0],XF.size(),MPI_DOUBLE,i+1,TAG,MPI_COMM_WORLD);
-				}else if(migrateVec[i]==-1){
-					//-1:recv
-					MPI_Recv(&XF[0],XF.size(),MPI_DOUBLE,i+1,TAG,MPI_COMM_WORLD,&status);
-					de.add(XF);
-				}
-			}
-		}
-	}
-	//return only in  process0.
-	if(processId==0){
-		for(int i=1;i<=NumAlgorithm;i++){
-			MPI_Recv(&XF[0],XF.size(),MPI_DOUBLE,i,TAG2,MPI_COMM_WORLD,&status);
-			if(i==1){
-				bestXF=XF;
-			}else{
-				if(XF.back()<bestXF.back()){
-					bestXF=XF;
-				}
-			}
-		}
-		bestF=bestXF.back();
-		bestX=bestXF;
-		bestX.pop_back();
-		return 0;
-	}else{
-		de.getOutput(XF,bestF);
-		XF.push_back(bestF);
-		MPI_Send(&XF[0],XF.size(),MPI_DOUBLE,0,TAG2,MPI_COMM_WORLD);
-	}
-	return -1;
-}
-vector<double> runPDE(int id,int idSize,Function*f,int maxRun){
-	vector<double>results;
-	results.resize(maxRun);
-	for(int run=0;run<maxRun;run++){
-		vector<double>bestX;
-		double bestF;
-		PDE(id,idSize,f,bestX,bestF);
-		results[run]=fabs(bestF-(f->getBest()));
-	}
-	return results;
-}
-#endif
-vector<double> runSerialDE(DE &de,Function*f,int maxRun){
-	vector<double>results;
-	const int MaxFE=300000;
-	int numDim=f->getNumDim();
-	vector<double>bestX;
-	double bestF;
-	results.resize(maxRun);
-	for(int run=0;run<maxRun;run++){
-		de.solve(f,MaxFE/de.getPopSize(),bestX,bestF);
-		results[run]=fabs(bestF-(f->getBest()));
-	}
-	return results;
-}
-
-*/
-int unused_main(int argc,char *argv[]){
-//int main(int argc,char *argv[]){
-	SearchParam param("DE1.json");
-	Trace(param.getDouble("CR"));
-	Trace(param.getInt("MaxFEs"));
-}
-//int unused_main(int argc,char *argv[]){
 int main(int argc,char *argv[]){
 	srand(time(NULL));
 	//parse the setting.
 	SearchParam param("DE1.json");
-	FunctionFactoryMy &funGenerator=FunctionFactoryMy::Instance(param.getInt("NumDim"));
-	//const int numTestFunction=funGenerator.getNumFunction();
-	const int numTestFunction=1;
+	FunctionFactoryMy *funGenerator=FunctionFactoryMy::Instance(param.getInt("NumDim"));
+	const int numTestFunction=funGenerator->getNumFunction();
 	DE de;
 	de.initParam(&param);
-
-	//cout<<"Runing DE("<<de.getName()<<") "<<maxRun<<"times."<<endl;
-	//printf("F\tmean\tstd\n");
+	cout<<"Runing "<<de.getName()<<" "<<endl;
 	Tic::tic("begin");
 	vector<double>x;
 	double fx;
+	cout<<"FunName(MyBestF,Optima)"<<endl;
 	for(int i=0;i<numTestFunction;i++){
-		Function*f=funGenerator.getFunction(i);
+		Function*f=funGenerator->getFunction(i);
 		de.getMin(f,param.getInt("MaxFEs"),x,fx);
 		printf("%s(%g,%g)",f->getName(),fx,f->getFBest());
-		//vector<double>results=runSerialDE(de,f,maxRun);
-		//double min,max,mean,std;
-		//calStatistics(results,min,max,mean,std);
-		//printf("%s\t%g\t%g\n",f->getShortName(),mean,std);
+		Tic::tic("end");
 	}
 	Tic::tic("end");
 	return 0;

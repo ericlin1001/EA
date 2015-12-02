@@ -242,26 +242,53 @@ DefCEC14Func(CEC14_F6,6);
 DefCEC14Func(CEC14_F7,7);
 DefCEC14Func(CEC14_F8,8);
 DefCEC14Func(CEC14_F9,9);
+DefCEC14Func(CEC14_F10,10);
+DefCEC14Func(CEC14_F11,11);
+DefCEC14Func(CEC14_F12,12);
+DefCEC14Func(CEC14_F13,13);
+DefCEC14Func(CEC14_F14,14);
+DefCEC14Func(CEC14_F15,15);
+DefCEC14Func(CEC14_F16,16);
+DefCEC14Func(CEC14_F17,17);
+DefCEC14Func(CEC14_F18,18);
+DefCEC14Func(CEC14_F19,19);
+DefCEC14Func(CEC14_F20,20);
+DefCEC14Func(CEC14_F21,21);
+DefCEC14Func(CEC14_F22,22);
+DefCEC14Func(CEC14_F23,23);
+DefCEC14Func(CEC14_F24,24);
+DefCEC14Func(CEC14_F25,25);
+DefCEC14Func(CEC14_F26,26);
+DefCEC14Func(CEC14_F27,27);
+DefCEC14Func(CEC14_F28,28);
+DefCEC14Func(CEC14_F29,29);
+DefCEC14Func(CEC14_F30,30);
 
 class FunctionFactory{
 	private:
 	protected:
 		vector<Function*>fs;
-		FunctionFactory(int numDim){
-			init(numDim);
+		FunctionFactory(){
+		}
+		void addFunction(Function*f){
+			fs.push_back(f);
 		}
 	public:
 		static FunctionFactory*instance;
 		virtual void init(int numDim){
+			cout<<"FunctionFactory init"<<endl;
 			fs.resize(4);
 			fs[0]=new F1(numDim);
 			fs[1]=new F3(numDim);
 			fs[2]=new PDEF3(numDim);
 			fs[3]=new PDEF4(numDim);
 		}
-		static FunctionFactory &Instance(int numDim){
-			if(instance==0)instance=new FunctionFactory(numDim);
-			return *instance;
+		static FunctionFactory *Instance(int numDim){
+			if(instance==0){
+				instance=new FunctionFactory();
+				instance->init(numDim);
+			}
+			return instance;
 		}
 		Function*getFunction(int index)const{
 			return fs[index];
@@ -279,24 +306,47 @@ class FunctionFactory{
 FunctionFactory*FunctionFactory::instance=0;
 class FunctionFactoryMy:public FunctionFactory{
 	private:
-		FunctionFactoryMy(int numDim):FunctionFactory(numDim){
+		FunctionFactoryMy():FunctionFactory(){
 		}
 	public:
-		static FunctionFactoryMy &Instance(int numDim){
-			if(instance==0)instance=new FunctionFactoryMy(numDim);
-			return *(FunctionFactoryMy*)instance;
+		static FunctionFactoryMy *Instance(int numDim){
+			if(instance==0){
+				instance=new FunctionFactoryMy();
+				instance->init(numDim);
+			}
+			return (FunctionFactoryMy*)instance;
 		}
 		virtual void init(int numDim){
-			fs.resize(9);
-			fs[0]=new CEC14_F1(numDim);
-			fs[1]=new CEC14_F2(numDim);
-			fs[2]=new CEC14_F3(numDim);
-			fs[3]=new CEC14_F4(numDim);
-			fs[4]=new CEC14_F5(numDim);
-			fs[5]=new CEC14_F6(numDim);
-			fs[6]=new CEC14_F7(numDim);
-			fs[7]=new CEC14_F8(numDim);
-			fs[8]=new CEC14_F9(numDim);
+			addFunction(new CEC14_F1(numDim));
+			addFunction(new CEC14_F2(numDim));
+			addFunction(new CEC14_F3(numDim));
+			addFunction(new CEC14_F4(numDim));
+			addFunction(new CEC14_F5(numDim));
+			addFunction(new CEC14_F6(numDim));
+			addFunction(new CEC14_F7(numDim));
+			addFunction(new CEC14_F8(numDim));
+			addFunction(new CEC14_F9(numDim));
+			addFunction(new CEC14_F10(numDim));
+			addFunction(new CEC14_F11(numDim));
+			addFunction(new CEC14_F12(numDim));
+			addFunction(new CEC14_F13(numDim));
+			addFunction(new CEC14_F14(numDim));
+			addFunction(new CEC14_F15(numDim));
+			addFunction(new CEC14_F16(numDim));
+			addFunction(new CEC14_F17(numDim));
+			addFunction(new CEC14_F18(numDim));
+			addFunction(new CEC14_F19(numDim));
+			addFunction(new CEC14_F20(numDim));
+			addFunction(new CEC14_F21(numDim));
+			addFunction(new CEC14_F22(numDim));
+			addFunction(new CEC14_F23(numDim));
+			addFunction(new CEC14_F24(numDim));
+			addFunction(new CEC14_F25(numDim));
+			addFunction(new CEC14_F26(numDim));
+			addFunction(new CEC14_F27(numDim));
+			addFunction(new CEC14_F28(numDim));
+			addFunction(new CEC14_F29(numDim));
+			addFunction(new CEC14_F30(numDim));
 		}
 };
 #endif
