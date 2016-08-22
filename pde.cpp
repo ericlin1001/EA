@@ -65,6 +65,7 @@ class Save{
 		~Save(){
 		}
 };
+
 class DE:public EA{
 	private:
 		//about function:f
